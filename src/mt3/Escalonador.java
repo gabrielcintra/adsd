@@ -35,8 +35,8 @@ public class Escalonador extends Thread {
 		this.tempo = tempo;
 		this.servico = false;
 		this.saida = 0;
-		this.varsFila1 = new int[] {7, 5, 12};
-		this.varsFila2 = new int[] {1, 1, 4};
+		this.varsFila1 = new int[] {10, 8, 12};
+		this.varsFila2 = new int[] {2, 2, 4};
 		this.varsSaida = new int[] {21, 5, 6};
 		this.idFila1 = 0;
 		this.idFila2 = 0;
