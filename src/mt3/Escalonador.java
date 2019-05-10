@@ -13,6 +13,7 @@ public class Escalonador extends Thread {
 	private int saida;
 	private int filaChegada;
 	private int a;
+	private int c;
 	private int m;
 	private int indice;
 	private boolean servico;
@@ -30,8 +31,9 @@ public class Escalonador extends Thread {
 		this.servico = false;
 		this.gerador = new GeradorNumerosAleatorios(7);
 		this.a = 5;
+		this.c = 2;
 		this.m = 32;
-		this.numerosAleatorios = gerador.metodoMultiplicativo(a, m);
+		this.numerosAleatorios = gerador.gerarNumeros(a, c, m);
 		this.indice = 0;
 		this.escalonaChegada(0);
 
@@ -110,7 +112,7 @@ public class Escalonador extends Thread {
 		if (indice == (numerosAleatorios.size()-1)){
 			this.a++;
 			this.m++;
-			this.numerosAleatorios = gerador.metodoMultiplicativo(a, m);
+			this.numerosAleatorios = gerador.gerarNumeros(a, c, m);
 			this.indice = 0;
 		}
 	}
@@ -131,9 +133,9 @@ public class Escalonador extends Thread {
 
 	public static void main(String[] args) {
 		int tempoDeEscalonamento = 300; //em segundos
-		Escalonador barbearia = new Escalonador(tempoDeEscalonamento);
+		Escalonador escalonador = new Escalonador(tempoDeEscalonamento);
 		
 		//inicia a thread
-		barbearia.start();
+		escalonador.start();
 	}
 }

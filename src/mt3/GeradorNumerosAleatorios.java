@@ -1,8 +1,6 @@
 package mt3;
 
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -11,62 +9,58 @@ public class GeradorNumerosAleatorios {
 	private List<Integer> valores;
 	private int semente;
 
+	/**
+	   * Construtor de classe
+	   * @param semente
+	   */
+	
 	public GeradorNumerosAleatorios(int semente) {
-		this.valores = new ArrayList<Integer>();
 		this.semente = semente;
+		this.valores = new ArrayList<Integer>();
 	}
 	
-	
-	public List<Integer> metodoMisto(int a, int c, int mod) {
+	/**
+	   * Gerador de número aleatório utilizando seed com base no Congruential Generator Method
+	   * https://en.wikipedia.org/wiki/Linear_congruential_generator
+	   * @param a
+	   * @param c
+	   * @param mod
+	   * @return List< Integer>
+	   */
+
+	private List<Integer> CongruentialGenerator(int a, int c, int mod) {
 		valores = new ArrayList<Integer>();
 		valores.add(semente);
+		
 		if (a < mod && c < mod) {
-			for (int i = 0; i < mod - 1; i++) {
-				int xn = valores.get(i);
-				int xn1 = ((a * xn) + c) % mod;
-				valores.add(xn1);
+			for (int i = 0; i < mod-1; i++) {
+				int aux = valores.get(i);
+				int aux2 = ((a * aux) + c) % mod;
+				valores.add(aux2);
 			}
 		}
-		return valores;
-	}
-
-	
-	public List<Integer> metodoMultiplicativo(int a, int mod) {
-		return metodoMisto(a, 0, mod);
-	}
-
-	
-	public List<Integer> metodoAditivo(List<Integer> sequenciaInicial, int mod) {
-		valores.clear();
-		valores.addAll(sequenciaInicial);
-		for (int i = 0; i <= sequenciaInicial.size(); i++) {
-			int novoNum = (valores.get(valores.size() - 1) + valores.get(i)) % mod;
-			valores.add(novoNum);
-		}
+		
 		return valores;
 	}
 	
-	public void setSemente(int novaSemente){
+	/**
+	   * Configura uma nova seed
+	   * @param novaSemente
+	   */
+
+	public void setSemente(int novaSemente) {
 		this.semente = novaSemente;
 	}
 	
-
-
-	public static void gerarArquivo(String metodo, String valores) {
-		PrintWriter writer = null;
-		try {
-			writer = new PrintWriter("saida/" + metodo, "UTF-8");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		writer.println(valores);
-		writer.close();
-	}
+	/**
+	   * Método de chamada do Congruential Generator (Repasse)
+	   * @param a
+	   * @param c
+	   * @param mod
+	   */
 	
-	public static void main(String[] args) {
-		GeradorNumerosAleatorios gerador = new GeradorNumerosAleatorios(7);
-		gerarArquivo("metodo misto",Arrays.toString(gerador.metodoMisto(3, 1, 20).toArray()));
-		gerarArquivo("metodo multiplicativo",Arrays.toString(gerador.metodoMultiplicativo(7, 40).toArray()));
-		gerarArquivo("metodo aditivo",Arrays.toString(gerador.metodoAditivo(new ArrayList<Integer>(Arrays.asList(25, 55, 78, 87, 32)), 100).toArray()));
+	public List<Integer> gerarNumeros(int a, int c, int mod) {
+		return CongruentialGenerator(a, c, mod);
 	}
+
 }
