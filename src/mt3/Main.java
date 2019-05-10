@@ -3,6 +3,8 @@ package mt3;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -10,16 +12,18 @@ import java.util.Calendar;
 public class Main 
 {
 	
-  public static void main(String[] args) {
+  public static void main(String[] args) throws UnsupportedEncodingException {
 	// Coleta data atual formatada
-	DateFormat formatoData = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+	DateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
     Calendar cal = Calendar.getInstance();
     String dataAtual = formatoData.format(cal.getTime());
     
-    // Gera arquivo de saída
+    // Gera arquivo de saída referente a data específica
     try {
-		PrintStream out = new PrintStream(new File("%s.txt", dataAtual));
-		System.setOut(out);
+    	String filePath = "src/mt3/results/" + dataAtual + ".txt";
+    	PrintStream printStream = new PrintStream(new File(filePath)); 
+    	
+    	System.setOut(printStream);
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
 	}
