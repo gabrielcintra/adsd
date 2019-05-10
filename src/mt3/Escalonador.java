@@ -1,141 +1,169 @@
 package mt3;
 
-import java.io.PrintWriter;
+import java.util.Calendar;
+import java.util.LinkedList;
 import java.util.List;
-
+import java.util.Queue;
 
 public class Escalonador extends Thread {
-
-	private GeradorNumerosAleatorios gerador;
-	private List<Integer> numerosAleatorios;
 	private int tempo;
-	private int chegada;
 	private int saida;
-	private int filaChegada;
-	private int a;
-	private int c;
-	private int m;
-	private int indice;
 	private boolean servico;
-	private PrintWriter writer;
-
-	/**
-	 * Construtor
-	 * @param tempo de execucao
-	 */
+	private GeradorNumerosAleatorios geradorNums;
+	private int filaAtendida;
+	private boolean fim = false;
+	
+	// Detalhes - Fila 1
+	private Queue<Integer> fila1;
+	private List<Integer> numsFila1;
+	private int idFila1;
+	private int[] varsFila1;
+	
+	// Detalhes - Fila 2
+	private Queue<Integer> fila2;
+	private List<Integer> numsFila2;
+	private int idFila2;
+	private int[] varsFila2;
+	
+	// Detalhes - Saída esperada
+	private List<Integer> numsSaida;
+	private int idSaida;
+	private int[] varsSaida;
+	private final int SAIDA = 3;
+	
 	public Escalonador(int tempo) {
 		this.tempo = tempo;
-		this.chegada = 0;
-		this.saida = 0;
-		this.filaChegada = 0;
 		this.servico = false;
-		this.gerador = new GeradorNumerosAleatorios(7);
-		this.a = 5;
-		this.c = 2;
-		this.m = 32;
-		this.numerosAleatorios = gerador.gerarNumeros(a, c, m);
-		this.indice = 0;
-		this.escalonaChegada(0);
-
-		try {
-			writer = new PrintWriter("saida/escalonador", "UTF-8");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		writer.println("-*-");
-		writer.println("Tempo de escalonamento" + this.tempo + "'");
-		writer.println(" Chegada de fregues em " + this.chegada + "'");
-		writer.println("-*-");
-		writer.println();
-	}
-
-	@Override
-	public void run() {
-		int segundos = 0;
-		while (segundos < this.tempo) {
-			try {
-				this.sleep(1);
-				segundos++;
-				checaEventosCriados(segundos);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-		writer.close();
-	}
-	
-	
-	public void checaEventosCriados(int segundos) {
-		boolean houveAlteracao = false;
-		if (segundos == chegada) {
-			houveAlteracao = true;
-			writer.println("Evento 1 > Chegada de fregues aos " + segundos + "'");
-			if (!this.servico) {
-				escalonaSaida(segundos);
-				this.servico = true;
-				writer.println("Evento 2 > atendimento da barbearia iniciado em "	+ segundos + "'");
-				writer.println("atendimento da barbearia encerrado em " + (this.saida - segundos)	+ "'");
-			} else {
-				this.filaChegada++;
-			}
-			escalonaChegada(segundos);
-			writer.println("Proximo fregues em " + (this.chegada - segundos) + "'");
-		}
-
-		if (segundos == this.saida) {
-			houveAlteracao = true;
-			writer.println("Evento 3 > atendimento da barbearia encerrado em " + segundos + "'");
-			if (this.filaChegada != 0) {
-				this.filaChegada--;
-				this.escalonaSaida(segundos);
-				this.servico = true;
-				writer.println("Evento 2 > atendimento da barbearia iniciado em "	+ segundos + "'");
-				writer.println("atendimento da barbearia  encerrado em " + (saida - segundos)	+ "'");
-			} else {
-				this.servico = false;
-			}
-		}
-		if (houveAlteracao) {
-			if (this.servico) {
-				writer.println("Barbearia ocupada em " + segundos + "'");
-			} else {
-				writer.println("Barbearia livre em " + segundos + "'");
-			}
-			writer.println("Tamanho da fila em " + segundos + "'" + filaChegada);
-			writer.println("-*-");
-		}
-	}
-	
-
-	public void geraNumerosAleatorios(){
-		if (indice == (numerosAleatorios.size()-1)){
-			this.a++;
-			this.m++;
-			this.numerosAleatorios = gerador.gerarNumeros(a, c, m);
-			this.indice = 0;
-		}
-	}
-	
-	
-	public void escalonaChegada(int segundos) {
-		this.geraNumerosAleatorios();
-		this.chegada = segundos + numerosAleatorios.get(indice);
-		this.indice++;
-	}
-
-	
-	public void escalonaSaida(int segundos) {
-		this.geraNumerosAleatorios();
-		this.saida = segundos + numerosAleatorios.get(indice);
-		this.indice++;
-	}
-
-	public static void main(String[] args) {
-		int tempoDeEscalonamento = 300; //em segundos
-		Escalonador escalonador = new Escalonador(tempoDeEscalonamento);
+		this.saida = 0;
+		this.varsFila1 = new int[] {10, 9, 12};
+		this.varsFila2 = new int[] {15, 7, 11};
+		this.varsSaida = new int[] {6, 5, 10};
+		this.idFila1 = 0;
+		this.idFila2 = 0;
+		this.idSaida = 0;
 		
-		//inicia a thread
-		escalonador.start();
+		Calendar data = Calendar.getInstance();
+		int seed = data.get(Calendar.HOUR_OF_DAY);
+		
+		geradorNums = new GeradorNumerosAleatorios(seed);
+		numsFila1 = geradorNums.gerarNumeros(varsFila1[0], varsFila1[1], varsFila1[2]);
+		numsFila2 = geradorNums.gerarNumeros(varsFila2[0], varsFila2[1], varsFila2[2]);
+		numsSaida = geradorNums.gerarNumeros(varsSaida[0], varsSaida[1], varsSaida[2]);
+
+		fila1 = new LinkedList<Integer>();
+		fila2 = new LinkedList<Integer>();
+		
+		this.escalonarEntrada(0, 1); // Escalona para fila 1
+		this.escalonarEntrada(0, 2); // Escalona para fila 2
+	}
+	
+	/**
+	   * Verifica e registra cada um dos eventos criados para escalonamento de entradas e saídas
+	   */
+
+	private void checarEventosCriados() {
+		if(!this.servico) {
+			int inicio = -1;
+			if(!this.fila1.isEmpty() && this.fila1.peek() <= this.saida) {
+				this.servico = true;
+				inicio = this.fila1.peek();
+				this.escalonarSaida(inicio);
+				this.escalonarEntrada(inicio, 1);
+				this.filaAtendida = 1;
+			} else {
+				this.servico = true;
+				inicio = this.fila2.peek();
+				this.escalonarSaida(inicio);
+				this.escalonarEntrada(inicio, 2);
+				this.filaAtendida = 2;
+			}
+			
+			System.out.println("[ENTRADA] Tempo: " + inicio);
+		} else {
+			this.servico = false;
+			if (this.filaAtendida == 1) {
+				this.fila1.poll();
+			} else {
+				this.fila2.poll();
+			}
+			
+			System.out.println("[SAIDA] Tempo: " + this.saida + " | Fila: " + this.filaAtendida);
+		}
+		
+		System.out.println("[SERVICO] Fila atendida anteriormente: " + this.filaAtendida);
+		System.out.println("[FILA 1] Tamanho: " + this.fila1.size());
+		System.out.println("[FILA 2] Tamanho: " + this.fila2.size());
+		System.out.println("-----------------------------");
+	}
+	
+	/**
+	   * Gera números aleatórios, ids e aumento do parâmetro congruente
+	   * @param fila identificador da fila
+	   */
+
+	private void gerarNumeroAleatorio(int fila) {
+		if(fila == 1 && this.idFila1 >= (this.numsFila1.size() - 1)) {
+			this.varsFila1[0]++;
+			this.numsFila1 = this.geradorNums.gerarNumeros(varsFila1[0], varsFila1[1], varsFila1[2]);
+			this.idFila1 = 0;
+		} else if (fila == 2 && this.idFila2 >= (this.numsFila2.size() - 1)) {
+			this.varsFila2[0]++;
+			this.numsFila2 = this.geradorNums.gerarNumeros(varsFila2[0], varsFila2[1], varsFila2[2]);
+			this.idFila2 = 0;
+		} else if (fila == SAIDA && this.idSaida >= (this.numsSaida.size() - 1)) {
+			this.numsSaida = this.geradorNums.gerarNumeros(varsSaida[0], varsSaida[1], varsSaida[2]);
+			this.idSaida = 0;
+		}
+	}
+	
+	/**
+	   * Realiza atividade de escalonar entrada na fila definida e no tempo definido
+	   * Finaliza execução caso ultrapasse o tempo limite
+	   * @param inicio
+	   * @param fila
+	   */
+
+	private void escalonarEntrada(int inicio, int fila) {
+		this.gerarNumeroAleatorio(fila);
+		int novaChegada = inicio;
+		if (fila == 1) {
+			novaChegada += this.numsFila1.get(this.idFila1);
+			this.fila1.add(novaChegada);
+			this.idFila1++;
+		} else if (fila == 2) {
+			novaChegada += this.numsFila2.get(this.idFila2);
+			this.fila2.add(novaChegada);
+			this.idFila2++;
+		}
+		
+		if(novaChegada > this.tempo) {
+			this.fim = true;
+		}
+	}
+	
+	/**
+	   * Realiza atividade de escalonar saida na fila de saídas
+	   * Finaliza execução caso ultrapasse o tempo limite
+	   * @param entrada
+	   */
+
+	private void escalonarSaida(int entrada) {
+		this.gerarNumeroAleatorio(SAIDA);
+		this.saida += entrada + this.numsSaida.get(this.idSaida);
+		this.idSaida++;
+		if (this.saida > this.tempo) {
+			this.fim = true;
+		}
+	}
+	
+	/**
+	   * Execução do escalonador.
+	   * O critério de parada é a variável global fim, manipulada pelos métodos de escalonamento.
+	   */
+
+	public void run() {
+		while(!this.fim) {
+			checarEventosCriados();
+		}
 	}
 }
