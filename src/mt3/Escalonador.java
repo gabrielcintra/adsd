@@ -35,17 +35,18 @@ public class Escalonador extends Thread {
 		this.tempo = tempo;
 		this.servico = false;
 		this.saida = 0;
-		this.varsFila1 = new int[] {10, 9, 12};
-		this.varsFila2 = new int[] {15, 7, 11};
-		this.varsSaida = new int[] {6, 5, 10};
+		this.varsFila1 = new int[] {7, 5, 12};
+		this.varsFila2 = new int[] {1, 1, 4};
+		this.varsSaida = new int[] {21, 5, 6};
 		this.idFila1 = 0;
 		this.idFila2 = 0;
 		this.idSaida = 0;
 		
 		Calendar data = Calendar.getInstance();
-		int seed = data.get(Calendar.HOUR_OF_DAY);
+		int seed = data.get(Calendar.MINUTE);
 		
 		geradorNums = new GeradorNumerosAleatorios(seed);
+		// TODO: Não deixar o código tão explícito (loop pode ser aplicado, por exemplo)
 		numsFila1 = geradorNums.gerarNumeros(varsFila1[0], varsFila1[1], varsFila1[2]);
 		numsFila2 = geradorNums.gerarNumeros(varsFila2[0], varsFila2[1], varsFila2[2]);
 		numsSaida = geradorNums.gerarNumeros(varsSaida[0], varsSaida[1], varsSaida[2]);
@@ -55,24 +56,30 @@ public class Escalonador extends Thread {
 		
 		this.escalonarEntrada(0, 1); // Escalona para fila 1
 		this.escalonarEntrada(0, 2); // Escalona para fila 2
+		
+		System.out.println("[INICIO SIMULAÇÃO] Tempo total: " + tempo);
 	}
 	
 	/**
 	   * Verifica e registra cada um dos eventos criados para escalonamento de entradas e saídas
+	   * Trata as 3 situações descritas no mini-teste, referente a ocupação do serviço e escalonamentos
 	   */
 
 	private void checarEventosCriados() {
 		if(!this.servico) {
-			int inicio = -1;
+			int inicio;
+			
 			if(!this.fila1.isEmpty() && this.fila1.peek() <= this.saida) {
-				this.servico = true;
 				inicio = this.fila1.peek();
+				
+				this.servico = true;
 				this.escalonarSaida(inicio);
 				this.escalonarEntrada(inicio, 1);
 				this.filaAtendida = 1;
 			} else {
-				this.servico = true;
 				inicio = this.fila2.peek();
+				
+				this.servico = true;
 				this.escalonarSaida(inicio);
 				this.escalonarEntrada(inicio, 2);
 				this.filaAtendida = 2;
@@ -81,16 +88,16 @@ public class Escalonador extends Thread {
 			System.out.println("[ENTRADA] Tempo: " + inicio);
 		} else {
 			this.servico = false;
-			if (this.filaAtendida == 1) {
-				this.fila1.poll();
-			} else {
-				this.fila2.poll();
-			}
 			
+			if (this.filaAtendida == 1) 
+				this.fila1.poll();
+			else 
+				this.fila2.poll();
+		
 			System.out.println("[SAIDA] Tempo: " + this.saida + " | Fila: " + this.filaAtendida);
 		}
 		
-		System.out.println("[SERVICO] Fila atendida anteriormente: " + this.filaAtendida);
+		System.out.println("[SERVICO] Fila atendida: " + this.filaAtendida);
 		System.out.println("[FILA 1] Tamanho: " + this.fila1.size());
 		System.out.println("[FILA 2] Tamanho: " + this.fila2.size());
 		System.out.println("-----------------------------");
@@ -165,5 +172,7 @@ public class Escalonador extends Thread {
 		while(!this.fim) {
 			checarEventosCriados();
 		}
+		
+		System.out.println("[FIM SIMULAÇÃO]");
 	}
 }

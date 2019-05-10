@@ -18,7 +18,7 @@ public class Main
     Calendar cal = Calendar.getInstance();
     String dataAtual = formatoData.format(cal.getTime());
     
-    // Gera arquivo de saída referente a data específica
+    // Gera arquivo de saída referente a data específica na pasta "results"
     try {
     	String filePath = "src/mt3/results/" + dataAtual + ".txt";
     	PrintStream printStream = new PrintStream(new File(filePath)); 
