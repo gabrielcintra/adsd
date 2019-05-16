@@ -5,14 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class Escalonador extends Thread {
-	private int tempo;
-	private int saida;
-	private boolean servico;
-	private GeradorNumerosAleatorios geradorNums;
-	private int filaAtendida;
-	private boolean fim = false;
-	
+public class Escalonador extends Thread {	
 	// Detalhes - Fila 1
 	private Queue<Integer> fila1;
 	private List<Integer> numsFila1;
@@ -29,15 +22,27 @@ public class Escalonador extends Thread {
 	private List<Integer> numsSaida;
 	private int idSaida;
 	private int[] varsSaida;
-	private final int SAIDA = 3;
+	
+	// Parâmetros funcionais
+	private final int SAIDA = -1;
+	private int tempoExecucao;
+	private int saida;
+	private boolean servico;
+	private int filaAtendida;
+	private GeradorNumerosAleatorios geradorNums;
+	
+	/**
+	   * Construtor do Escalonador. Recebe o tempo limite de execução como parâmetro.
+	   * @param tempo
+	   */
 	
 	public Escalonador(int tempo) {
-		this.tempo = tempo;
+		this.tempoExecucao = tempo;
 		this.servico = false;
-		this.saida = 0;
-		this.varsFila1 = new int[] {10, 8, 12};
-		this.varsFila2 = new int[] {2, 2, 4};
-		this.varsSaida = new int[] {21, 5, 6};
+		this.saida = -1;
+		this.varsFila1 = new int[] {3, 1, 12}; // mod (param 3) define a expo
+		this.varsFila2 = new int[] {1, 1, 4}; // mod (param 3) define a expo
+		this.varsSaida = new int[] {10, 3, 6}; // mod (param 3) define a expo
 		this.idFila1 = 0;
 		this.idFila2 = 0;
 		this.idSaida = 0;
@@ -57,50 +62,73 @@ public class Escalonador extends Thread {
 		this.escalonarEntrada(0, 1); // Escalona para fila 1
 		this.escalonarEntrada(0, 2); // Escalona para fila 2
 		
-		System.out.println("[INICIO SIMULAÇÃO] Tempo total: " + tempo);
+		System.out.println("[INICIO SIMULAÇÃO] Tempo de execução: " + tempo);
 	}
 	
 	/**
 	   * Verifica e registra cada um dos eventos criados para escalonamento de entradas e saídas
 	   * Trata as 3 situações descritas no mini-teste, referente a ocupação do serviço e escalonamentos
+	   * @param segundos
 	   */
-
-	private void checarEventosCriados() {
-		if(!this.servico) {
-			int inicio;
-			
-			if(!this.fila1.isEmpty() && this.fila1.peek() <= this.saida) {
-				inicio = this.fila1.peek();
-				
-				this.servico = true;
-				this.escalonarSaida(inicio);
-				this.escalonarEntrada(inicio, 1);
-				this.filaAtendida = 1;
-			} else {
-				inicio = this.fila2.peek();
-				
-				this.servico = true;
-				this.escalonarSaida(inicio);
-				this.escalonarEntrada(inicio, 2);
-				this.filaAtendida = 2;
-			}
-			
-			System.out.println("[ENTRADA] Tempo: " + inicio);
-		} else {
-			this.servico = false;
-			
-			if (this.filaAtendida == 1) 
-				this.fila1.poll();
-			else 
-				this.fila2.poll();
+	
+	private void checarEventoNoTempo(int segundos) {
+		boolean match = false;
+		int filaEntrada = -1,
+			segFila1 = ((LinkedList<Integer>) this.fila1).get(this.fila1.size() - 1),
+			segFila2 = ((LinkedList<Integer>) this.fila2).get(this.fila2.size() - 1);
 		
-			System.out.println("[SAIDA] Tempo: " + this.saida + " | Fila: " + this.filaAtendida);
+		if (segundos == segFila1) {
+			match = true;
+			
+			if (!this.servico) criarSaida(1, segundos);
+	
+			this.escalonarEntrada(segundos, 1);
+			filaEntrada = 1;
 		}
 		
-		System.out.println("[SERVICO] Fila atendida: " + this.filaAtendida);
-		System.out.println("[FILA 1] Tamanho: " + this.fila1.size());
-		System.out.println("[FILA 2] Tamanho: " + this.fila2.size());
-		System.out.println("-----------------------------");
+		if (segundos == segFila2) {
+			match = true;
+			
+			if (!this.servico) criarSaida(2, segundos);
+			
+			this.escalonarEntrada(segundos, 2);
+			filaEntrada = 2;
+		}
+		
+		if (filaEntrada != -1) // Houve entrada na fila
+			System.out.println("[ENTRADA] Tempo: " + segundos + " / Fila " + filaEntrada);
+
+		if (this.saida == segundos) {
+			this.servico = false;
+			
+			if (this.fila1.size() > 0 && this.fila1.peek() < segundos) 
+				criarSaida(1, segundos);
+			else if (this.fila2.size() > 0) 
+				criarSaida(2, segundos);
+			
+			System.out.println("[SAIDA] Tempo: " + segundos);
+		}
+		
+		if (match) {
+			System.out.println("[FILA 1] Tamanho: " + this.fila1.size());
+			System.out.println("[FILA 2] Tamanho: " + this.fila2.size());
+			System.out.println("[SERVICO] Fila atendida: " + this.filaAtendida);
+		}
+	}
+
+	/**
+	   * Cria uma nova saida numa fila e momento específico
+	   * @param fila
+	   * @param segundos
+	   */
+	
+	private void criarSaida(int fila, int segundos) {
+		this.servico = true;
+		this.escalonarSaida(segundos);
+		this.filaAtendida = fila;
+		
+		if (this.filaAtendida == 1) this.fila1.poll();
+		else this.fila2.poll();
 	}
 	
 	/**
@@ -132,19 +160,18 @@ public class Escalonador extends Thread {
 
 	private void escalonarEntrada(int inicio, int fila) {
 		this.gerarNumeroAleatorio(fila);
-		int novaChegada = inicio;
-		if (fila == 1) {
-			novaChegada += this.numsFila1.get(this.idFila1);
-			this.fila1.add(novaChegada);
-			this.idFila1++;
-		} else if (fila == 2) {
-			novaChegada += this.numsFila2.get(this.idFila2);
-			this.fila2.add(novaChegada);
-			this.idFila2++;
-		}
+		int chegada = inicio;
 		
-		if(novaChegada > this.tempo) {
-			this.fim = true;
+		// Adiciona na fila 1
+		if (fila == 1) { 
+			chegada += this.numsFila1.get(this.idFila1);
+			this.fila1.add(chegada);
+			this.idFila1++;
+		// Adiciona na fila 2
+		} else if (fila == 2) {
+			chegada += this.numsFila2.get(this.idFila2);
+			this.fila2.add(chegada);
+			this.idFila2++;
 		}
 	}
 	
@@ -155,24 +182,29 @@ public class Escalonador extends Thread {
 	   */
 
 	private void escalonarSaida(int entrada) {
+		if (this.saida < 0) this.saida = 0;
+		
 		this.gerarNumeroAleatorio(SAIDA);
-		this.saida += entrada + this.numsSaida.get(this.idSaida);
+		
+		this.saida += entrada;
+		this.saida += this.numsSaida.get(this.idSaida);
 		this.idSaida++;
-		if (this.saida > this.tempo) {
-			this.fim = true;
-		}
 	}
 	
 	/**
 	   * Execução do escalonador.
-	   * O critério de parada é a variável global fim, manipulada pelos métodos de escalonamento.
+	   * O critério de parada é que o tempo de execução alcance o tempo total estimado na execução.
 	   */
 
 	public void run() {
-		while(!this.fim) {
-			checarEventosCriados();
-		}
+		int tempoAtual = 0;
 		
+		while(true) {
+			if (tempoAtual == this.tempoExecucao) break;
+			checarEventoNoTempo(tempoAtual);
+			tempoAtual++;
+		}
+
 		System.out.println("[FIM SIMULAÇÃO]");
 	}
 }
