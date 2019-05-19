@@ -20,9 +20,9 @@ public class Main {
       
       Cache cache = new Cache("Cache", 5, 2, seed);
       
-      Disk disk = new Disk("DiskWebServer", 1, 0.8, seed, Scope.WebServer);
-      Disk disk2 = new Disk("DiskApplication", 2, 1, seed, Scope.Application);
-      Disk disk3 = new Disk("DiskDatabase", 3, 1.5, seed, Scope.Database);
+      Disk disk = new Disk("DiskWebServer", 4, 0.6, seed, Scope.WebServer);
+      Disk disk2 = new Disk("DiskApplication", 4, 0.6, seed, Scope.Application);
+      Disk disk3 = new Disk("DiskDatabase", 4, 0.6, seed, Scope.Database);
       
       Out out = new Out("Output", 5, 2, seed);
             

@@ -44,11 +44,7 @@ class CPU extends Sim_entity {
 	    add_port(in3);
 	    add_port(out1);
 	    add_port(out2);
-
-	    // 3rd Input
-	    if (this.type == Scope.WebServer || this.type == Scope.Database) {
-	    	add_port(out3);
-	    }
+	    add_port(out3);
 	  }
 		
 	  public void body() {
