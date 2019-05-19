@@ -11,7 +11,7 @@ Importação de JARs referentes ao JavaSim.
 ---
 
 ##### Modelo seguido
-![Modelo](https://i.ibb.co/CJqhqtQ/model.png "Modelo")
+![Modelo](https://i.ibb.co/2vsfPRq/model.png "Modelo")
 
 ---
 

@@ -33,18 +33,17 @@ public class Main {
       Sim_system.link_ports("CpuWebServer", "CpuOut1", "CpuApplication", "CpuIn1");
       Sim_system.link_ports("CpuWebServer", "CpuOut2", "Output", "OutputIn1");
       Sim_system.link_ports("CpuWebServer", "CpuOut3", "DiskWebServer", "DiskIn1");
-      Sim_system.link_ports("CpuWebServer", "CpuIn1", "DiskApplication", "DiskIn1");
-      
+
       // Disk from WebServer
       Sim_system.link_ports("DiskWebServer", "DiskOut1", "CpuWebServer", "CpuIn3");
       
       // Cpu from Application
-      Sim_system.link_ports("CpuApplication", "CpuOut1", "CpuDatabase", "CpuIn1");
-      Sim_system.link_ports("CpuApplication", "CpuOut2", "Output", "OutputIn1");
+      Sim_system.link_ports("CpuApplication", "CpuOut1", "CpuWebServer", "CpuIn1");
+      Sim_system.link_ports("CpuApplication", "CpuOut2", "CpuDatabase", "CpuIn1");
+      Sim_system.link_ports("CpuApplication", "CpuOut3", "DiskApplication", "DiskIn1");
       
       // Disk from Application
       Sim_system.link_ports("DiskApplication", "DiskOut1", "CpuApplication", "CpuIn3");
-      Sim_system.link_ports("DiskApplication", "DiskIn1", "CpuWebServer", "CpuIn1");
       
       // Cpu from Database
       Sim_system.link_ports("CpuDatabase", "CpuOut1", "CpuApplication", "CpuIn2");

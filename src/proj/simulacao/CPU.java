@@ -72,23 +72,26 @@ class CPU extends Sim_entity {
 
 		          if (this.type == Scope.WebServer) { // WebServer Scope
 			    	  if (origin.equals("Source")) { 
-			    		  if (probSample < 0.60) {
+			    		  if (probSample < 0.50) {
 				          	sim_trace(1, "WebServer Disk selected to receive the request.");
 				          	sim_schedule(out3, 0.0, 1);
 				          } else {
-				          	sim_trace(1, "Application Disk selected to receive the request.");
+				          	sim_trace(1, "Application CPU selected to receive the request.");
 				            sim_schedule(in1, 0.0, 1);
 				          }
-			          } else if (origin.equals("DiskWebServer")) {  	  
-			    		  if (probSample < 0.25) {
+			          } else if (origin.equals("CpuApplication")) {  	  
+			    		  if (probSample < 0.80) {
 				          	sim_trace(1, "Output selected to receive the request.");
 				          	sim_schedule(out2, 0.0, 1);
+			    		  } else if (probSample < 0.90) {
+				          	sim_trace(1, "WebServer Disk selected to receive the request.");
+				          	sim_schedule(out3, 0.0, 1);
 				          } else {
 				          	sim_trace(1, "Application CPU selected to receive the request.");
 				            sim_schedule(out1, 0.0, 1);
 				          }
-			          } else if (origin.equals("DiskApplication")) {  	  
-			    		  if (probSample < 0.50) {
+			          } else if (origin.equals("DiskWebServer")) {  	  
+			    		  if (probSample < 0.10) {
 				          	sim_trace(1, "Output selected to receive the request.");
 				          	sim_schedule(out2, 0.0, 1);
 				          } else {
@@ -97,43 +100,59 @@ class CPU extends Sim_entity {
 				          }
 			          }    	
 		          }
+	    	  
 		          else if (this.type == Scope.Application) { // Application Scope
 			    	  if (origin.equals("CpuWebServer")) {  
-			    		  if (probSample < 0.10) {
-				          	sim_trace(1, "Output selected to receive the request.");
-				          	sim_schedule(out2, 0.0, 1);
-				          } else {
+			    		  if (probSample < 0.05) {
+				          	sim_trace(1, "WebServer CPU selected to receive the request.");
+				          	sim_schedule(out1, 0.0, 1);
+				          } else if (probSample < 0.38) {
+				          	sim_trace(1, "Application Disk selected to receive the request.");
+				          	sim_schedule(out3, 0.0, 1);
+					      } else {
 				          	sim_trace(1, "Database CPU selected to receive the request.");
-				            sim_schedule(out1, 0.0, 1);
+				            sim_schedule(out2, 0.0, 1);
 				          }
 			          } else if (origin.equals("CpuDatabase")) {  	  
-			          	 sim_trace(1, "Output selected to receive the request.");
-			          	 sim_schedule(out2, 0.0, 1); 	  
+			    		  if (probSample < 0.85) {
+				          	sim_trace(1, "WebServer CPU selected to receive the request.");
+				          	sim_schedule(out1, 0.0, 1);
+				          } else if (probSample < 0.95) {
+				          	sim_trace(1, "Application Disk selected to receive the request.");
+				          	sim_schedule(out3, 0.0, 1);
+					      } else {
+				          	sim_trace(1, "Database CPU selected to receive the request.");
+				            sim_schedule(out2, 0.0, 1);
+				          } 	  
 			          } else if (origin.equals("DiskApplication")) {  
-			    		  if (probSample < 0.25) {
-				          	sim_trace(1, "Output selected to receive the request.");
-				          	sim_schedule(out2, 0.0, 1);
+			    		  if (probSample < 0.40) {
+				          	sim_trace(1, "WebServer CPU selected to receive the request.");
+				          	sim_schedule(out1, 0.0, 1);
 				          } else {
 				          	sim_trace(1, "Database CPU selected to receive the request.");
-				            sim_schedule(out1, 0.0, 1);
+				            sim_schedule(out2, 0.0, 1);
 				          }
 			          }
 		          }
+		          
 		          else if (this.type == Scope.Database) { // Database Scope
 			    	  if (origin.equals("CpuApplication")) {  
-			    		  if (probSample < 0.05) {
+			    		  if (probSample < 0.10) {
 				          	sim_trace(1, "Application CPU selected to receive the request.");
 				          	sim_schedule(out1, 0.0, 1);
-				          } else {
+				          } else if (probSample < 0.95) {
 				          	sim_trace(1, "Cache selected to receive the request.");
+				          	sim_schedule(out3, 0.0, 1);
+					      } else {
+				          	sim_trace(1, "Database Disk to receive the request.");
 				            sim_schedule(out3, 0.0, 1);
 				          }
 			          } else if (origin.equals("Cache")) {  	  
-			    		  if (probSample < 0.30) {
+			    		  if (probSample < 0.40) {
 				          	sim_trace(1, "Application CPU selected to receive the request.");
 				          	sim_schedule(out1, 0.0, 1);
 				          } else {
-				          	sim_trace(1, "Disk selected to receive the request.");
+				          	sim_trace(1, "Database Disk selected to receive the request.");
 				            sim_schedule(out2, 0.0, 1);
 				          }	  
 			          } else {  
