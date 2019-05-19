@@ -1,6 +1,6 @@
 package proj.simulacao;
 
-enum Origin {
+enum Scope {
     WebServer,
     Application,
     Database

@@ -3,7 +3,7 @@ package proj.simulacao;
 import eduni.simjava.*;
 
 public class Main {
-    // The main method
+
     @SuppressWarnings("unused")
 	public static void main(String[] args) {
       // Initialize Sim_system
@@ -14,15 +14,15 @@ public class Main {
       // Entities
       Source source = new Source("Source", 40, 3, seed);
       
-      CPU cpu1 = new CPU("CpuWebServer", 5, 1, seed, Origin.WebServer);
-      CPU cpu2 = new CPU("CpuApplication", 6, 1.5, seed, Origin.Application);
-      CPU cpu3 = new CPU("CpuDatabase", 4, 0.2, seed, Origin.Database);
+      CPU cpu1 = new CPU("CpuWebServer", 5, 1, seed, Scope.WebServer);
+      CPU cpu2 = new CPU("CpuApplication", 6, 1.5, seed, Scope.Application);
+      CPU cpu3 = new CPU("CpuDatabase", 4, 0.2, seed, Scope.Database);
       
       Cache cache = new Cache("Cache", 5, 2, seed);
       
-      Disk disk = new Disk("DiskWebServer", 4, 0.6, seed, Origin.WebServer);
-      Disk disk2 = new Disk("DiskApplication", 4, 0.6, seed, Origin.Application);
-      Disk disk3 = new Disk("DiskDatabase", 4, 0.6, seed, Origin.Database);
+      Disk disk = new Disk("DiskWebServer", 1, 0.8, seed, Scope.WebServer);
+      Disk disk2 = new Disk("DiskApplication", 2, 1, seed, Scope.Application);
+      Disk disk3 = new Disk("DiskDatabase", 3, 1.5, seed, Scope.Database);
       
       Out out = new Out("Output", 5, 2, seed);
             

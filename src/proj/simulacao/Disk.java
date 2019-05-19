@@ -8,12 +8,12 @@ class Disk extends Sim_entity {
   Sim_stat stat;
   private Sim_port in1, in2, out1;
   private Sim_normal_obj delay;
-  private Origin origin;
+  private Scope type;
 
-  public Disk(String name, double mean, double variance, long seed, Origin origin) {
+  public Disk(String name, double mean, double variance, long seed, Scope type) {
     super(name);
     this.delay = new Sim_normal_obj("Delay", mean, variance, seed);
-    this.origin = origin;
+    this.type = type;
     
     stat = new Sim_stat();
     stat.add_measure(Sim_stat.ARRIVAL_RATE);        
@@ -35,7 +35,7 @@ class Disk extends Sim_entity {
     add_port(out1);
     
     // If its from WebServer scope, it uses cache as input
-    if (this.origin == Origin.Database) 
+    if (this.type == Scope.Database) 
     	add_port(in2);
   }
 
@@ -57,7 +57,7 @@ class Disk extends Sim_entity {
 	    	  sim_schedule(out1, 0.0, 1);
     	  }
       } catch(eduni.simjava.Sim_exception exc) {
-    	  System.out.println("Algo errado aconteceu!");
+    	  System.out.println("Something went wrong!");
     	  System.out.println(exc.getMessage());    	  
       }
                       

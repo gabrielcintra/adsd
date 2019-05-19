@@ -18,9 +18,10 @@ Importação de JARs referentes ao JavaSim.
 ## Verificação de resultados
 
 #### Input
-Seeds aleatórias no código
-Utilização de probabilidade nas entidades convenientes ao uso
+- Seeds aleatórias no código
+- Utilização de probabilidade nas entidades convenientes ao uso
 
 #### Input
 Arquivos padrões do SimJava na raiz do Projeto
-- report_trace
+- sim_report
+- sim_trace

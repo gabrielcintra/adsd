@@ -5,14 +5,14 @@ import eduni.simjava.distributions.*;
 
 class CPU extends Sim_entity {
   
-	 Origin type;
+	 Scope type;
 	 Sim_stat stat;
 	 private Sim_normal_obj delay;
 	 private Sim_random_obj prob;
 	 private Sim_port in1, in2, in3,  
    				   	  out1, out2, out3;
 	 
-	 public CPU (String name, double mean, double variance, long seed, Origin type) {
+	 public CPU (String name, double mean, double variance, long seed, Scope type) {
 		super(name);
 		this.delay = new Sim_normal_obj("Delay", mean, variance, seed);
 		this.prob = new Sim_random_obj("Probability", seed);
@@ -46,10 +46,9 @@ class CPU extends Sim_entity {
 	    add_port(out2);
 
 	    // 3rd Input
-	    if (this.type == Origin.WebServer || this.type == Origin.Database) {
+	    if (this.type == Scope.WebServer || this.type == Scope.Database) {
 	    	add_port(out3);
 	    }
-	    
 	  }
 		
 	  public void body() {
@@ -71,7 +70,7 @@ class CPU extends Sim_entity {
 	    	  if (e.get_src() != -1) {    		  
 		    	  String origin = Sim_system.get_entity(e.get_src()).get_name();  
 
-		          if (this.type == Origin.WebServer) { // WebServer Scope
+		          if (this.type == Scope.WebServer) { // WebServer Scope
 			    	  if (origin.equals("Source")) { 
 			    		  if (probSample < 0.60) {
 				          	sim_trace(1, "WebServer Disk selected to receive the request.");
@@ -98,7 +97,7 @@ class CPU extends Sim_entity {
 				          }
 			          }    	
 		          }
-		          else if (this.type == Origin.Application) { // Application Scope
+		          else if (this.type == Scope.Application) { // Application Scope
 			    	  if (origin.equals("CpuWebServer")) {  
 			    		  if (probSample < 0.10) {
 				          	sim_trace(1, "Output selected to receive the request.");
@@ -120,7 +119,7 @@ class CPU extends Sim_entity {
 				          }
 			          }
 		          }
-		          else if (this.type == Origin.Database) { // Application Scope
+		          else if (this.type == Scope.Database) { // Database Scope
 			    	  if (origin.equals("CpuApplication")) {  
 			    		  if (probSample < 0.05) {
 				          	sim_trace(1, "Application CPU selected to receive the request.");

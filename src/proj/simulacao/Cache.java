@@ -31,6 +31,7 @@ class Cache extends Sim_entity {
     out1 = new Sim_port("CacheOut1");    
     out2 = new Sim_port("CacheOut2"); 
     
+    // Registering ports
     add_port(in1);
     add_port(out1);
     add_port(out2);
