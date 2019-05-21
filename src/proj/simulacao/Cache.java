@@ -7,12 +7,14 @@ class Cache extends Sim_entity {
   private Sim_port in1, out1, out2;
   private Sim_normal_obj delay;
   private Sim_random_obj prob;
+  private double cacheHitProb;
   Sim_stat stat;
 
-  public Cache(String name, double mean, double variance, long seed) {
+  public Cache(String name, double mean, double variance, long seed, double cacheHitProb) {
     super(name);
     this.delay = new Sim_normal_obj("Delay", mean, variance, seed);
     this.prob = new Sim_random_obj("Probability", seed);
+    this.cacheHitProb = cacheHitProb;
     
     stat = new Sim_stat();
     stat.add_measure(Sim_stat.ARRIVAL_RATE);        
@@ -51,7 +53,7 @@ class Cache extends Sim_entity {
       
       double probSample = prob.sample();
 
-      if (probSample < 0.70) {
+      if (probSample < cacheHitProb) {
     	sim_trace(1, "Database CPU selected to receive the request.");
     	sim_schedule(out1, 0.0, 1);
       } else {       

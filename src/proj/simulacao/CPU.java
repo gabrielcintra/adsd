@@ -1,5 +1,7 @@
 package proj.simulacao;
 
+import java.util.HashMap;
+
 import eduni.simjava.*;
 import eduni.simjava.distributions.*;
 
@@ -7,16 +9,18 @@ class CPU extends Sim_entity {
   
 	 Scope type;
 	 Sim_stat stat;
+	 private HashMap<String, Double[]> probs;
 	 private Sim_normal_obj delay;
 	 private Sim_random_obj prob;
 	 private Sim_port in1, in2, in3,  
    				   	  out1, out2, out3;
 	 
-	 public CPU (String name, double mean, double variance, long seed, Scope type) {
+	 public CPU (String name, double mean, double variance, long seed, HashMap<String, Double[]> probs, Scope type) {
 		super(name);
 		this.delay = new Sim_normal_obj("Delay", mean, variance, seed);
 		this.prob = new Sim_random_obj("Probability", seed);
 		this.type = type;
+		this.probs = probs;
 	    
 	    stat = new Sim_stat();
 	    stat.add_measure(Sim_stat.ARRIVAL_RATE);        
@@ -68,7 +72,7 @@ class CPU extends Sim_entity {
 
 		          if (this.type == Scope.WebServer) { // WebServer Scope
 			    	  if (origin.equals("Source")) { 
-			    		  if (probSample < 0.50) {
+			    		  if (probSample < GetProb(origin, 0)) {
 				          	sim_trace(1, "WebServer Disk selected to receive the request.");
 				          	sim_schedule(out3, 0.0, 1);
 				          } else {
@@ -76,10 +80,10 @@ class CPU extends Sim_entity {
 				            sim_schedule(in1, 0.0, 1);
 				          }
 			          } else if (origin.equals("CpuApplication")) {  	  
-			    		  if (probSample < 0.80) {
+			    		  if (probSample < GetProb(origin, 0)) {
 				          	sim_trace(1, "Output selected to receive the request.");
 				          	sim_schedule(out2, 0.0, 1);
-			    		  } else if (probSample < 0.90) {
+			    		  } else if (probSample < GetProb(origin, 1)) {
 				          	sim_trace(1, "WebServer Disk selected to receive the request.");
 				          	sim_schedule(out3, 0.0, 1);
 				          } else {
@@ -87,7 +91,7 @@ class CPU extends Sim_entity {
 				            sim_schedule(out1, 0.0, 1);
 				          }
 			          } else if (origin.equals("DiskWebServer")) {  	  
-			    		  if (probSample < 0.10) {
+			    		  if (probSample < GetProb(origin, 0)) {
 				          	sim_trace(1, "Output selected to receive the request.");
 				          	sim_schedule(out2, 0.0, 1);
 				          } else {
@@ -99,10 +103,10 @@ class CPU extends Sim_entity {
 	    	  
 		          else if (this.type == Scope.Application) { // Application Scope
 			    	  if (origin.equals("CpuWebServer")) {  
-			    		  if (probSample < 0.05) {
+			    		  if (probSample < GetProb(origin, 0)) {
 				          	sim_trace(1, "WebServer CPU selected to receive the request.");
 				          	sim_schedule(out1, 0.0, 1);
-				          } else if (probSample < 0.38) {
+				          } else if (probSample < GetProb(origin, 1)) {
 				          	sim_trace(1, "Application Disk selected to receive the request.");
 				          	sim_schedule(out3, 0.0, 1);
 					      } else {
@@ -110,10 +114,10 @@ class CPU extends Sim_entity {
 				            sim_schedule(out2, 0.0, 1);
 				          }
 			          } else if (origin.equals("CpuDatabase")) {  	  
-			    		  if (probSample < 0.85) {
+			    		  if (probSample < GetProb(origin, 0)) {
 				          	sim_trace(1, "WebServer CPU selected to receive the request.");
 				          	sim_schedule(out1, 0.0, 1);
-				          } else if (probSample < 0.95) {
+				          } else if (probSample < GetProb(origin, 1)) {
 				          	sim_trace(1, "Application Disk selected to receive the request.");
 				          	sim_schedule(out3, 0.0, 1);
 					      } else {
@@ -121,7 +125,7 @@ class CPU extends Sim_entity {
 				            sim_schedule(out2, 0.0, 1);
 				          } 	  
 			          } else if (origin.equals("DiskApplication")) {  
-			    		  if (probSample < 0.40) {
+			    		  if (probSample < GetProb(origin, 0)) {
 				          	sim_trace(1, "WebServer CPU selected to receive the request.");
 				          	sim_schedule(out1, 0.0, 1);
 				          } else {
@@ -133,10 +137,10 @@ class CPU extends Sim_entity {
 		          
 		          else if (this.type == Scope.Database) { // Database Scope
 			    	  if (origin.equals("CpuApplication")) {  
-			    		  if (probSample < 0.10) {
+			    		  if (probSample < GetProb(origin, 0)) {
 				          	sim_trace(1, "Application CPU selected to receive the request.");
 				          	sim_schedule(out1, 0.0, 1);
-				          } else if (probSample < 0.95) {
+				          } else if (probSample < GetProb(origin, 1)) {
 				          	sim_trace(1, "Cache selected to receive the request.");
 				          	sim_schedule(out3, 0.0, 1);
 					      } else {
@@ -144,7 +148,7 @@ class CPU extends Sim_entity {
 				            sim_schedule(out3, 0.0, 1);
 				          }
 			          } else if (origin.equals("Cache")) {  	  
-			    		  if (probSample < 0.40) {
+			    		  if (probSample < GetProb(origin, 0)) {
 				          	sim_trace(1, "Application CPU selected to receive the request.");
 				          	sim_schedule(out1, 0.0, 1);
 				          } else {
@@ -163,5 +167,10 @@ class CPU extends Sim_entity {
 	      }
 	      
 	    }
+	  }
+	  
+	  private double GetProb(String origin, int portNumber)
+	  {
+		  return this.probs.get(origin)[portNumber];
 	  }
 }
