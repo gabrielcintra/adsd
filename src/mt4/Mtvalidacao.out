@@ -1,80 +1,718 @@
 
-----------------------------------------------------------------------
-17114:CCREAT
-Entidade: 123
-Um erro de simulação foi detectado no tempo  0.017827943 no seguinte bloco:
-
- *    1 7$              CREATE,40,MinutesToBaseTime(0.0),Entity 1:
-                            MinutesToBaseTime(EXPO(1)):
-                            NEXT(8$);
-
-Maximo de 150 entidades excedido.
-Possíveis causas:
-- Um problema na lógica do seu modelo está criando muitas entidades e não as está retirando do modelo
-. O controlador de execução pode ser útil para descobrir o problema.
-- Você está no modo de demonstração e excedeu o limite de entidades. A versão comercial
-  é necessária para rodar modelos grandes.
-- Você configurou um limite de entidades no elemento DISCRETE que é muito baixo.
-  Remova o limite ou configure para um valor maior.
-- Você excedeu a matriz padrão de  
-espaço para os modelos. Use a página Tamanhos das Matrizes
- na caixa de diálogo Rodar/Configurar para incrementar o espaço alocado para RSET e
- cheque novamente seu modelo.
-----------------------------------------------------------------------
-
-
-Controlador de execução do SIMAN.
-
-0.017827943 Horas>
                                       ARENA Simulation Results
                                 Usuário do Windows - License: STUDENT
 
-                                  Sumário para Replicação 1 de 100
+                                  Sumário para Replicação 1 de 10
 
-Projeto: Unnamed Project                                             Data da execução : 5/23/2019
-Analista: rafaela.rock@hotmail.com.br                                 Data de revisão do modelo: 5/23/2019
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
 
-Replicação terminada no tempo de      : 0.017827943 Horas (Sunday, July 22, 2018, 00:19:59)
-Unidade de Tempo Base: Horas
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
 
                                            VARIÁVEIS DE REGISTRO
 
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             3.0959E-04 (Insuf)    5.4834E-05 9.0645E-04     26    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         26    
-Entity 1.WaitTime                           .01196     (Insuf)    .00705     .01507         26    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         26    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         26    
-Entity 1.TotalTime                          .01227     (Insuf)    .00759     .01539         26    
-C4.Queue.WaitingTime                        .00581     (Insuf)    .00350     .00707          8    
-C1.Queue.WaitingTime                        .00397     (Insuf)    .00000     .00707        124    
-C2.Queue.WaitingTime                        .00503     (Insuf)    .00305     .00741         55    
-C3.Queue.WaitingTime                        .00554     (Insuf)    .00342     .00722         18    
+Entity 1.VATime                             .09661     .00320     .00477     .34395       1205    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1205    
+Entity 1.WaitTime                           .14924     .03026     .00000     .91107       1205    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1205    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1205    
+Entity 1.TotalTime                          .24585     .03156     .00944     1.0775       1205    
+C4.Queue.WaitingTime                        .00126     6.2530E-04 .00000     .06368        475    
+C1.Queue.WaitingTime                        .05374     .01973     .00000     .34202       1531    
+C2.Queue.WaitingTime                        .05522     .01584     .00000     .49945       1207    
+C3.Queue.WaitingTime                        .04147     .01499     .00000     .38645        731    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                69.053     (Insuf)    .00000     134.00     134.00    
-Resource 1.NumberBusy                       1.0000     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                4.9385     .81398     .00000     23.000     2.0000    
+Resource 4.NumberBusy                       .07709     .01013     .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .07709     .01013     .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .50840     .04531     .00000     1.0000     .00000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .50840     .04531     .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .64943     .05220     .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .64943     .05220     .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .70614     (Corr)     .00000     1.0000     .00000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      1.0000     (Insuf)    .00000     1.0000     1.0000    
-C4.Queue.NumberInQueue                      3.2814     (Insuf)    .00000     6.0000     6.0000    
-C1.Queue.NumberInQueue                      40.062     (Insuf)    .00000     96.000     95.000    
-C2.Queue.NumberInQueue                      17.095     (Insuf)    .00000     33.000     9.0000    
-C3.Queue.NumberInQueue                      7.6138     (Insuf)    .00000     23.000     23.000    
+Resource 1.Utilization                      .70614     (Corr)     .00000     1.0000     .00000    
+C4.Queue.NumberInQueue                      .00999     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.3713     (Corr)     .00000     12.000     .00000    
+C2.Queue.NumberInQueue                      1.1109     .35427     .00000     12.000     .00000    
+C3.Queue.NumberInQueue                      .50521     .21010     .00000     9.0000     .00000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           160.00    
-Entity 1.NumberOut                          26.000    
-Resource 1.NumberSeized                     205.00    
-Resource 1.ScheduledUtilization             1.0000    
-System.NumberOut                            26.000    
+Entity 1.NumberIn                           1207.0    
+Entity 1.NumberOut                          1205.0    
+Resource 4.NumberSeized                     475.00    
+Resource 4.ScheduledUtilization             .07709    
+Resource 3.NumberSeized                     731.00    
+Resource 3.ScheduledUtilization             .50840    
+Resource 2.NumberSeized                     1207.0    
+Resource 2.ScheduledUtilization             .64943    
+Resource 1.NumberSeized                     1531.0    
+Resource 1.ScheduledUtilization             .70614    
+System.NumberOut                            1205.0    
 
+Iniciando replicação 2 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 2 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09290     .00341     .00444     .34408       1185    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1185    
+Entity 1.WaitTime                           .16629     .04428     .00000     .91276       1185    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1185    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1185    
+Entity 1.TotalTime                          .25919     .04552     .01113     .98531       1185    
+C4.Queue.WaitingTime                        5.5796E-04 2.4561E-04 .00000     .03138        501    
+C1.Queue.WaitingTime                        .06066     .02145     .00000     .48148       1460    
+C2.Queue.WaitingTime                        .07732     .03111     .00000     .55859       1185    
+C3.Queue.WaitingTime                        .02425     .00569     .00000     .23970        684    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.1189     1.0596     .00000     19.000     .00000    
+Resource 4.NumberBusy                       .07921     .00863     .00000     1.0000     .00000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .07921     .00863     .00000     1.0000     .00000    
+Resource 3.NumberBusy                       .43434     .03128     .00000     1.0000     .00000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .43434     .03128     .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .65440     .05053     .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .65440     .05053     .00000     1.0000     .00000    
+Resource 1.NumberBusy                       .66674     .04612     .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .66674     .04612     .00000     1.0000     .00000    
+C4.Queue.NumberInQueue                      .00466     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.4759     .48576     .00000     14.000     .00000    
+C2.Queue.NumberInQueue                      1.5271     .71630     .00000     16.000     .00000    
+C3.Queue.NumberInQueue                      .27645     .05914     .00000     5.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1185.0    
+Entity 1.NumberOut                          1185.0    
+Resource 4.NumberSeized                     501.00    
+Resource 4.ScheduledUtilization             .07921    
+Resource 3.NumberSeized                     684.00    
+Resource 3.ScheduledUtilization             .43434    
+Resource 2.NumberSeized                     1185.0    
+Resource 2.ScheduledUtilization             .65440    
+Resource 1.NumberSeized                     1460.0    
+Resource 1.ScheduledUtilization             .66674    
+System.NumberOut                            1185.0    
+
+Iniciando replicação 3 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 3 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09279     .00263     .00355     .38575       1189    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1189    
+Entity 1.WaitTime                           .14499     .02905     .00000     1.0560       1189    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1189    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1189    
+Entity 1.TotalTime                          .23777     .03012     .01178     1.1822       1189    
+C4.Queue.WaitingTime                        7.9602E-04 4.1370E-04 .00000     .03811        474    
+C1.Queue.WaitingTime                        .05887     (Corr)     .00000     .42663       1451    
+C2.Queue.WaitingTime                        .05399     .01399     .00000     .39378       1196    
+C3.Queue.WaitingTime                        .03291     .01057     .00000     .30660        716    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                4.7491     .82913     .00000     16.000     9.0000    
+Resource 4.NumberBusy                       .07916     .01141     .00000     1.0000     .00000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .07916     .01141     .00000     1.0000     .00000    
+Resource 3.NumberBusy                       .45840     .04843     .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .45840     .04843     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .63937     .05066     .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .63937     .05066     .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .66836     .05685     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .66836     .05685     .00000     1.0000     1.0000    
+C4.Queue.NumberInQueue                      .00629     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.4236     .50406     .00000     11.000     .00000    
+C2.Queue.NumberInQueue                      1.0763     (Corr)     .00000     12.000     1.0000    
+C3.Queue.NumberInQueue                      .39754     .15264     .00000     7.0000     5.0000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1198.0    
+Entity 1.NumberOut                          1189.0    
+Resource 4.NumberSeized                     474.00    
+Resource 4.ScheduledUtilization             .07916    
+Resource 3.NumberSeized                     716.00    
+Resource 3.ScheduledUtilization             .45840    
+Resource 2.NumberSeized                     1196.0    
+Resource 2.ScheduledUtilization             .63937    
+Resource 1.NumberSeized                     1451.0    
+Resource 1.ScheduledUtilization             .66836    
+System.NumberOut                            1189.0    
+
+Iniciando replicação 4 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 4 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09213     .00389     .00580     .39999       1201    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1201    
+Entity 1.WaitTime                           .19086     (Corr)     .00000     1.7127       1201    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1201    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1201    
+Entity 1.TotalTime                          .28299     (Corr)     .01172     1.9475       1201    
+C4.Queue.WaitingTime                        9.1196E-04 3.6600E-04 .00000     .03497        510    
+C1.Queue.WaitingTime                        .07856     (Corr)     .00000     .56469       1525    
+C2.Queue.WaitingTime                        .07583     (Corr)     .00000     .60659       1203    
+C3.Queue.WaitingTime                        .02621     .00693     .00000     .28290        692    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.6764     (Corr)     .00000     25.000     5.0000    
+Resource 4.NumberBusy                       .08527     .01271     .00000     1.0000     .00000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .08527     .01271     .00000     1.0000     .00000    
+Resource 3.NumberBusy                       .43224     .03572     .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .43224     .03572     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .63947     (Corr)     .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .63947     (Corr)     .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .68926     .06606     .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .68926     .06606     .00000     1.0000     .00000    
+C4.Queue.NumberInQueue                      .00775     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.9966     (Corr)     .00000     18.000     .00000    
+C2.Queue.NumberInQueue                      1.5236     (Corr)     .00000     16.000     3.0000    
+C3.Queue.NumberInQueue                      .30224     .09045     .00000     6.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1206.0    
+Entity 1.NumberOut                          1201.0    
+Resource 4.NumberSeized                     510.00    
+Resource 4.ScheduledUtilization             .08527    
+Resource 3.NumberSeized                     692.00    
+Resource 3.ScheduledUtilization             .43224    
+Resource 2.NumberSeized                     1203.0    
+Resource 2.ScheduledUtilization             .63947    
+Resource 1.NumberSeized                     1525.0    
+Resource 1.ScheduledUtilization             .68926    
+System.NumberOut                            1201.0    
+
+Iniciando replicação 5 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 5 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09526     .00427     .00304     .42045       1215    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1215    
+Entity 1.WaitTime                           .16319     (Corr)     .00000     1.3431       1215    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1215    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1215    
+Entity 1.TotalTime                          .25845     .03875     .00724     1.6164       1215    
+C4.Queue.WaitingTime                        7.5733E-04 3.3684E-04 .00000     .03385        497    
+C1.Queue.WaitingTime                        .06247     .01888     .00000     .46333       1517    
+C2.Queue.WaitingTime                        .06152     (Corr)     .00000     .49153       1217    
+C3.Queue.WaitingTime                        .03983     .01336     .00000     .33983        719    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.2442     .94344     .00000     18.000     4.0000    
+Resource 4.NumberBusy                       .07862     .01062     .00000     1.0000     .00000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .07862     .01062     .00000     1.0000     .00000    
+Resource 3.NumberBusy                       .46469     .04126     .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .46469     .04126     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .66540     .04835     .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .66540     .04835     .00000     1.0000     .00000    
+Resource 1.NumberBusy                       .72292     .05339     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .72292     .05339     .00000     1.0000     1.0000    
+C4.Queue.NumberInQueue                      .00627     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.5796     .49949     .00000     13.000     1.0000    
+C2.Queue.NumberInQueue                      1.2478     .47163     .00000     15.000     .00000    
+C3.Queue.NumberInQueue                      .47889     .19983     .00000     7.0000     1.0000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1219.0    
+Entity 1.NumberOut                          1215.0    
+Resource 4.NumberSeized                     497.00    
+Resource 4.ScheduledUtilization             .07862    
+Resource 3.NumberSeized                     719.00    
+Resource 3.ScheduledUtilization             .46469    
+Resource 2.NumberSeized                     1217.0    
+Resource 2.ScheduledUtilization             .66540    
+Resource 1.NumberSeized                     1517.0    
+Resource 1.ScheduledUtilization             .72292    
+System.NumberOut                            1215.0    
+
+Iniciando replicação 6 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 6 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09460     .00387     .00345     .36484       1260    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1260    
+Entity 1.WaitTime                           .16944     .02789     .00000     .84131       1260    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1260    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1260    
+Entity 1.TotalTime                          .26403     .02912     .01010     1.0712       1260    
+C4.Queue.WaitingTime                        8.7440E-04 3.6268E-04 .00000     .03708        490    
+C1.Queue.WaitingTime                        .07189     .01987     .00000     .49769       1544    
+C2.Queue.WaitingTime                        .05637     .01467     .00000     .42715       1262    
+C3.Queue.WaitingTime                        .04124     .01283     .00000     .29699        771    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.5623     .82574     .00000     18.000     2.0000    
+Resource 4.NumberBusy                       .08130     .01098     .00000     1.0000     .00000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .08130     .01098     .00000     1.0000     .00000    
+Resource 3.NumberBusy                       .51106     .04842     .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .51106     .04842     .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .66514     .04219     .00000     1.0000     .00000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .66514     .04219     .00000     1.0000     .00000    
+Resource 1.NumberBusy                       .73070     .04328     .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .73070     .04328     .00000     1.0000     .00000    
+C4.Queue.NumberInQueue                      .00714     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.8498     .55244     .00000     14.000     .00000    
+C2.Queue.NumberInQueue                      1.1857     .34504     .00000     10.000     .00000    
+C3.Queue.NumberInQueue                      .53146     .17087     .00000     10.000     1.0000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1262.0    
+Entity 1.NumberOut                          1260.0    
+Resource 4.NumberSeized                     490.00    
+Resource 4.ScheduledUtilization             .08130    
+Resource 3.NumberSeized                     771.00    
+Resource 3.ScheduledUtilization             .51106    
+Resource 2.NumberSeized                     1262.0    
+Resource 2.ScheduledUtilization             .66514    
+Resource 1.NumberSeized                     1544.0    
+Resource 1.ScheduledUtilization             .73070    
+System.NumberOut                            1260.0    
+
+Iniciando replicação 7 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 7 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09446     .00323     .00333     .47400       1175    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1175    
+Entity 1.WaitTime                           .18170     (Corr)     .00000     1.0982       1175    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1175    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1175    
+Entity 1.TotalTime                          .27616     (Corr)     .00777     1.2265       1175    
+C4.Queue.WaitingTime                        9.4354E-04 3.5694E-04 .00000     .03271        504    
+C1.Queue.WaitingTime                        .07195     .02666     .00000     .50825       1470    
+C2.Queue.WaitingTime                        .07383     (Corr)     .00000     .75871       1176    
+C3.Queue.WaitingTime                        .03113     .01076     .00000     .36959        671    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.4166     1.3438     .00000     27.000     3.0000    
+Resource 4.NumberBusy                       .08078     .00959     .00000     1.0000     .00000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .08078     .00959     .00000     1.0000     .00000    
+Resource 3.NumberBusy                       .44075     .05122     .00000     1.0000     .00000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .44075     .05122     .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .65045     .04915     .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .65045     .04915     .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .67830     .05467     .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .67830     .05467     .00000     1.0000     .00000    
+C4.Queue.NumberInQueue                      .00793     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.7626     .74339     .00000     18.000     .00000    
+C2.Queue.NumberInQueue                      1.4477     .73935     .00000     20.000     2.0000    
+C3.Queue.NumberInQueue                      .34810     .14472     .00000     6.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1178.0    
+Entity 1.NumberOut                          1175.0    
+Resource 4.NumberSeized                     504.00    
+Resource 4.ScheduledUtilization             .08078    
+Resource 3.NumberSeized                     671.00    
+Resource 3.ScheduledUtilization             .44075    
+Resource 2.NumberSeized                     1176.0    
+Resource 2.ScheduledUtilization             .65045    
+Resource 1.NumberSeized                     1470.0    
+Resource 1.ScheduledUtilization             .67830    
+System.NumberOut                            1175.0    
+
+Iniciando replicação 8 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 8 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09832     .00296     .00654     .45404       1200    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1200    
+Entity 1.WaitTime                           .14212     .02873     .00000     .83359       1200    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1200    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1200    
+Entity 1.TotalTime                          .24044     .02958     .00943     1.0154       1200    
+C4.Queue.WaitingTime                        9.8284E-04 4.9213E-04 .00000     .04878        505    
+C1.Queue.WaitingTime                        .05634     .01605     .00000     .43706       1514    
+C2.Queue.WaitingTime                        .04882     .01060     .00000     .31199       1201    
+C3.Queue.WaitingTime                        .03834     .01523     .00000     .45408        695    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                4.8199     .77274     .00000     18.000     4.0000    
+Resource 4.NumberBusy                       .09020     .01172     .00000     1.0000     .00000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .09020     .01172     .00000     1.0000     .00000    
+Resource 3.NumberBusy                       .49434     .05733     .00000     1.0000     .00000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .49434     .05733     .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .67221     .04324     .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .67221     .04324     .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .71123     .05092     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .71123     .05092     .00000     1.0000     1.0000    
+C4.Queue.NumberInQueue                      .00827     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.4225     .41045     .00000     14.000     2.0000    
+C2.Queue.NumberInQueue                      .97718     .25438     .00000     10.000     .00000    
+C3.Queue.NumberInQueue                      .44406     .17460     .00000     7.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1204.0    
+Entity 1.NumberOut                          1200.0    
+Resource 4.NumberSeized                     505.00    
+Resource 4.ScheduledUtilization             .09020    
+Resource 3.NumberSeized                     695.00    
+Resource 3.ScheduledUtilization             .49434    
+Resource 2.NumberSeized                     1201.0    
+Resource 2.ScheduledUtilization             .67221    
+Resource 1.NumberSeized                     1514.0    
+Resource 1.ScheduledUtilization             .71123    
+System.NumberOut                            1200.0    
+
+Iniciando replicação 9 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 9 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09594     .00319     .00639     .40033       1176    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1176    
+Entity 1.WaitTime                           .16373     (Corr)     .00000     1.2827       1176    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1176    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1176    
+Entity 1.TotalTime                          .25966     (Corr)     .00890     1.4741       1176    
+C4.Queue.WaitingTime                        6.2061E-04 3.2558E-04 .00000     .02410        441    
+C1.Queue.WaitingTime                        .05962     .02414     .00000     .47436       1431    
+C2.Queue.WaitingTime                        .07234     (Corr)     .00000     .76570       1179    
+C3.Queue.WaitingTime                        .02983     .01128     .00000     .30140        736    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.0979     1.1659     .00000     25.000     6.0000    
+Resource 4.NumberBusy                       .07374     .01011     .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .07374     .01011     .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .48055     .05384     .00000     1.0000     .00000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .48055     .05384     .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .67159     .06290     .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .67159     .06290     .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .65726     .05196     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .65726     .05196     .00000     1.0000     1.0000    
+C4.Queue.NumberInQueue                      .00458     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      1.4228     .50031     .00000     13.000     2.0000    
+C2.Queue.NumberInQueue                      1.4213     .88570     .00000     21.000     .00000    
+C3.Queue.NumberInQueue                      .36590     .14559     .00000     6.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1182.0    
+Entity 1.NumberOut                          1176.0    
+Resource 4.NumberSeized                     441.00    
+Resource 4.ScheduledUtilization             .07374    
+Resource 3.NumberSeized                     736.00    
+Resource 3.ScheduledUtilization             .48055    
+Resource 2.NumberSeized                     1179.0    
+Resource 2.ScheduledUtilization             .67159    
+Resource 1.NumberSeized                     1431.0    
+Resource 1.ScheduledUtilization             .65726    
+System.NumberOut                            1176.0    
+
+Iniciando replicação 10 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 10 de 10
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .09656     (Corr)     .00492     .36395       1175    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000       1175    
+Entity 1.WaitTime                           .17366     .03743     .00000     1.4167       1175    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000       1175    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000       1175    
+Entity 1.TotalTime                          .27021     .03928     .00763     1.5436       1175    
+C4.Queue.WaitingTime                        4.5584E-04 2.0153E-04 .00000     .02036        443    
+C1.Queue.WaitingTime                        .06567     .02764     .00000     .51593       1473    
+C2.Queue.WaitingTime                        .07124     (Corr)     .00000     .60988       1177    
+C3.Queue.WaitingTime                        .03379     .01033     .00000     .32187        733    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                5.3316     .87390     .00000     19.000     11.000    
+Resource 4.NumberBusy                       .07078     .00918     .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .07078     .00918     .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .46723     .04624     .00000     1.0000     .00000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .46723     .04624     .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .66194     .04753     .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .66194     .04753     .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .69245     .04865     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .69245     .04865     .00000     1.0000     1.0000    
+C4.Queue.NumberInQueue                      .00337     (Insuf)    .00000     2.0000     .00000    
+C1.Queue.NumberInQueue                      1.6253     (Corr)     .00000     14.000     7.0000    
+C2.Queue.NumberInQueue                      1.3977     .54622     .00000     15.000     1.0000    
+C3.Queue.NumberInQueue                      .41279     .12345     .00000     7.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           1186.0    
+Entity 1.NumberOut                          1175.0    
+Resource 4.NumberSeized                     443.00    
+Resource 4.ScheduledUtilization             .07078    
+Resource 3.NumberSeized                     733.00    
+Resource 3.ScheduledUtilization             .46723    
+Resource 2.NumberSeized                     1177.0    
+Resource 2.ScheduledUtilization             .66194    
+Resource 1.NumberSeized                     1473.0    
+Resource 1.ScheduledUtilization             .69245    
+System.NumberOut                            1175.0    
+
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                              Resumo de resultados para 10 Replicações
+
+Projeto: ADSD                                                        Data da execução : 5/23/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 5/23/2019
+
+
+                                             RESULTADOS
+
+Identificador                                 Média    Meia-largura Mínima    Maximo # de Replicações
+___________________________________________________________________________________________________
+
+Entity 1.NumberIn                           1202.7     17.628     1178.0     1262.0     10
+Entity 1.NumberOut                          1198.1     18.448     1175.0     1260.0     10
+Resource 4.NumberSeized                     484.00     18.036     441.00     510.00     10
+Resource 4.ScheduledUtilization             .07961     .00391     .07078     .09020     10
+Resource 3.NumberSeized                     714.80     21.325     671.00     771.00     10
+Resource 3.ScheduledUtilization             .46920     .02076     .43224     .51106     10
+Resource 2.NumberSeized                     1200.3     18.435     1176.0     1262.0     10
+Resource 2.ScheduledUtilization             .65694     .00870     .63937     .67221     10
+Resource 1.NumberSeized                     1491.6     27.900     1431.0     1544.0     10
+Resource 1.ScheduledUtilization             .69234     .01788     .65726     .73070     10
+System.NumberOut                            1198.1     18.448     1175.0     1260.0     10
+
+Tempo executando a simulação: 0.47 minutos.
+Simulação completada.

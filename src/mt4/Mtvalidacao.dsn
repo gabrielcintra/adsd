@@ -9,5 +9,5 @@ MaxScanRows=8
 MaxBufferSize=2048
 FIL=MS Access
 DriverId=281
-DefaultDir=c:\Users\GCint\Desktop
-DBQ=C:\Users\GCint\Desktop\Mtvalidacao.accdb
+DefaultDir=c:\Users\GCint\eclipse-workspace\adsd\src\mt4
+DBQ=C:\Users\GCint\eclipse-workspace\adsd\src\mt4\Mtvalidacao.accdb
