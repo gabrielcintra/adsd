@@ -17,3 +17,6 @@ Distribuição de valores no modelo, cálculo de métricas e replicação das m�
 ![Tabela](https://i.ibb.co/8cLxVmq/Tabela.png "Tabela")
 
 ---
+
+##### Saída
+Pode ser verificada no arquivo docs/report.pdf
