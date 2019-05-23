@@ -1,0 +1,80 @@
+
+----------------------------------------------------------------------
+17114:CCREAT
+Entidade: 123
+Um erro de simulação foi detectado no tempo  0.017827943 no seguinte bloco:
+
+ *    1 7$              CREATE,40,MinutesToBaseTime(0.0),Entity 1:
+                            MinutesToBaseTime(EXPO(1)):
+                            NEXT(8$);
+
+Maximo de 150 entidades excedido.
+Possíveis causas:
+- Um problema na lógica do seu modelo está criando muitas entidades e não as está retirando do modelo
+. O controlador de execução pode ser útil para descobrir o problema.
+- Você está no modo de demonstração e excedeu o limite de entidades. A versão comercial
+  é necessária para rodar modelos grandes.
+- Você configurou um limite de entidades no elemento DISCRETE que é muito baixo.
+  Remova o limite ou configure para um valor maior.
+- Você excedeu a matriz padrão de  
+espaço para os modelos. Use a página Tamanhos das Matrizes
+ na caixa de diálogo Rodar/Configurar para incrementar o espaço alocado para RSET e
+ cheque novamente seu modelo.
+----------------------------------------------------------------------
+
+
+Controlador de execução do SIMAN.
+
+0.017827943 Horas>
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 1 de 100
+
+Projeto: Unnamed Project                                             Data da execução : 5/23/2019
+Analista: rafaela.rock@hotmail.com.br                                 Data de revisão do modelo: 5/23/2019
+
+Replicação terminada no tempo de      : 0.017827943 Horas (Sunday, July 22, 2018, 00:19:59)
+Unidade de Tempo Base: Horas
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             3.0959E-04 (Insuf)    5.4834E-05 9.0645E-04     26    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000         26    
+Entity 1.WaitTime                           .01196     (Insuf)    .00705     .01507         26    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000         26    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000         26    
+Entity 1.TotalTime                          .01227     (Insuf)    .00759     .01539         26    
+C4.Queue.WaitingTime                        .00581     (Insuf)    .00350     .00707          8    
+C1.Queue.WaitingTime                        .00397     (Insuf)    .00000     .00707        124    
+C2.Queue.WaitingTime                        .00503     (Insuf)    .00305     .00741         55    
+C3.Queue.WaitingTime                        .00554     (Insuf)    .00342     .00722         18    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                69.053     (Insuf)    .00000     134.00     134.00    
+Resource 1.NumberBusy                       1.0000     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      1.0000     (Insuf)    .00000     1.0000     1.0000    
+C4.Queue.NumberInQueue                      3.2814     (Insuf)    .00000     6.0000     6.0000    
+C1.Queue.NumberInQueue                      40.062     (Insuf)    .00000     96.000     95.000    
+C2.Queue.NumberInQueue                      17.095     (Insuf)    .00000     33.000     9.0000    
+C3.Queue.NumberInQueue                      7.6138     (Insuf)    .00000     23.000     23.000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           160.00    
+Entity 1.NumberOut                          26.000    
+Resource 1.NumberSeized                     205.00    
+Resource 1.ScheduledUtilization             1.0000    
+System.NumberOut                            26.000    
+
