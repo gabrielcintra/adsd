@@ -1,0 +1,22 @@
+[RESOURCES]
+Resource 2
+Resource 1
+[VARIABLES]
+OUT.NumberOut
+APP_DISK.NumberIn
+APP_DISK.NumberOut
+DB_CACHE_DECIDE.NumberOut True
+DB_CACHE_DECIDE.NumberOut False
+DB_DISK.NumberIn
+WEB_CPU.NumberIn
+APP_CPU.NumberIn
+DB_CACHE.NumberOut
+DB_CACHE.NumberIn
+IN.NumberOut
+DB_CPU.NumberIn
+WEB_DISK.NumberOut
+WEB_DISK.NumberIn
+WEB_CPU.NumberOut
+DB_CPU.NumberOut
+APP_CPU.NumberOut
+DB_DISK.NumberOut

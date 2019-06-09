@@ -1,0 +1,694 @@
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 1 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .12466     (Insuf)    2.4132E-04 2.7033        195    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        195    
+Entity 1.WaitTime                           5.2240     (Insuf)    .00000     44.177        195    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        195    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        195    
+Entity 1.TotalTime                          5.3487     (Insuf)    .03407     45.696        195    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    2.7060     (Corr)     .00000     5.7133        435    
+APP_DISK.Queue.WaitingTime                  .19110     (Insuf)    .00000     1.1944         81    
+APP_CPU.Queue.WaitingTime                   2.6926     (Insuf)    .00000     5.6860        265    
+DB_DISK.Queue.WaitingTime                   .19796     (Insuf)    .00000     1.3250        297    
+WEB_CPU.Queue.WaitingTime                   3.0431     (Corr)     .00000     5.7630        408    
+WEB_DISK.Queue.WaitingTime                  .22309     (Insuf)    .00000     1.2906         86    
+DB_CACHE.Queue.WaitingTime                  .19547     (Insuf)    .00000     1.2478        176    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                61.034     (Corr)     .00000     117.00     111.00    
+Resource 2.NumberBusy                       .77151     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .77151     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .98237     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .98237     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  21.408     (Corr)     .00000     42.000     34.000    
+APP_DISK.Queue.NumberInQueue                .25798     (Insuf)    .00000     3.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 13.291     (Corr)     .00000     35.000     32.000    
+DB_DISK.Queue.NumberInQueue                 .97989     .38123     .00000     7.0000     .00000    
+WEB_CPU.Queue.NumberInQueue                 22.448     (Corr)     .00000     55.000     42.000    
+WEB_DISK.Queue.NumberInQueue                .32081     (Insuf)    .00000     4.0000     1.0000    
+DB_CACHE.Queue.NumberInQueue                .57339     (Insuf)    .00000     7.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           306.00    
+Entity 1.NumberOut                          195.00    
+Resource 2.NumberSeized                     640.00    
+Resource 2.ScheduledUtilization             .77151    
+Resource 1.NumberSeized                     1108.0    
+Resource 1.ScheduledUtilization             .98237    
+System.NumberOut                            195.00    
+
+Iniciando replicação 2 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 2 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .14226     (Insuf)    7.6083E-04 3.7430        210    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        210    
+Entity 1.WaitTime                           4.5524     (Insuf)    .00000     29.805        210    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        210    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        210    
+Entity 1.TotalTime                          4.6946     (Insuf)    .00124     31.521        210    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    2.8064     (Corr)     .00000     5.7955        397    
+APP_DISK.Queue.WaitingTime                  .19071     (Insuf)    .00000     1.1886         64    
+APP_CPU.Queue.WaitingTime                   2.7822     (Insuf)    .00000     5.8179        243    
+DB_DISK.Queue.WaitingTime                   .16495     (Insuf)    .00000     1.0407        268    
+WEB_CPU.Queue.WaitingTime                   2.7900     (Corr)     .00000     5.8128        432    
+WEB_DISK.Queue.WaitingTime                  .15551     (Insuf)    .00000     1.0322         89    
+DB_CACHE.Queue.WaitingTime                  .17616     (Insuf)    .00000     1.0528        157    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                57.641     (Corr)     .00000     110.00     109.00    
+Resource 2.NumberBusy                       .71578     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .71578     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .98479     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .98479     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  20.774     (Corr)     .00000     53.000     47.000    
+APP_DISK.Queue.NumberInQueue                .20342     (Insuf)    .00000     3.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 12.103     (Corr)     .00000     29.000     22.000    
+DB_DISK.Queue.NumberInQueue                 .75532     (Insuf)    .00000     7.0000     2.0000    
+WEB_CPU.Queue.NumberInQueue                 21.389     (Corr)     .00000     45.000     33.000    
+WEB_DISK.Queue.NumberInQueue                .24455     (Insuf)    .00000     3.0000     2.0000    
+DB_CACHE.Queue.NumberInQueue                .47085     (Insuf)    .00000     5.0000     1.0000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           319.00    
+Entity 1.NumberOut                          210.00    
+Resource 2.NumberSeized                     578.00    
+Resource 2.ScheduledUtilization             .71578    
+Resource 1.NumberSeized                     1072.0    
+Resource 1.ScheduledUtilization             .98479    
+System.NumberOut                            210.00    
+
+Iniciando replicação 3 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 3 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .15379     (Insuf)    7.7035E-05 3.0517        199    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        199    
+Entity 1.WaitTime                           5.3830     (Insuf)    .00975     50.037        199    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        199    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        199    
+Entity 1.TotalTime                          5.5368     (Insuf)    .02621     53.088        199    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    3.1098     (Corr)     .00000     5.9830        439    
+APP_DISK.Queue.WaitingTime                  .21552     (Insuf)    .00000     .77994         70    
+APP_CPU.Queue.WaitingTime                   3.1693     (Insuf)    .00000     5.9977        248    
+DB_DISK.Queue.WaitingTime                   .20028     (Insuf)    .00000     .84016        300    
+WEB_CPU.Queue.WaitingTime                   2.9627     (Corr)     .00000     6.0181        394    
+WEB_DISK.Queue.WaitingTime                  .25178     (Insuf)    .00000     .88055         80    
+DB_CACHE.Queue.WaitingTime                  .21900     (Insuf)    .00000     .85542        184    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                63.870     (Corr)     .00000     112.00     106.00    
+Resource 2.NumberBusy                       .79706     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .79706     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .99679     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .99679     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  24.673     (Corr)     .00000     47.000     42.000    
+APP_DISK.Queue.NumberInQueue                .25143     (Insuf)    .00000     3.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 14.023     (Corr)     .00000     32.000     20.000    
+DB_DISK.Queue.NumberInQueue                 1.0258     .24805     .00000     5.0000     3.0000    
+WEB_CPU.Queue.NumberInQueue                 21.079     (Corr)     .00000     45.000     36.000    
+WEB_DISK.Queue.NumberInQueue                .33571     (Insuf)    .00000     4.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .68719     (Insuf)    .00000     5.0000     3.0000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           305.00    
+Entity 1.NumberOut                          199.00    
+Resource 2.NumberSeized                     634.00    
+Resource 2.ScheduledUtilization             .79706    
+Resource 1.NumberSeized                     1081.0    
+Resource 1.ScheduledUtilization             .99679    
+System.NumberOut                            199.00    
+
+Iniciando replicação 4 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 4 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .12531     (Insuf)    2.4021E-04 5.2473        183    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        183    
+Entity 1.WaitTime                           4.1536     (Insuf)    .00000     33.246        183    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        183    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        183    
+Entity 1.TotalTime                          4.2789     (Insuf)    .01664     38.493        183    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    2.7763     (Corr)     .00000     6.0886        475    
+APP_DISK.Queue.WaitingTime                  .25180     (Insuf)    .00000     .99796         61    
+APP_CPU.Queue.WaitingTime                   3.0144     (Insuf)    .00000     5.9489        238    
+DB_DISK.Queue.WaitingTime                   .28346     (Corr)     .00000     .96827        339    
+WEB_CPU.Queue.WaitingTime                   2.7995     (Corr)     .00000     5.9508        377    
+WEB_DISK.Queue.WaitingTime                  .27075     (Insuf)    .00000     .83009         77    
+DB_CACHE.Queue.WaitingTime                  .28070     (Insuf)    .00000     1.0149        182    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                62.435     (Corr)     .00000     121.00     117.00    
+Resource 2.NumberBusy                       .83893     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .83893     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .98528     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .98528     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  24.387     (Corr)     .00000     52.000     51.000    
+APP_DISK.Queue.NumberInQueue                .25600     (Insuf)    .00000     2.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 13.175     (Corr)     .00000     29.000     22.000    
+DB_DISK.Queue.NumberInQueue                 1.6162     (Corr)     .00000     9.0000     3.0000    
+WEB_CPU.Queue.NumberInQueue                 19.977     (Corr)     .00000     44.000     39.000    
+WEB_DISK.Queue.NumberInQueue                .34746     (Insuf)    .00000     4.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .85144     (Insuf)    .00000     6.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           300.00    
+Entity 1.NumberOut                          183.00    
+Resource 2.NumberSeized                     659.00    
+Resource 2.ScheduledUtilization             .83893    
+Resource 1.NumberSeized                     1090.0    
+Resource 1.ScheduledUtilization             .98528    
+System.NumberOut                            183.00    
+
+Iniciando replicação 5 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 5 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .17156     (Insuf)    4.1458E-04 4.3407        212    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        212    
+Entity 1.WaitTime                           5.7664     (Insuf)    .00000     52.150        212    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        212    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        212    
+Entity 1.TotalTime                          5.9380     (Insuf)    .00275     53.951        212    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    2.6989     (Corr)     .00000     6.2750        410    
+APP_DISK.Queue.WaitingTime                  .24759     (Insuf)    .00000     1.4992         84    
+APP_CPU.Queue.WaitingTime                   3.0433     (Insuf)    .00000     6.4523        274    
+DB_DISK.Queue.WaitingTime                   .26414     (Insuf)    .00000     1.5515        265    
+WEB_CPU.Queue.WaitingTime                   2.8902     (Corr)     .00000     6.4483        426    
+WEB_DISK.Queue.WaitingTime                  .28196     (Insuf)    .00000     1.3825         79    
+DB_CACHE.Queue.WaitingTime                  .23613     (Insuf)    .00000     1.4054        146    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                62.847     (Corr)     .00000     124.00     123.00    
+Resource 2.NumberBusy                       .73765     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .73765     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .97906     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .97906     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  19.772     (Corr)     .00000     35.000     28.000    
+APP_DISK.Queue.NumberInQueue                .34663     (Insuf)    .00000     3.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 15.718     (Corr)     .00000     39.000     37.000    
+DB_DISK.Queue.NumberInQueue                 1.1689     (Corr)     .00000     8.0000     1.0000    
+WEB_CPU.Queue.NumberInQueue                 23.178     (Corr)     .00000     58.000     55.000    
+WEB_DISK.Queue.NumberInQueue                .37125     (Insuf)    .00000     4.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .57457     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           335.00    
+Entity 1.NumberOut                          212.00    
+Resource 2.NumberSeized                     574.00    
+Resource 2.ScheduledUtilization             .73765    
+Resource 1.NumberSeized                     1110.0    
+Resource 1.ScheduledUtilization             .97906    
+System.NumberOut                            212.00    
+
+Iniciando replicação 6 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 6 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .10450     (Insuf)    1.9488E-04 1.9133        211    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        211    
+Entity 1.WaitTime                           5.4135     (Insuf)    .00000     38.897        211    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        211    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        211    
+Entity 1.TotalTime                          5.5180     (Insuf)    .04466     39.782        211    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    3.5288     (Corr)     .00000     7.7963        449    
+APP_DISK.Queue.WaitingTime                  .15996     (Insuf)    .00000     .79426         93    
+APP_CPU.Queue.WaitingTime                   3.1905     (Insuf)    .00000     7.9161        297    
+DB_DISK.Queue.WaitingTime                   .14612     (Insuf)    .00000     .80047        303    
+WEB_CPU.Queue.WaitingTime                   3.4615     (Corr)     .00000     7.8639        455    
+WEB_DISK.Queue.WaitingTime                  .18278     (Insuf)    .00000     .83941         98    
+DB_CACHE.Queue.WaitingTime                  .14503     (Insuf)    .00000     .77484        175    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                79.006     (Corr)     .00000     146.00     143.00    
+Resource 2.NumberBusy                       .77276     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .77276     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .98910     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .98910     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  29.199     (Corr)     .00000     59.000     55.000    
+APP_DISK.Queue.NumberInQueue                .25363     (Insuf)    .00000     3.0000     2.0000    
+APP_CPU.Queue.NumberInQueue                 17.697     (Corr)     .00000     36.000     34.000    
+DB_DISK.Queue.NumberInQueue                 .74192     .27444     .00000     6.0000     1.0000    
+WEB_CPU.Queue.NumberInQueue                 28.621     (Corr)     .00000     58.000     47.000    
+WEB_DISK.Queue.NumberInQueue                .29854     (Insuf)    .00000     3.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .43190     (Insuf)    .00000     3.0000     2.0000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           354.00    
+Entity 1.NumberOut                          211.00    
+Resource 2.NumberSeized                     669.00    
+Resource 2.ScheduledUtilization             .77276    
+Resource 1.NumberSeized                     1201.0    
+Resource 1.ScheduledUtilization             .98910    
+System.NumberOut                            211.00    
+
+Iniciando replicação 7 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 7 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .14877     (Insuf)    1.0553E-04 3.9245        193    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        193    
+Entity 1.WaitTime                           3.7255     (Insuf)    .00000     38.755        193    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        193    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        193    
+Entity 1.TotalTime                          3.8742     (Insuf)    .04264     41.058        193    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    2.2587     (Corr)     .00000     6.3302        404    
+APP_DISK.Queue.WaitingTime                  .14753     (Insuf)    .00000     .59567         63    
+APP_CPU.Queue.WaitingTime                   2.3253     (Insuf)    .00000     6.2830        223    
+DB_DISK.Queue.WaitingTime                   .17488     (Insuf)    .00000     .79940        271    
+WEB_CPU.Queue.WaitingTime                   2.4862     (Corr)     .00000     6.4553        397    
+WEB_DISK.Queue.WaitingTime                  .20518     (Insuf)    .00000     .75479         94    
+DB_CACHE.Queue.WaitingTime                  .16230     (Insuf)    .00000     .71944        175    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                49.651     (Corr)     .00000     126.00     125.00    
+Resource 2.NumberBusy                       .72943     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .72943     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .97293     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .97293     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  17.188     (Corr)     .00000     44.000     41.000    
+APP_DISK.Queue.NumberInQueue                .15491     (Insuf)    .00000     2.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 10.047     (Corr)     .00000     30.000     28.000    
+DB_DISK.Queue.NumberInQueue                 .78989     .26364     .00000     8.0000     .00000    
+WEB_CPU.Queue.NumberInQueue                 18.973     (Corr)     .00000     55.000     54.000    
+WEB_DISK.Queue.NumberInQueue                .32146     (Insuf)    .00000     4.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .47337     (Insuf)    .00000     4.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           318.00    
+Entity 1.NumberOut                          193.00    
+Resource 2.NumberSeized                     603.00    
+Resource 2.ScheduledUtilization             .72943    
+Resource 1.NumberSeized                     1024.0    
+Resource 1.ScheduledUtilization             .97293    
+System.NumberOut                            193.00    
+
+Iniciando replicação 8 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 8 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .19701     (Insuf)    2.8277E-04 5.8947        196    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        196    
+Entity 1.WaitTime                           4.0117     (Insuf)    .00000     52.148        196    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        196    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        196    
+Entity 1.TotalTime                          4.2087     (Insuf)    .00328     58.043        196    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    1.7299     (Corr)     .00000     4.0274        464    
+APP_DISK.Queue.WaitingTime                  .38306     (Insuf)    .00000     1.7696         71    
+APP_CPU.Queue.WaitingTime                   1.6334     (Insuf)    .00000     4.0213        245    
+DB_DISK.Queue.WaitingTime                   .39024     (Insuf)    .00000     1.7902        312    
+WEB_CPU.Queue.WaitingTime                   1.7131     (Corr)     .00000     3.9643        371    
+WEB_DISK.Queue.WaitingTime                  .45183     (Insuf)    .00000     1.7838         72    
+DB_CACHE.Queue.WaitingTime                  .35098     (Insuf)    .00000     1.6510        203    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                38.983     (Corr)     .00000     80.000     76.000    
+Resource 2.NumberBusy                       .85578     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .85578     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .98459     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .98459     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  14.190     (Corr)     .00000     31.000     27.000    
+APP_DISK.Queue.NumberInQueue                .45329     (Insuf)    .00000     3.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 7.3767     (Corr)     .00000     22.000     21.000    
+DB_DISK.Queue.NumberInQueue                 2.0292     (Corr)     .00000     14.000     .00000    
+WEB_CPU.Queue.NumberInQueue                 11.363     (Corr)     .00000     36.000     26.000    
+WEB_DISK.Queue.NumberInQueue                .54220     (Insuf)    .00000     5.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                1.1874     (Corr)     .00000     7.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           272.00    
+Entity 1.NumberOut                          196.00    
+Resource 2.NumberSeized                     658.00    
+Resource 2.ScheduledUtilization             .85578    
+Resource 1.NumberSeized                     1080.0    
+Resource 1.ScheduledUtilization             .98459    
+System.NumberOut                            196.00    
+
+Iniciando replicação 9 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 9 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .15651     (Insuf)    .00148     3.5638        165    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        165    
+Entity 1.WaitTime                           4.9499     (Insuf)    .00000     49.498        165    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        165    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        165    
+Entity 1.TotalTime                          5.1064     (Insuf)    .01937     53.062        165    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    2.7837     (Corr)     .00000     6.1085        451    
+APP_DISK.Queue.WaitingTime                  .30361     (Insuf)    .00000     1.0769         85    
+APP_CPU.Queue.WaitingTime                   2.6744     (Insuf)    .00000     6.0735        259    
+DB_DISK.Queue.WaitingTime                   .26794     .08788     .00000     1.1141        323    
+WEB_CPU.Queue.WaitingTime                   2.7100     (Corr)     .00000     6.0420        335    
+WEB_DISK.Queue.WaitingTime                  .25471     (Insuf)    .00000     1.0577         56    
+DB_CACHE.Queue.WaitingTime                  .26915     (Insuf)    .00000     .91648        184    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                57.302     (Corr)     .00000     114.00     113.00    
+Resource 2.NumberBusy                       .80145     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .80145     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .99196     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .99196     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  22.873     (Corr)     .00000     46.000     45.000    
+APP_DISK.Queue.NumberInQueue                .43012     (Insuf)    .00000     4.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 12.472     (Corr)     .00000     27.000     23.000    
+DB_DISK.Queue.NumberInQueue                 1.4440     (Corr)     .00000     8.0000     1.0000    
+WEB_CPU.Queue.NumberInQueue                 17.226     (Corr)     .00000     43.000     42.000    
+WEB_DISK.Queue.NumberInQueue                .23773     (Insuf)    .00000     3.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .82539     (Insuf)    .00000     5.0000     .00000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           278.00    
+Entity 1.NumberOut                          165.00    
+Resource 2.NumberSeized                     648.00    
+Resource 2.ScheduledUtilization             .80145    
+Resource 1.NumberSeized                     1045.0    
+Resource 1.ScheduledUtilization             .99196    
+System.NumberOut                            165.00    
+
+Iniciando replicação 10 de 10
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                                  Sumário para Replicação 10 de 10
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
+Unidade de Tempo Base: Minutos
+
+                                           VARIÁVEIS DE REGISTRO
+
+Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
+___________________________________________________________________________________________________
+
+Entity 1.VATime                             .16387     (Insuf)    4.1917E-04 3.9948        196    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        196    
+Entity 1.WaitTime                           5.1877     (Insuf)    .02059     41.772        196    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        196    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        196    
+Entity 1.TotalTime                          5.3516     (Insuf)    .10894     45.336        196    
+C1.Queue.WaitingTime                            --         --         --         --          0
+DB_CPU.Queue.WaitingTime                    2.9038     (Corr)     .00000     5.1627        395    
+APP_DISK.Queue.WaitingTime                  .16566     (Insuf)    .00000     1.1571         93    
+APP_CPU.Queue.WaitingTime                   2.7637     (Insuf)    .00000     5.2061        264    
+DB_DISK.Queue.WaitingTime                   .16249     (Insuf)    .00000     1.1820        262    
+WEB_CPU.Queue.WaitingTime                   2.9352     (Corr)     .00000     5.1820        405    
+WEB_DISK.Queue.WaitingTime                  .11558     (Insuf)    .00000     .46599         89    
+DB_CACHE.Queue.WaitingTime                  .16528     (Insuf)    .00000     1.1316        143    
+
+                                     VARIÁVEIS DISCRETAS
+
+Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                57.555     (Corr)     .00000     103.00     102.00    
+Resource 2.NumberBusy                       .72389     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 2.Utilization                      .72389     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .99666     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .99666     (Insuf)    .00000     1.0000     1.0000    
+C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
+DB_CPU.Queue.NumberInQueue                  20.503     (Corr)     .00000     42.000     41.000    
+APP_DISK.Queue.NumberInQueue                .25986     (Insuf)    .00000     4.0000     1.0000    
+APP_CPU.Queue.NumberInQueue                 13.108     (Corr)     .00000     29.000     27.000    
+DB_DISK.Queue.NumberInQueue                 .71550     (Insuf)    .00000     7.0000     1.0000    
+WEB_CPU.Queue.NumberInQueue                 20.664     (Corr)     .00000     40.000     27.000    
+WEB_DISK.Queue.NumberInQueue                .17769     (Insuf)    .00000     3.0000     1.0000    
+DB_CACHE.Queue.NumberInQueue                .40593     (Insuf)    .00000     4.0000     2.0000    
+
+                                             RESULTADOS
+
+Identificador                                   Valor
+_____________________________________________________________
+
+Entity 1.NumberIn                           298.00    
+Entity 1.NumberOut                          196.00    
+Resource 2.NumberSeized                     587.00    
+Resource 2.ScheduledUtilization             .72389    
+Resource 1.NumberSeized                     1064.0    
+Resource 1.ScheduledUtilization             .99666    
+System.NumberOut                            196.00    
+
+
+                                      ARENA Simulation Results
+                                Usuário do Windows - License: STUDENT
+
+                              Resumo de resultados para 10 Replicações
+
+Projeto: ADSD                                                        Data da execução : 6/ 9/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/ 9/2019
+
+
+                                             RESULTADOS
+
+Identificador                                 Média    Meia-largura Mínima    Maximo # de Replicações
+___________________________________________________________________________________________________
+
+Entity 1.NumberIn                           308.50     17.580     272.00     354.00     10
+Entity 1.NumberOut                          196.00     10.188     165.00     212.00     10
+Resource 2.NumberSeized                     625.00     25.850     574.00     669.00     10
+Resource 2.ScheduledUtilization             .77442     .03488     .71578     .85578     10
+Resource 1.NumberSeized                     1087.5     34.175     1024.0     1201.0     10
+Resource 1.ScheduledUtilization             .98635     .00539     .97293     .99679     10
+System.NumberOut                            196.00     10.188     165.00     212.00     10
+
+Tempo executando a simulação: 0.23 minutos.
+Simulação completada.
