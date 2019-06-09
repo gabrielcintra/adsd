@@ -1,6 +1,6 @@
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 1 de 10
 
@@ -15,59 +15,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .12466     (Insuf)    2.4132E-04 2.7033        195    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        195    
-Entity 1.WaitTime                           5.2240     (Insuf)    .00000     44.177        195    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        195    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        195    
-Entity 1.TotalTime                          5.3487     (Insuf)    .03407     45.696        195    
+Entity 1.VATime                             1.4519     (Insuf)    .00196     11.273        162    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        162    
+Entity 1.WaitTime                           3.2616     (Insuf)    .00000     27.295        162    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        162    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        162    
+Entity 1.TotalTime                          4.7136     (Insuf)    .08338     36.054        162    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    2.7060     (Corr)     .00000     5.7133        435    
-APP_DISK.Queue.WaitingTime                  .19110     (Insuf)    .00000     1.1944         81    
-APP_CPU.Queue.WaitingTime                   2.6926     (Insuf)    .00000     5.6860        265    
-DB_DISK.Queue.WaitingTime                   .19796     (Insuf)    .00000     1.3250        297    
-WEB_CPU.Queue.WaitingTime                   3.0431     (Corr)     .00000     5.7630        408    
-WEB_DISK.Queue.WaitingTime                  .22309     (Insuf)    .00000     1.2906         86    
-DB_CACHE.Queue.WaitingTime                  .19547     (Insuf)    .00000     1.2478        176    
+DB_CPU.Queue.WaitingTime                    .04960     .01514     .00000     .31654        854    
+APP_DISK.Queue.WaitingTime                  .49544     (Insuf)    .00000     2.2868        137    
+APP_CPU.Queue.WaitingTime                   .39201     (Corr)     .00000     1.5582        423    
+DB_DISK.Queue.WaitingTime                   .07903     (Corr)     .00000     .64441        568    
+WEB_CPU.Queue.WaitingTime                   .70558     (Corr)     .00000     2.2956        328    
+WEB_DISK.Queue.WaitingTime                  1.4596     (Insuf)    .00000     5.0058         65    
+DB_CACHE.Queue.WaitingTime                  .15613     (Insuf)    .00000     .87829        308    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                61.034     (Corr)     .00000     117.00     111.00    
-Resource 2.NumberBusy                       .77151     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                16.683     (Corr)     .00000     30.000     17.000    
+Resource 7.NumberBusy                       .62388     (Corr)     .00000     1.0000     1.0000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .62388     (Corr)     .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .62375     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .62375     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .58049     (Corr)     .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .58049     (Corr)     .00000     1.0000     .00000    
+Resource 4.NumberBusy                       .68630     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .68630     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .81385     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .81385     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .83776     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .77151     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .98237     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .83776     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .88574     (Insuf)    .00000     1.0000     1.0000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .98237     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .88574     (Insuf)    .00000     1.0000     1.0000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  21.408     (Corr)     .00000     42.000     34.000    
-APP_DISK.Queue.NumberInQueue                .25798     (Insuf)    .00000     3.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 13.291     (Corr)     .00000     35.000     32.000    
-DB_DISK.Queue.NumberInQueue                 .97989     .38123     .00000     7.0000     .00000    
-WEB_CPU.Queue.NumberInQueue                 22.448     (Corr)     .00000     55.000     42.000    
-WEB_DISK.Queue.NumberInQueue                .32081     (Insuf)    .00000     4.0000     1.0000    
-DB_CACHE.Queue.NumberInQueue                .57339     (Insuf)    .00000     7.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  .70600     (Corr)     .00000     7.0000     .00000    
+APP_DISK.Queue.NumberInQueue                1.1332     (Insuf)    .00000     7.0000     3.0000    
+APP_CPU.Queue.NumberInQueue                 2.7659     (Corr)     .00000     14.000     1.0000    
+DB_DISK.Queue.NumberInQueue                 .74834     (Corr)     .00000     7.0000     1.0000    
+WEB_CPU.Queue.NumberInQueue                 3.8795     (Corr)     .00000     14.000     4.0000    
+WEB_DISK.Queue.NumberInQueue                1.5968     (Insuf)    .00000     6.0000     3.0000    
+DB_CACHE.Queue.NumberInQueue                .80149     .38286     .00000     8.0000     .00000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           306.00    
-Entity 1.NumberOut                          195.00    
-Resource 2.NumberSeized                     640.00    
-Resource 2.ScheduledUtilization             .77151    
-Resource 1.NumberSeized                     1108.0    
-Resource 1.ScheduledUtilization             .98237    
-System.NumberOut                            195.00    
+Entity 1.NumberIn                           179.00    
+Entity 1.NumberOut                          162.00    
+Resource 7.NumberSeized                     568.00    
+Resource 7.ScheduledUtilization             .62388    
+Resource 6.NumberSeized                     308.00    
+Resource 6.ScheduledUtilization             .62375    
+Resource 5.NumberSeized                     854.00    
+Resource 5.ScheduledUtilization             .58049    
+Resource 4.NumberSeized                     137.00    
+Resource 4.ScheduledUtilization             .68630    
+Resource 3.NumberSeized                     423.00    
+Resource 3.ScheduledUtilization             .81385    
+Resource 2.NumberSeized                     65.000    
+Resource 2.ScheduledUtilization             .83776    
+Resource 1.NumberSeized                     328.00    
+Resource 1.ScheduledUtilization             .88574    
+System.NumberOut                            162.00    
 
 Iniciando replicação 2 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 2 de 10
 
@@ -82,59 +107,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .14226     (Insuf)    7.6083E-04 3.7430        210    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        210    
-Entity 1.WaitTime                           4.5524     (Insuf)    .00000     29.805        210    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        210    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        210    
-Entity 1.TotalTime                          4.6946     (Insuf)    .00124     31.521        210    
+Entity 1.VATime                             1.6170     (Insuf)    .00148     13.702        145    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        145    
+Entity 1.WaitTime                           2.3104     (Insuf)    .00000     14.998        145    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        145    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        145    
+Entity 1.TotalTime                          3.9274     (Insuf)    .00190     25.059        145    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    2.8064     (Corr)     .00000     5.7955        397    
-APP_DISK.Queue.WaitingTime                  .19071     (Insuf)    .00000     1.1886         64    
-APP_CPU.Queue.WaitingTime                   2.7822     (Insuf)    .00000     5.8179        243    
-DB_DISK.Queue.WaitingTime                   .16495     (Insuf)    .00000     1.0407        268    
-WEB_CPU.Queue.WaitingTime                   2.7900     (Corr)     .00000     5.8128        432    
-WEB_DISK.Queue.WaitingTime                  .15551     (Insuf)    .00000     1.0322         89    
-DB_CACHE.Queue.WaitingTime                  .17616     (Insuf)    .00000     1.0528        157    
+DB_CPU.Queue.WaitingTime                    .05027     .01718     .00000     .63345        842    
+APP_DISK.Queue.WaitingTime                  .17370     (Insuf)    .00000     1.7788        100    
+APP_CPU.Queue.WaitingTime                   .19367     .07523     .00000     1.1392        347    
+DB_DISK.Queue.WaitingTime                   .06728     (Corr)     .00000     .46381        575    
+WEB_CPU.Queue.WaitingTime                   .43350     (Insuf)    .00000     1.8207        276    
+WEB_DISK.Queue.WaitingTime                  1.0226     (Insuf)    .00000     5.3995         45    
+DB_CACHE.Queue.WaitingTime                  .15110     (Corr)     .00000     1.0010        343    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                57.641     (Corr)     .00000     110.00     109.00    
-Resource 2.NumberBusy                       .71578     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                10.773     (Insuf)    .00000     18.000     10.000    
+Resource 7.NumberBusy                       .60730     (Corr)     .00000     1.0000     1.0000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .60730     (Corr)     .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .58387     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .58387     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberBusy                       .57418     (Corr)     .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .57418     (Corr)     .00000     1.0000     1.0000    
+Resource 4.NumberBusy                       .54210     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .54210     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .67041     (Insuf)    .00000     1.0000     .00000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .67041     (Insuf)    .00000     1.0000     .00000    
+Resource 2.NumberBusy                       .61050     (Insuf)    .00000     1.0000     .00000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .71578     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .98479     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .61050     (Insuf)    .00000     1.0000     .00000    
+Resource 1.NumberBusy                       .78933     (Insuf)    .00000     1.0000     .00000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .98479     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .78933     (Insuf)    .00000     1.0000     .00000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  20.774     (Corr)     .00000     53.000     47.000    
-APP_DISK.Queue.NumberInQueue                .20342     (Insuf)    .00000     3.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 12.103     (Corr)     .00000     29.000     22.000    
-DB_DISK.Queue.NumberInQueue                 .75532     (Insuf)    .00000     7.0000     2.0000    
-WEB_CPU.Queue.NumberInQueue                 21.389     (Corr)     .00000     45.000     33.000    
-WEB_DISK.Queue.NumberInQueue                .24455     (Insuf)    .00000     3.0000     2.0000    
-DB_CACHE.Queue.NumberInQueue                .47085     (Insuf)    .00000     5.0000     1.0000    
+DB_CPU.Queue.NumberInQueue                  .70726     (Corr)     .00000     9.0000     2.0000    
+APP_DISK.Queue.NumberInQueue                .28951     (Insuf)    .00000     3.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 1.1200     .44839     .00000     8.0000     .00000    
+DB_DISK.Queue.NumberInQueue                 .65341     (Corr)     .00000     7.0000     3.0000    
+WEB_CPU.Queue.NumberInQueue                 1.9940     (Corr)     .00000     11.000     .00000    
+WEB_DISK.Queue.NumberInQueue                .76698     (Insuf)    .00000     6.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .86425     (Corr)     .00000     7.0000     1.0000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           319.00    
-Entity 1.NumberOut                          210.00    
-Resource 2.NumberSeized                     578.00    
-Resource 2.ScheduledUtilization             .71578    
-Resource 1.NumberSeized                     1072.0    
-Resource 1.ScheduledUtilization             .98479    
-System.NumberOut                            210.00    
+Entity 1.NumberIn                           155.00    
+Entity 1.NumberOut                          145.00    
+Resource 7.NumberSeized                     575.00    
+Resource 7.ScheduledUtilization             .60730    
+Resource 6.NumberSeized                     343.00    
+Resource 6.ScheduledUtilization             .58387    
+Resource 5.NumberSeized                     842.00    
+Resource 5.ScheduledUtilization             .57418    
+Resource 4.NumberSeized                     100.00    
+Resource 4.ScheduledUtilization             .54210    
+Resource 3.NumberSeized                     347.00    
+Resource 3.ScheduledUtilization             .67041    
+Resource 2.NumberSeized                     45.000    
+Resource 2.ScheduledUtilization             .61050    
+Resource 1.NumberSeized                     276.00    
+Resource 1.ScheduledUtilization             .78933    
+System.NumberOut                            145.00    
 
 Iniciando replicação 3 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 3 de 10
 
@@ -149,59 +199,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .15379     (Insuf)    7.7035E-05 3.0517        199    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        199    
-Entity 1.WaitTime                           5.3830     (Insuf)    .00975     50.037        199    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        199    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        199    
-Entity 1.TotalTime                          5.5368     (Insuf)    .02621     53.088        199    
+Entity 1.VATime                             1.2950     (Insuf)    .00227     9.7235        124    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        124    
+Entity 1.WaitTime                           3.1451     (Insuf)    .00000     28.763        124    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        124    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        124    
+Entity 1.TotalTime                          4.4402     (Insuf)    .00487     37.257        124    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    3.1098     (Corr)     .00000     5.9830        439    
-APP_DISK.Queue.WaitingTime                  .21552     (Insuf)    .00000     .77994         70    
-APP_CPU.Queue.WaitingTime                   3.1693     (Insuf)    .00000     5.9977        248    
-DB_DISK.Queue.WaitingTime                   .20028     (Insuf)    .00000     .84016        300    
-WEB_CPU.Queue.WaitingTime                   2.9627     (Corr)     .00000     6.0181        394    
-WEB_DISK.Queue.WaitingTime                  .25178     (Insuf)    .00000     .88055         80    
-DB_CACHE.Queue.WaitingTime                  .21900     (Insuf)    .00000     .85542        184    
+DB_CPU.Queue.WaitingTime                    .08164     .02499     .00000     .67551       1005    
+APP_DISK.Queue.WaitingTime                  2.0935     (Insuf)    .00000     7.1924        117    
+APP_CPU.Queue.WaitingTime                   .20657     .08256     .00000     1.3404        412    
+DB_DISK.Queue.WaitingTime                   .13341     .05925     .00000     .89091        669    
+WEB_CPU.Queue.WaitingTime                   .61707     (Insuf)    .00000     2.6055        282    
+WEB_DISK.Queue.WaitingTime                  1.1080     (Insuf)    .00000     3.5587         52    
+DB_CACHE.Queue.WaitingTime                  .23923     (Corr)     .00000     1.4501        386    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                63.870     (Corr)     .00000     112.00     106.00    
-Resource 2.NumberBusy                       .79706     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                19.149     (Insuf)    .00000     31.000     31.000    
+Resource 7.NumberBusy                       .70419     (Corr)     .00000     1.0000     1.0000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .70419     (Corr)     .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .70141     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .70141     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberBusy                       .69199     (Corr)     .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .69199     (Corr)     .00000     1.0000     .00000    
+Resource 4.NumberBusy                       .79023     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .79023     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .68779     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .68779     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .60379     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .79706     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .99679     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .60379     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .81667     (Insuf)    .00000     1.0000     1.0000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .99679     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .81667     (Insuf)    .00000     1.0000     1.0000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  24.673     (Corr)     .00000     47.000     42.000    
-APP_DISK.Queue.NumberInQueue                .25143     (Insuf)    .00000     3.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 14.023     (Corr)     .00000     32.000     20.000    
-DB_DISK.Queue.NumberInQueue                 1.0258     .24805     .00000     5.0000     3.0000    
-WEB_CPU.Queue.NumberInQueue                 21.079     (Corr)     .00000     45.000     36.000    
-WEB_DISK.Queue.NumberInQueue                .33571     (Insuf)    .00000     4.0000     .00000    
-DB_CACHE.Queue.NumberInQueue                .68719     (Insuf)    .00000     5.0000     3.0000    
+DB_CPU.Queue.NumberInQueue                  1.3675     .46122     .00000     10.000     .00000    
+APP_DISK.Queue.NumberInQueue                4.3500     (Insuf)    .00000     12.000     7.0000    
+APP_CPU.Queue.NumberInQueue                 1.4184     .49684     .00000     8.0000     .00000    
+DB_DISK.Queue.NumberInQueue                 1.5015     (Corr)     .00000     11.000     4.0000    
+WEB_CPU.Queue.NumberInQueue                 2.9016     (Corr)     .00000     13.000     2.0000    
+WEB_DISK.Queue.NumberInQueue                .96028     (Insuf)    .00000     6.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                1.6535     (Corr)     .00000     14.000     12.000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           305.00    
-Entity 1.NumberOut                          199.00    
-Resource 2.NumberSeized                     634.00    
-Resource 2.ScheduledUtilization             .79706    
-Resource 1.NumberSeized                     1081.0    
-Resource 1.ScheduledUtilization             .99679    
-System.NumberOut                            199.00    
+Entity 1.NumberIn                           155.00    
+Entity 1.NumberOut                          124.00    
+Resource 7.NumberSeized                     669.00    
+Resource 7.ScheduledUtilization             .70419    
+Resource 6.NumberSeized                     386.00    
+Resource 6.ScheduledUtilization             .70141    
+Resource 5.NumberSeized                     1005.0    
+Resource 5.ScheduledUtilization             .69199    
+Resource 4.NumberSeized                     117.00    
+Resource 4.ScheduledUtilization             .79023    
+Resource 3.NumberSeized                     412.00    
+Resource 3.ScheduledUtilization             .68779    
+Resource 2.NumberSeized                     52.000    
+Resource 2.ScheduledUtilization             .60379    
+Resource 1.NumberSeized                     282.00    
+Resource 1.ScheduledUtilization             .81667    
+System.NumberOut                            124.00    
 
 Iniciando replicação 4 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 4 de 10
 
@@ -216,59 +291,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .12531     (Insuf)    2.4021E-04 5.2473        183    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        183    
-Entity 1.WaitTime                           4.1536     (Insuf)    .00000     33.246        183    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        183    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        183    
-Entity 1.TotalTime                          4.2789     (Insuf)    .01664     38.493        183    
+Entity 1.VATime                             1.2016     (Insuf)    5.3237E-05 17.399        149    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        149    
+Entity 1.WaitTime                           2.4706     (Insuf)    .00000     23.488        149    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        149    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        149    
+Entity 1.TotalTime                          3.6722     (Insuf)    5.8641E-04 38.954        149    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    2.7763     (Corr)     .00000     6.0886        475    
-APP_DISK.Queue.WaitingTime                  .25180     (Insuf)    .00000     .99796         61    
-APP_CPU.Queue.WaitingTime                   3.0144     (Insuf)    .00000     5.9489        238    
-DB_DISK.Queue.WaitingTime                   .28346     (Corr)     .00000     .96827        339    
-WEB_CPU.Queue.WaitingTime                   2.7995     (Corr)     .00000     5.9508        377    
-WEB_DISK.Queue.WaitingTime                  .27075     (Insuf)    .00000     .83009         77    
-DB_CACHE.Queue.WaitingTime                  .28070     (Insuf)    .00000     1.0149        182    
+DB_CPU.Queue.WaitingTime                    .04316     .01811     .00000     .46181        690    
+APP_DISK.Queue.WaitingTime                  3.0349     (Insuf)    .00000     7.2671        110    
+APP_CPU.Queue.WaitingTime                   .12924     .07352     .00000     1.4430        328    
+DB_DISK.Queue.WaitingTime                   .08734     (Corr)     .00000     .74839        470    
+WEB_CPU.Queue.WaitingTime                   .28286     (Insuf)    .00000     1.3780        283    
+WEB_DISK.Queue.WaitingTime                  .91085     (Insuf)    .00000     4.0367         46    
+DB_CACHE.Queue.WaitingTime                  .10448     (Insuf)    .00000     1.0242        269    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                62.435     (Corr)     .00000     121.00     117.00    
-Resource 2.NumberBusy                       .83893     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                14.635     (Corr)     .00000     26.000     23.000    
+Resource 7.NumberBusy                       .51778     (Corr)     .00000     1.0000     .00000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .51778     (Corr)     .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .44214     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .44214     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberBusy                       .47669     (Corr)     .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .47669     (Corr)     .00000     1.0000     1.0000    
+Resource 4.NumberBusy                       .84272     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .84272     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .55573     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .55573     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .59757     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .83893     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .98528     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .59757     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .71159     (Insuf)    .00000     1.0000     1.0000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .98528     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .71159     (Insuf)    .00000     1.0000     1.0000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  24.387     (Corr)     .00000     52.000     51.000    
-APP_DISK.Queue.NumberInQueue                .25600     (Insuf)    .00000     2.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 13.175     (Corr)     .00000     29.000     22.000    
-DB_DISK.Queue.NumberInQueue                 1.6162     (Corr)     .00000     9.0000     3.0000    
-WEB_CPU.Queue.NumberInQueue                 19.977     (Corr)     .00000     44.000     39.000    
-WEB_DISK.Queue.NumberInQueue                .34746     (Insuf)    .00000     4.0000     .00000    
-DB_CACHE.Queue.NumberInQueue                .85144     (Insuf)    .00000     6.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  .49631     .24323     .00000     8.0000     .00000    
+APP_DISK.Queue.NumberInQueue                6.1035     (Insuf)    .00000     17.000     17.000    
+APP_CPU.Queue.NumberInQueue                 .70649     (Corr)     .00000     8.0000     .00000    
+DB_DISK.Queue.NumberInQueue                 .68413     (Corr)     .00000     8.0000     .00000    
+WEB_CPU.Queue.NumberInQueue                 1.3341     (Corr)     .00000     9.0000     .00000    
+WEB_DISK.Queue.NumberInQueue                .69831     (Insuf)    .00000     5.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .46841     (Insuf)    .00000     7.0000     .00000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           300.00    
-Entity 1.NumberOut                          183.00    
-Resource 2.NumberSeized                     659.00    
-Resource 2.ScheduledUtilization             .83893    
-Resource 1.NumberSeized                     1090.0    
-Resource 1.ScheduledUtilization             .98528    
-System.NumberOut                            183.00    
+Entity 1.NumberIn                           172.00    
+Entity 1.NumberOut                          149.00    
+Resource 7.NumberSeized                     470.00    
+Resource 7.ScheduledUtilization             .51778    
+Resource 6.NumberSeized                     269.00    
+Resource 6.ScheduledUtilization             .44214    
+Resource 5.NumberSeized                     690.00    
+Resource 5.ScheduledUtilization             .47669    
+Resource 4.NumberSeized                     110.00    
+Resource 4.ScheduledUtilization             .84272    
+Resource 3.NumberSeized                     328.00    
+Resource 3.ScheduledUtilization             .55573    
+Resource 2.NumberSeized                     46.000    
+Resource 2.ScheduledUtilization             .59757    
+Resource 1.NumberSeized                     283.00    
+Resource 1.ScheduledUtilization             .71159    
+System.NumberOut                            149.00    
 
 Iniciando replicação 5 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 5 de 10
 
@@ -283,59 +383,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .17156     (Insuf)    4.1458E-04 4.3407        212    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        212    
-Entity 1.WaitTime                           5.7664     (Insuf)    .00000     52.150        212    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        212    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        212    
-Entity 1.TotalTime                          5.9380     (Insuf)    .00275     53.951        212    
+Entity 1.VATime                             1.1902     (Insuf)    2.5328E-04 11.346        174    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        174    
+Entity 1.WaitTime                           5.4690     (Insuf)    .00000     33.053        174    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        174    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        174    
+Entity 1.TotalTime                          6.6592     (Insuf)    .00370     44.400        174    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    2.6989     (Corr)     .00000     6.2750        410    
-APP_DISK.Queue.WaitingTime                  .24759     (Insuf)    .00000     1.4992         84    
-APP_CPU.Queue.WaitingTime                   3.0433     (Insuf)    .00000     6.4523        274    
-DB_DISK.Queue.WaitingTime                   .26414     (Insuf)    .00000     1.5515        265    
-WEB_CPU.Queue.WaitingTime                   2.8902     (Corr)     .00000     6.4483        426    
-WEB_DISK.Queue.WaitingTime                  .28196     (Insuf)    .00000     1.3825         79    
-DB_CACHE.Queue.WaitingTime                  .23613     (Insuf)    .00000     1.4054        146    
+DB_CPU.Queue.WaitingTime                    .06801     (Corr)     .00000     .65741        914    
+APP_DISK.Queue.WaitingTime                  .21619     (Insuf)    .00000     1.4638         98    
+APP_CPU.Queue.WaitingTime                   .16091     .08754     .00000     1.3421        352    
+DB_DISK.Queue.WaitingTime                   .15812     (Corr)     .00000     .95468        629    
+WEB_CPU.Queue.WaitingTime                   2.2624     (Corr)     .00000     5.9939        325    
+WEB_DISK.Queue.WaitingTime                  5.3427     (Insuf)    .00000     9.0342         53    
+DB_CACHE.Queue.WaitingTime                  .26249     .09101     .00000     1.4293        389    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                62.847     (Corr)     .00000     124.00     123.00    
-Resource 2.NumberBusy                       .73765     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                29.733     (Corr)     .00000     53.000     50.000    
+Resource 7.NumberBusy                       .72116     (Corr)     .00000     1.0000     1.0000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .72116     (Corr)     .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .74047     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .74047     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberBusy                       .64320     (Corr)     .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .64320     (Corr)     .00000     1.0000     .00000    
+Resource 4.NumberBusy                       .58539     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .58539     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .61221     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .61221     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .82775     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .73765     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .97906     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .82775     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .92995     (Insuf)    .00000     1.0000     1.0000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .97906     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .92995     (Insuf)    .00000     1.0000     1.0000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  19.772     (Corr)     .00000     35.000     28.000    
-APP_DISK.Queue.NumberInQueue                .34663     (Insuf)    .00000     3.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 15.718     (Corr)     .00000     39.000     37.000    
-DB_DISK.Queue.NumberInQueue                 1.1689     (Corr)     .00000     8.0000     1.0000    
-WEB_CPU.Queue.NumberInQueue                 23.178     (Corr)     .00000     58.000     55.000    
-WEB_DISK.Queue.NumberInQueue                .37125     (Insuf)    .00000     4.0000     .00000    
-DB_CACHE.Queue.NumberInQueue                .57457     (Insuf)    .00000     4.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  1.0360     .36647     .00000     8.0000     .00000    
+APP_DISK.Queue.NumberInQueue                .35782     (Insuf)    .00000     3.0000     2.0000    
+APP_CPU.Queue.NumberInQueue                 .94475     .55367     .00000     12.000     1.0000    
+DB_DISK.Queue.NumberInQueue                 1.6730     .56769     .00000     10.000     5.0000    
+WEB_CPU.Queue.NumberInQueue                 13.254     (Corr)     .00000     30.000     24.000    
+WEB_DISK.Queue.NumberInQueue                5.7054     (Insuf)    .00000     13.000     12.000    
+DB_CACHE.Queue.NumberInQueue                1.7018     (Corr)     .00000     9.0000     .00000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           335.00    
-Entity 1.NumberOut                          212.00    
-Resource 2.NumberSeized                     574.00    
-Resource 2.ScheduledUtilization             .73765    
-Resource 1.NumberSeized                     1110.0    
-Resource 1.ScheduledUtilization             .97906    
-System.NumberOut                            212.00    
+Entity 1.NumberIn                           224.00    
+Entity 1.NumberOut                          174.00    
+Resource 7.NumberSeized                     629.00    
+Resource 7.ScheduledUtilization             .72116    
+Resource 6.NumberSeized                     389.00    
+Resource 6.ScheduledUtilization             .74047    
+Resource 5.NumberSeized                     914.00    
+Resource 5.ScheduledUtilization             .64320    
+Resource 4.NumberSeized                     98.000    
+Resource 4.ScheduledUtilization             .58539    
+Resource 3.NumberSeized                     352.00    
+Resource 3.ScheduledUtilization             .61221    
+Resource 2.NumberSeized                     53.000    
+Resource 2.ScheduledUtilization             .82775    
+Resource 1.NumberSeized                     325.00    
+Resource 1.ScheduledUtilization             .92995    
+System.NumberOut                            174.00    
 
 Iniciando replicação 6 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 6 de 10
 
@@ -350,59 +475,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .10450     (Insuf)    1.9488E-04 1.9133        211    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        211    
-Entity 1.WaitTime                           5.4135     (Insuf)    .00000     38.897        211    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        211    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        211    
-Entity 1.TotalTime                          5.5180     (Insuf)    .04466     39.782        211    
+Entity 1.VATime                             1.1752     (Insuf)    5.8392E-04 13.208        128    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        128    
+Entity 1.WaitTime                           2.7372     (Insuf)    .00000     31.411        128    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        128    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        128    
+Entity 1.TotalTime                          3.9125     (Insuf)    .00369     44.619        128    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    3.5288     (Corr)     .00000     7.7963        449    
-APP_DISK.Queue.WaitingTime                  .15996     (Insuf)    .00000     .79426         93    
-APP_CPU.Queue.WaitingTime                   3.1905     (Insuf)    .00000     7.9161        297    
-DB_DISK.Queue.WaitingTime                   .14612     (Insuf)    .00000     .80047        303    
-WEB_CPU.Queue.WaitingTime                   3.4615     (Corr)     .00000     7.8639        455    
-WEB_DISK.Queue.WaitingTime                  .18278     (Insuf)    .00000     .83941         98    
-DB_CACHE.Queue.WaitingTime                  .14503     (Insuf)    .00000     .77484        175    
+DB_CPU.Queue.WaitingTime                    .10439     .03080     .00000     .88405       1012    
+APP_DISK.Queue.WaitingTime                  .44810     (Insuf)    .00000     3.2631        114    
+APP_CPU.Queue.WaitingTime                   .21411     .07701     .00000     1.1203        393    
+DB_DISK.Queue.WaitingTime                   .13839     .05178     .00000     .91865        694    
+WEB_CPU.Queue.WaitingTime                   .44836     (Insuf)    .00000     3.1305        293    
+WEB_DISK.Queue.WaitingTime                  3.2785     (Insuf)    .00000     10.743         61    
+DB_CACHE.Queue.WaitingTime                  .31128     (Corr)     .00000     1.2707        426    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                79.006     (Corr)     .00000     146.00     143.00    
-Resource 2.NumberBusy                       .77276     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                20.338     (Insuf)    .00000     41.000     41.000    
+Resource 7.NumberBusy                       .72243     (Corr)     .00000     1.0000     .00000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .72243     (Corr)     .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .77325     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .77325     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .72379     (Corr)     .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .72379     (Corr)     .00000     1.0000     1.0000    
+Resource 4.NumberBusy                       .63513     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .63513     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .68098     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .68098     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .79068     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .77276     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .98910     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .79068     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .76675     (Insuf)    .00000     1.0000     1.0000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .98910     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .76675     (Insuf)    .00000     1.0000     1.0000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  29.199     (Corr)     .00000     59.000     55.000    
-APP_DISK.Queue.NumberInQueue                .25363     (Insuf)    .00000     3.0000     2.0000    
-APP_CPU.Queue.NumberInQueue                 17.697     (Corr)     .00000     36.000     34.000    
-DB_DISK.Queue.NumberInQueue                 .74192     .27444     .00000     6.0000     1.0000    
-WEB_CPU.Queue.NumberInQueue                 28.621     (Corr)     .00000     58.000     47.000    
-WEB_DISK.Queue.NumberInQueue                .29854     (Insuf)    .00000     3.0000     .00000    
-DB_CACHE.Queue.NumberInQueue                .43190     (Insuf)    .00000     3.0000     2.0000    
+DB_CPU.Queue.NumberInQueue                  1.7762     .58727     .00000     13.000     8.0000    
+APP_DISK.Queue.NumberInQueue                .88701     (Insuf)    .00000     5.0000     3.0000    
+APP_CPU.Queue.NumberInQueue                 1.4024     .55176     .00000     11.000     .00000    
+DB_DISK.Queue.NumberInQueue                 1.6006     .59644     .00000     11.000     .00000    
+WEB_CPU.Queue.NumberInQueue                 2.5835     (Corr)     .00000     15.000     14.000    
+WEB_DISK.Queue.NumberInQueue                4.7851     (Insuf)    .00000     15.000     11.000    
+DB_CACHE.Queue.NumberInQueue                2.2101     (Corr)     .00000     11.000     .00000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           354.00    
-Entity 1.NumberOut                          211.00    
-Resource 2.NumberSeized                     669.00    
-Resource 2.ScheduledUtilization             .77276    
-Resource 1.NumberSeized                     1201.0    
-Resource 1.ScheduledUtilization             .98910    
-System.NumberOut                            211.00    
+Entity 1.NumberIn                           169.00    
+Entity 1.NumberOut                          128.00    
+Resource 7.NumberSeized                     694.00    
+Resource 7.ScheduledUtilization             .72243    
+Resource 6.NumberSeized                     426.00    
+Resource 6.ScheduledUtilization             .77325    
+Resource 5.NumberSeized                     1012.0    
+Resource 5.ScheduledUtilization             .72379    
+Resource 4.NumberSeized                     114.00    
+Resource 4.ScheduledUtilization             .63513    
+Resource 3.NumberSeized                     393.00    
+Resource 3.ScheduledUtilization             .68098    
+Resource 2.NumberSeized                     61.000    
+Resource 2.ScheduledUtilization             .79068    
+Resource 1.NumberSeized                     293.00    
+Resource 1.ScheduledUtilization             .76675    
+System.NumberOut                            128.00    
 
 Iniciando replicação 7 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 7 de 10
 
@@ -417,59 +567,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .14877     (Insuf)    1.0553E-04 3.9245        193    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        193    
-Entity 1.WaitTime                           3.7255     (Insuf)    .00000     38.755        193    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        193    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        193    
-Entity 1.TotalTime                          3.8742     (Insuf)    .04264     41.058        193    
+Entity 1.VATime                             1.3350     (Insuf)    .00553     14.630        164    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        164    
+Entity 1.WaitTime                           2.7316     (Insuf)    .00000     27.946        164    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        164    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        164    
+Entity 1.TotalTime                          4.0666     (Insuf)    .01106     42.577        164    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    2.2587     (Corr)     .00000     6.3302        404    
-APP_DISK.Queue.WaitingTime                  .14753     (Insuf)    .00000     .59567         63    
-APP_CPU.Queue.WaitingTime                   2.3253     (Insuf)    .00000     6.2830        223    
-DB_DISK.Queue.WaitingTime                   .17488     (Insuf)    .00000     .79940        271    
-WEB_CPU.Queue.WaitingTime                   2.4862     (Corr)     .00000     6.4553        397    
-WEB_DISK.Queue.WaitingTime                  .20518     (Insuf)    .00000     .75479         94    
-DB_CACHE.Queue.WaitingTime                  .16230     (Insuf)    .00000     .71944        175    
+DB_CPU.Queue.WaitingTime                    .03435     .00627     .00000     .30861        812    
+APP_DISK.Queue.WaitingTime                  .48963     (Insuf)    .00000     3.2225        105    
+APP_CPU.Queue.WaitingTime                   .26098     (Corr)     .00000     1.5165        356    
+DB_DISK.Queue.WaitingTime                   .08362     .02370     .00000     .54876        544    
+WEB_CPU.Queue.WaitingTime                   .65992     (Insuf)    .00000     2.2922        308    
+WEB_DISK.Queue.WaitingTime                  1.7766     (Insuf)    .00000     6.3814         50    
+DB_CACHE.Queue.WaitingTime                  .15540     .07583     .00000     1.0877        320    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                49.651     (Corr)     .00000     126.00     125.00    
-Resource 2.NumberBusy                       .72943     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                13.819     (Corr)     .00000     28.000     21.000    
+Resource 7.NumberBusy                       .59572     (Corr)     .00000     1.0000     .00000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .59572     (Corr)     .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .65609     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .65609     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberBusy                       .57018     (Corr)     .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .57018     (Corr)     .00000     1.0000     1.0000    
+Resource 4.NumberBusy                       .55006     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .55006     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .68047     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .68047     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .53294     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .72943     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .97293     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .53294     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .84053     (Insuf)    .00000     1.0000     1.0000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .97293     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .84053     (Insuf)    .00000     1.0000     1.0000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  17.188     (Corr)     .00000     44.000     41.000    
-APP_DISK.Queue.NumberInQueue                .15491     (Insuf)    .00000     2.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 10.047     (Corr)     .00000     30.000     28.000    
-DB_DISK.Queue.NumberInQueue                 .78989     .26364     .00000     8.0000     .00000    
-WEB_CPU.Queue.NumberInQueue                 18.973     (Corr)     .00000     55.000     54.000    
-WEB_DISK.Queue.NumberInQueue                .32146     (Insuf)    .00000     4.0000     .00000    
-DB_CACHE.Queue.NumberInQueue                .47337     (Insuf)    .00000     4.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  .46810     .12741     .00000     7.0000     4.0000    
+APP_DISK.Queue.NumberInQueue                .85685     (Insuf)    .00000     7.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 1.5764     (Corr)     .00000     12.000     5.0000    
+DB_DISK.Queue.NumberInQueue                 .75817     .25069     .00000     6.0000     .00000    
+WEB_CPU.Queue.NumberInQueue                 3.4124     (Corr)     .00000     13.000     3.0000    
+WEB_DISK.Queue.NumberInQueue                1.4901     (Insuf)    .00000     9.0000     1.0000    
+DB_CACHE.Queue.NumberInQueue                .83118     (Corr)     .00000     7.0000     2.0000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           318.00    
-Entity 1.NumberOut                          193.00    
-Resource 2.NumberSeized                     603.00    
-Resource 2.ScheduledUtilization             .72943    
-Resource 1.NumberSeized                     1024.0    
-Resource 1.ScheduledUtilization             .97293    
-System.NumberOut                            193.00    
+Entity 1.NumberIn                           185.00    
+Entity 1.NumberOut                          164.00    
+Resource 7.NumberSeized                     544.00    
+Resource 7.ScheduledUtilization             .59572    
+Resource 6.NumberSeized                     320.00    
+Resource 6.ScheduledUtilization             .65609    
+Resource 5.NumberSeized                     812.00    
+Resource 5.ScheduledUtilization             .57018    
+Resource 4.NumberSeized                     105.00    
+Resource 4.ScheduledUtilization             .55006    
+Resource 3.NumberSeized                     356.00    
+Resource 3.ScheduledUtilization             .68047    
+Resource 2.NumberSeized                     50.000    
+Resource 2.ScheduledUtilization             .53294    
+Resource 1.NumberSeized                     308.00    
+Resource 1.ScheduledUtilization             .84053    
+System.NumberOut                            164.00    
 
 Iniciando replicação 8 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 8 de 10
 
@@ -484,59 +659,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .19701     (Insuf)    2.8277E-04 5.8947        196    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        196    
-Entity 1.WaitTime                           4.0117     (Insuf)    .00000     52.148        196    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        196    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        196    
-Entity 1.TotalTime                          4.2087     (Insuf)    .00328     58.043        196    
+Entity 1.VATime                             1.3630     (Insuf)    .00599     11.483        141    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        141    
+Entity 1.WaitTime                           3.2388     (Insuf)    .00000     29.465        141    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        141    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        141    
+Entity 1.TotalTime                          4.6019     (Insuf)    .01433     40.409        141    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    1.7299     (Corr)     .00000     4.0274        464    
-APP_DISK.Queue.WaitingTime                  .38306     (Insuf)    .00000     1.7696         71    
-APP_CPU.Queue.WaitingTime                   1.6334     (Insuf)    .00000     4.0213        245    
-DB_DISK.Queue.WaitingTime                   .39024     (Insuf)    .00000     1.7902        312    
-WEB_CPU.Queue.WaitingTime                   1.7131     (Corr)     .00000     3.9643        371    
-WEB_DISK.Queue.WaitingTime                  .45183     (Insuf)    .00000     1.7838         72    
-DB_CACHE.Queue.WaitingTime                  .35098     (Insuf)    .00000     1.6510        203    
+DB_CPU.Queue.WaitingTime                    .07641     .02244     .00000     .61821        845    
+APP_DISK.Queue.WaitingTime                  .56349     (Insuf)    .00000     2.1827        105    
+APP_CPU.Queue.WaitingTime                   .15651     .06427     .00000     .90671        353    
+DB_DISK.Queue.WaitingTime                   .12555     .04621     .00000     1.0300        556    
+WEB_CPU.Queue.WaitingTime                   .63667     (Insuf)    .00000     2.3088        282    
+WEB_DISK.Queue.WaitingTime                  3.8552     (Insuf)    .00000     10.700         46    
+DB_CACHE.Queue.WaitingTime                  .26350     (Corr)     .00000     1.2854        359    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                38.983     (Corr)     .00000     80.000     76.000    
-Resource 2.NumberBusy                       .85578     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                17.327     (Insuf)    .00000     37.000     36.000    
+Resource 7.NumberBusy                       .64742     (Corr)     .00000     1.0000     1.0000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .64742     (Corr)     .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .64595     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .64595     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberBusy                       .62821     (Corr)     .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .62821     (Corr)     .00000     1.0000     1.0000    
+Resource 4.NumberBusy                       .64134     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .64134     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .61349     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .61349     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .79035     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .85578     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .98459     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .79035     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .83163     (Insuf)    .00000     1.0000     1.0000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .98459     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .83163     (Insuf)    .00000     1.0000     1.0000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  14.190     (Corr)     .00000     31.000     27.000    
-APP_DISK.Queue.NumberInQueue                .45329     (Insuf)    .00000     3.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 7.3767     (Corr)     .00000     22.000     21.000    
-DB_DISK.Queue.NumberInQueue                 2.0292     (Corr)     .00000     14.000     .00000    
-WEB_CPU.Queue.NumberInQueue                 11.363     (Corr)     .00000     36.000     26.000    
-WEB_DISK.Queue.NumberInQueue                .54220     (Insuf)    .00000     5.0000     .00000    
-DB_CACHE.Queue.NumberInQueue                1.1874     (Corr)     .00000     7.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  1.0769     .41316     .00000     10.000     2.0000    
+APP_DISK.Queue.NumberInQueue                .99238     (Insuf)    .00000     7.0000     1.0000    
+APP_CPU.Queue.NumberInQueue                 .93083     .40058     .00000     9.0000     3.0000    
+DB_DISK.Queue.NumberInQueue                 1.1637     .47618     .00000     9.0000     2.0000    
+WEB_CPU.Queue.NumberInQueue                 3.1156     (Corr)     .00000     15.000     8.0000    
+WEB_DISK.Queue.NumberInQueue                3.6702     (Insuf)    .00000     11.000     11.000    
+DB_CACHE.Queue.NumberInQueue                1.5793     (Corr)     .00000     9.0000     2.0000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           272.00    
-Entity 1.NumberOut                          196.00    
-Resource 2.NumberSeized                     658.00    
-Resource 2.ScheduledUtilization             .85578    
-Resource 1.NumberSeized                     1080.0    
-Resource 1.ScheduledUtilization             .98459    
-System.NumberOut                            196.00    
+Entity 1.NumberIn                           177.00    
+Entity 1.NumberOut                          141.00    
+Resource 7.NumberSeized                     556.00    
+Resource 7.ScheduledUtilization             .64742    
+Resource 6.NumberSeized                     359.00    
+Resource 6.ScheduledUtilization             .64595    
+Resource 5.NumberSeized                     845.00    
+Resource 5.ScheduledUtilization             .62821    
+Resource 4.NumberSeized                     105.00    
+Resource 4.ScheduledUtilization             .64134    
+Resource 3.NumberSeized                     353.00    
+Resource 3.ScheduledUtilization             .61349    
+Resource 2.NumberSeized                     46.000    
+Resource 2.ScheduledUtilization             .79035    
+Resource 1.NumberSeized                     282.00    
+Resource 1.ScheduledUtilization             .83163    
+System.NumberOut                            141.00    
 
 Iniciando replicação 9 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 9 de 10
 
@@ -551,59 +751,84 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .15651     (Insuf)    .00148     3.5638        165    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        165    
-Entity 1.WaitTime                           4.9499     (Insuf)    .00000     49.498        165    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        165    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        165    
-Entity 1.TotalTime                          5.1064     (Insuf)    .01937     53.062        165    
+Entity 1.VATime                             1.1590     (Insuf)    6.5008E-04 10.666        150    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        150    
+Entity 1.WaitTime                           3.2484     (Insuf)    .00000     33.680        150    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        150    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        150    
+Entity 1.TotalTime                          4.4074     (Insuf)    .01716     44.347        150    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    2.7837     (Corr)     .00000     6.1085        451    
-APP_DISK.Queue.WaitingTime                  .30361     (Insuf)    .00000     1.0769         85    
-APP_CPU.Queue.WaitingTime                   2.6744     (Insuf)    .00000     6.0735        259    
-DB_DISK.Queue.WaitingTime                   .26794     .08788     .00000     1.1141        323    
-WEB_CPU.Queue.WaitingTime                   2.7100     (Corr)     .00000     6.0420        335    
-WEB_DISK.Queue.WaitingTime                  .25471     (Insuf)    .00000     1.0577         56    
-DB_CACHE.Queue.WaitingTime                  .26915     (Insuf)    .00000     .91648        184    
+DB_CPU.Queue.WaitingTime                    .10680     .02947     .00000     .68549        999    
+APP_DISK.Queue.WaitingTime                  2.0462     (Insuf)    .00000     6.0472        113    
+APP_CPU.Queue.WaitingTime                   .32184     (Corr)     .00000     1.8054        418    
+DB_DISK.Queue.WaitingTime                   .19781     (Corr)     .00000     .87428        691    
+WEB_CPU.Queue.WaitingTime                   .93587     (Corr)     .00000     2.7946        341    
+WEB_DISK.Queue.WaitingTime                  1.5380     (Insuf)    .00000     4.2938         64    
+DB_CACHE.Queue.WaitingTime                  .30647     (Corr)     .00000     1.8131        376    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                57.302     (Corr)     .00000     114.00     113.00    
-Resource 2.NumberBusy                       .80145     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                24.954     (Corr)     .00000     43.000     43.000    
+Resource 7.NumberBusy                       .78563     (Insuf)    .00000     1.0000     1.0000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .78563     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberBusy                       .74399     (Insuf)    .00000     1.0000     .00000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .74399     (Insuf)    .00000     1.0000     .00000    
+Resource 5.NumberBusy                       .70105     .08635     .00000     1.0000     1.0000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .70105     .08635     .00000     1.0000     1.0000    
+Resource 4.NumberBusy                       .82945     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .82945     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .76544     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .76544     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .76066     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .80145     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .99196     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .76066     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .90500     (Insuf)    .00000     1.0000     1.0000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .99196     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .90500     (Insuf)    .00000     1.0000     1.0000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  22.873     (Corr)     .00000     46.000     45.000    
-APP_DISK.Queue.NumberInQueue                .43012     (Insuf)    .00000     4.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 12.472     (Corr)     .00000     27.000     23.000    
-DB_DISK.Queue.NumberInQueue                 1.4440     (Corr)     .00000     8.0000     1.0000    
-WEB_CPU.Queue.NumberInQueue                 17.226     (Corr)     .00000     43.000     42.000    
-WEB_DISK.Queue.NumberInQueue                .23773     (Insuf)    .00000     3.0000     .00000    
-DB_CACHE.Queue.NumberInQueue                .82539     (Insuf)    .00000     5.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  1.7788     .61325     .00000     11.000     2.0000    
+APP_DISK.Queue.NumberInQueue                3.9243     (Insuf)    .00000     12.000     4.0000    
+APP_CPU.Queue.NumberInQueue                 2.3750     (Corr)     .00000     13.000     11.000    
+DB_DISK.Queue.NumberInQueue                 2.3494     (Corr)     .00000     12.000     8.0000    
+WEB_CPU.Queue.NumberInQueue                 5.4410     (Corr)     .00000     22.000     9.0000    
+WEB_DISK.Queue.NumberInQueue                1.6740     (Insuf)    .00000     7.0000     3.0000    
+DB_CACHE.Queue.NumberInQueue                1.9205     (Corr)     .00000     12.000     .00000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           278.00    
-Entity 1.NumberOut                          165.00    
-Resource 2.NumberSeized                     648.00    
-Resource 2.ScheduledUtilization             .80145    
-Resource 1.NumberSeized                     1045.0    
-Resource 1.ScheduledUtilization             .99196    
-System.NumberOut                            165.00    
+Entity 1.NumberIn                           193.00    
+Entity 1.NumberOut                          150.00    
+Resource 7.NumberSeized                     691.00    
+Resource 7.ScheduledUtilization             .78563    
+Resource 6.NumberSeized                     376.00    
+Resource 6.ScheduledUtilization             .74399    
+Resource 5.NumberSeized                     999.00    
+Resource 5.ScheduledUtilization             .70105    
+Resource 4.NumberSeized                     113.00    
+Resource 4.ScheduledUtilization             .82945    
+Resource 3.NumberSeized                     418.00    
+Resource 3.ScheduledUtilization             .76544    
+Resource 2.NumberSeized                     64.000    
+Resource 2.ScheduledUtilization             .76066    
+Resource 1.NumberSeized                     341.00    
+Resource 1.ScheduledUtilization             .90500    
+System.NumberOut                            150.00    
 
 Iniciando replicação 10 de 10
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                                   Sumário para Replicação 10 de 10
 
@@ -618,58 +843,83 @@ Unidade de Tempo Base: Minutos
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .16387     (Insuf)    4.1917E-04 3.9948        196    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        196    
-Entity 1.WaitTime                           5.1877     (Insuf)    .02059     41.772        196    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        196    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        196    
-Entity 1.TotalTime                          5.3516     (Insuf)    .10894     45.336        196    
+Entity 1.VATime                             1.2925     (Insuf)    .00170     14.563        159    
+Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        159    
+Entity 1.WaitTime                           1.5388     (Insuf)    .00000     11.550        159    
+Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        159    
+Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        159    
+Entity 1.TotalTime                          2.8314     (Insuf)    .00170     26.114        159    
 C1.Queue.WaitingTime                            --         --         --         --          0
-DB_CPU.Queue.WaitingTime                    2.9038     (Corr)     .00000     5.1627        395    
-APP_DISK.Queue.WaitingTime                  .16566     (Insuf)    .00000     1.1571         93    
-APP_CPU.Queue.WaitingTime                   2.7637     (Insuf)    .00000     5.2061        264    
-DB_DISK.Queue.WaitingTime                   .16249     (Insuf)    .00000     1.1820        262    
-WEB_CPU.Queue.WaitingTime                   2.9352     (Corr)     .00000     5.1820        405    
-WEB_DISK.Queue.WaitingTime                  .11558     (Insuf)    .00000     .46599         89    
-DB_CACHE.Queue.WaitingTime                  .16528     (Insuf)    .00000     1.1316        143    
+DB_CPU.Queue.WaitingTime                    .03684     (Corr)     .00000     .42616        682    
+APP_DISK.Queue.WaitingTime                  .34555     (Insuf)    .00000     1.5749         90    
+APP_CPU.Queue.WaitingTime                   .13228     (Insuf)    .00000     1.0363        297    
+DB_DISK.Queue.WaitingTime                   .06401     (Corr)     .00000     .51087        473    
+WEB_CPU.Queue.WaitingTime                   .30995     (Insuf)    .00000     1.6255        295    
+WEB_DISK.Queue.WaitingTime                  .82811     (Insuf)    .00000     2.9700         56    
+DB_CACHE.Queue.WaitingTime                  .15115     (Insuf)    .00000     1.3638        261    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                57.555     (Corr)     .00000     103.00     102.00    
-Resource 2.NumberBusy                       .72389     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                9.4640     (Corr)     .00000     16.000     13.000    
+Resource 7.NumberBusy                       .50930     (Corr)     .00000     1.0000     .00000    
+Resource 7.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 7.Utilization                      .50930     (Corr)     .00000     1.0000     .00000    
+Resource 6.NumberBusy                       .52278     (Insuf)    .00000     1.0000     1.0000    
+Resource 6.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 6.Utilization                      .52278     (Insuf)    .00000     1.0000     1.0000    
+Resource 5.NumberBusy                       .46799     (Corr)     .00000     1.0000     .00000    
+Resource 5.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 5.Utilization                      .46799     (Corr)     .00000     1.0000     .00000    
+Resource 4.NumberBusy                       .60800     (Insuf)    .00000     1.0000     1.0000    
+Resource 4.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 4.Utilization                      .60800     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberBusy                       .58527     (Insuf)    .00000     1.0000     1.0000    
+Resource 3.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 3.Utilization                      .58527     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.NumberBusy                       .85102     (Insuf)    .00000     1.0000     1.0000    
 Resource 2.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 2.Utilization                      .72389     (Insuf)    .00000     1.0000     1.0000    
-Resource 1.NumberBusy                       .99666     (Insuf)    .00000     1.0000     1.0000    
+Resource 2.Utilization                      .85102     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.NumberBusy                       .75228     (Insuf)    .00000     1.0000     .00000    
 Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Resource 1.Utilization                      .99666     (Insuf)    .00000     1.0000     1.0000    
+Resource 1.Utilization                      .75228     (Insuf)    .00000     1.0000     .00000    
 C1.Queue.NumberInQueue                      .00000     (Insuf)    .00000     .00000     .00000    
-DB_CPU.Queue.NumberInQueue                  20.503     (Corr)     .00000     42.000     41.000    
-APP_DISK.Queue.NumberInQueue                .25986     (Insuf)    .00000     4.0000     1.0000    
-APP_CPU.Queue.NumberInQueue                 13.108     (Corr)     .00000     29.000     27.000    
-DB_DISK.Queue.NumberInQueue                 .71550     (Insuf)    .00000     7.0000     1.0000    
-WEB_CPU.Queue.NumberInQueue                 20.664     (Corr)     .00000     40.000     27.000    
-WEB_DISK.Queue.NumberInQueue                .17769     (Insuf)    .00000     3.0000     1.0000    
-DB_CACHE.Queue.NumberInQueue                .40593     (Insuf)    .00000     4.0000     2.0000    
+DB_CPU.Queue.NumberInQueue                  .41879     (Corr)     .00000     6.0000     .00000    
+APP_DISK.Queue.NumberInQueue                .57681     (Insuf)    .00000     6.0000     3.0000    
+APP_CPU.Queue.NumberInQueue                 .65542     (Corr)     .00000     5.0000     1.0000    
+DB_DISK.Queue.NumberInQueue                 .50463     (Corr)     .00000     5.0000     .00000    
+WEB_CPU.Queue.NumberInQueue                 1.5239     (Corr)     .00000     9.0000     .00000    
+WEB_DISK.Queue.NumberInQueue                .82363     (Insuf)    .00000     5.0000     2.0000    
+DB_CACHE.Queue.NumberInQueue                .66420     (Insuf)    .00000     6.0000     3.0000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           298.00    
-Entity 1.NumberOut                          196.00    
-Resource 2.NumberSeized                     587.00    
-Resource 2.ScheduledUtilization             .72389    
-Resource 1.NumberSeized                     1064.0    
-Resource 1.ScheduledUtilization             .99666    
-System.NumberOut                            196.00    
+Entity 1.NumberIn                           172.00    
+Entity 1.NumberOut                          159.00    
+Resource 7.NumberSeized                     473.00    
+Resource 7.ScheduledUtilization             .50930    
+Resource 6.NumberSeized                     261.00    
+Resource 6.ScheduledUtilization             .52278    
+Resource 5.NumberSeized                     682.00    
+Resource 5.ScheduledUtilization             .46799    
+Resource 4.NumberSeized                     90.000    
+Resource 4.ScheduledUtilization             .60800    
+Resource 3.NumberSeized                     297.00    
+Resource 3.ScheduledUtilization             .58527    
+Resource 2.NumberSeized                     56.000    
+Resource 2.ScheduledUtilization             .85102    
+Resource 1.NumberSeized                     295.00    
+Resource 1.ScheduledUtilization             .75228    
+System.NumberOut                            159.00    
 
 
                                       ARENA Simulation Results
-                                Usuário do Windows - License: STUDENT
+                                         Usuário do Windows
 
                               Resumo de resultados para 10 Replicações
 
@@ -682,13 +932,23 @@ Analista: gcintra@live.com                                            Data de re
 Identificador                                 Média    Meia-largura Mínima    Maximo # de Replicações
 ___________________________________________________________________________________________________
 
-Entity 1.NumberIn                           308.50     17.580     272.00     354.00     10
-Entity 1.NumberOut                          196.00     10.188     165.00     212.00     10
-Resource 2.NumberSeized                     625.00     25.850     574.00     669.00     10
-Resource 2.ScheduledUtilization             .77442     .03488     .71578     .85578     10
-Resource 1.NumberSeized                     1087.5     34.175     1024.0     1201.0     10
-Resource 1.ScheduledUtilization             .98635     .00539     .97293     .99679     10
-System.NumberOut                            196.00     10.188     165.00     212.00     10
+Entity 1.NumberIn                           178.10     14.311     155.00     224.00     10
+Entity 1.NumberOut                          149.60     11.341     124.00     174.00     10
+Resource 7.NumberSeized                     586.90     58.769     470.00     694.00     10
+Resource 7.ScheduledUtilization             .64348     .06484     .50930     .78563     10
+Resource 6.NumberSeized                     343.70     38.555     261.00     426.00     10
+Resource 6.ScheduledUtilization             .64337     .07499     .44214     .77325     10
+Resource 5.NumberSeized                     865.50     85.815     682.00     1012.0     10
+Resource 5.ScheduledUtilization             .60578     .06349     .46799     .72379     10
+Resource 4.NumberSeized                     108.90     9.1879     90.000     137.00     10
+Resource 4.ScheduledUtilization             .67107     .08042     .54210     .84272     10
+Resource 3.NumberSeized                     367.90     29.964     297.00     423.00     10
+Resource 3.ScheduledUtilization             .66656     .05693     .55573     .81385     10
+Resource 2.NumberSeized                     53.800     5.3507     45.000     65.000     10
+Resource 2.ScheduledUtilization             .72030     .08587     .53294     .85102     10
+Resource 1.NumberSeized                     301.30     16.388     276.00     341.00     10
+Resource 1.ScheduledUtilization             .82295     .05015     .71159     .92995     10
+System.NumberOut                            149.60     11.341     124.00     174.00     10
 
-Tempo executando a simulação: 0.23 minutos.
+Tempo executando a simulação: 0.25 minutos.
 Simulação completada.
