@@ -10,17 +10,8 @@ Distribuição de valores no modelo, cálculo de métricas e replicação das m�
 
 ---
 
-##### Configuração 1
-
-![Modelo](https://i.ibb.co/gtmqTQM/Model1.png "Modelo")
-
-![Sistema](https://i.ibb.co/vQv49Pr/System1.png "Sistema")
-
-![Tabela](https://i.ibb.co/KFNSJW7/Table1.png "Tabela")
-
----
-
 ##### Análise de saída
-Pode ser verificada no arquivo docs/report.pdf e comparado com o arquivo dos cálculos presentes em docs/tableX.png
+Pode ser verificada na pasta docs.
+Cada configuração possui seu reportN, modelN, tableN e analysisN.
 
 A execução no Arena Simulator foi realizada na casa de minutos. Portanto, deve haver a divisão por 60 (Minutos) em comparações.
