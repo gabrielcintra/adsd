@@ -7,8 +7,11 @@ ADSD - UFCG 2019.1
 - Memória em uso
 - CPU em uso
 
+##### Entrada
+Vídeo no formato .flv
+
 ##### Fatores e níveis
-- Formato do vídeo a ser convertido
+- Formato do vídeo na saída
 -- MP4
 -- AVI
 
