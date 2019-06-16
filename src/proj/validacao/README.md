@@ -4,6 +4,7 @@ ADSD - UFCG 2019.1
 
 ##### Utilizado:
 - [Arena Simulator](https://www.arenasimulation.com/) (Arena Simulator)
+- [Planilha de cálculos](https://docs.google.com/spreadsheets/d/15eTOycJeUKTqQrFJloZqOF3FRHQv9mQxEDYxh7hi27U/edit#gid=0) (Planilha)
 
 ##### Metodologia de resolução:
 Distribuição de valores no modelo, cálculo de métricas e replicação das métricas no simulador para análise.
