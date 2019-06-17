@@ -1,11 +1,11 @@
 [RESOURCES]
-Resource 7
-Resource 6
-Resource 5
-Resource 4
-Resource 3
-Resource 2
-Resource 1
+Db Cache
+Db Cpu
+App Disk
+Db Disk
+Web CPU
+App Cpu
+Web Disk
 [VARIABLES]
 OUT.NumberOut
 APP_DISK.NumberIn
