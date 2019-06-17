@@ -1,0 +1,11 @@
+[INICIO SIMULAÇÃO] Tempo de execução: 300
+[ENTRADA] Tempo: 27 / Fila 2
+[FILA 1] Tamanho: 1
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 29 / Fila 1
+[FILA 1] Tamanho: 2
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[SAIDA] Tempo: 54
+[SAIDA] Tempo: 135

@@ -1,0 +1,128 @@
+[INICIO SIMULAÇÃO] Tempo de execução: 300
+[ENTRADA] Tempo: 39 / Fila 2
+[FILA 1] Tamanho: 1
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 41 / Fila 1
+[FILA 1] Tamanho: 2
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 48 / Fila 1
+[FILA 1] Tamanho: 3
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 54 / Fila 1
+[FILA 1] Tamanho: 4
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 65 / Fila 1
+[FILA 1] Tamanho: 5
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 75 / Fila 1
+[FILA 1] Tamanho: 6
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 78 / Fila 1
+[SAIDA] Tempo: 78
+[FILA 1] Tamanho: 6
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 80 / Fila 1
+[FILA 1] Tamanho: 7
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 87 / Fila 1
+[FILA 1] Tamanho: 8
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 93 / Fila 1
+[FILA 1] Tamanho: 9
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 104 / Fila 1
+[FILA 1] Tamanho: 10
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[SAIDA] Tempo: 117
+[ENTRADA] Tempo: 143 / Fila 1
+[FILA 1] Tamanho: 10
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 148 / Fila 1
+[FILA 1] Tamanho: 11
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[SAIDA] Tempo: 156
+[ENTRADA] Tempo: 157 / Fila 1
+[FILA 1] Tamanho: 11
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 162 / Fila 1
+[FILA 1] Tamanho: 12
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 171 / Fila 1
+[FILA 1] Tamanho: 13
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 176 / Fila 1
+[FILA 1] Tamanho: 14
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 185 / Fila 1
+[FILA 1] Tamanho: 15
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 190 / Fila 1
+[FILA 1] Tamanho: 16
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[SAIDA] Tempo: 195
+[ENTRADA] Tempo: 199 / Fila 1
+[FILA 1] Tamanho: 16
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 204 / Fila 1
+[FILA 1] Tamanho: 17
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 213 / Fila 1
+[FILA 1] Tamanho: 18
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[SAIDA] Tempo: 234
+[ENTRADA] Tempo: 252 / Fila 1
+[FILA 1] Tamanho: 18
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 260 / Fila 1
+[FILA 1] Tamanho: 19
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 265 / Fila 1
+[FILA 1] Tamanho: 20
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 267 / Fila 1
+[FILA 1] Tamanho: 21
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[SAIDA] Tempo: 273
+[ENTRADA] Tempo: 278 / Fila 1
+[FILA 1] Tamanho: 21
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 286 / Fila 1
+[FILA 1] Tamanho: 22
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 291 / Fila 1
+[FILA 1] Tamanho: 23
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[ENTRADA] Tempo: 293 / Fila 1
+[FILA 1] Tamanho: 24
+[FILA 2] Tamanho: 2
+[SERVICO] Fila atendida: 1
+[FIM SIMULAÇÃO]
