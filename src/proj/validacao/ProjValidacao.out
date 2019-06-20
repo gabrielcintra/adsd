@@ -2,459 +2,279 @@
                                       ARENA Simulation Results
                                          Usuário do Windows
 
-                                  Sumário para Replicação 1 de 5
+                                  Sumário para Replicação 1 de 3
 
-Projeto: ADSD                                                        Data da execução : 6/17/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/17/2019
+Projeto: ADSD                                                        Data da execução : 6/20/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/20/2019
 
-Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
-Unidade de Tempo Base: Minutos
-
-                                           VARIÁVEIS DE REGISTRO
-
-Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
-___________________________________________________________________________________________________
-
-Entity 1.VATime                             1.3105     (Insuf)    5.7130E-04 16.723        162    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        162    
-Entity 1.WaitTime                           2.6008     (Insuf)    .00000     26.147        162    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        162    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        162    
-Entity 1.TotalTime                          3.9114     (Insuf)    .00453     42.870        162    
-DB_CPU.Queue.WaitingTime                    .05821     (Corr)     .00000     .48588        801    
-APP_DISK.Queue.WaitingTime                  .69511     (Insuf)    .00000     3.7002        114    
-APP_CPU.Queue.WaitingTime                   .29650     (Corr)     .00000     1.5999        353    
-DB_DISK.Queue.WaitingTime                   .10518     .03770     .00000     .79236        557    
-WEB_CPU.Queue.WaitingTime                   .46332     (Insuf)    .00000     1.6558        309    
-WEB_DISK.Queue.WaitingTime                  2.7072     (Insuf)    .00000     7.7050         54    
-DB_CACHE.Queue.WaitingTime                  .11113     (Insuf)    .00000     .88605        305    
-
-                                     VARIÁVEIS DISCRETAS
-
-Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
-___________________________________________________________________________________________________
-
-Entity 1.WIP                                14.984     (Corr)     .00000     27.000     17.000    
-Db Cache.NumberBusy                         .52253     (Insuf)    .00000     1.0000     .00000    
-Db Cache.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cache.Utilization                        .52253     (Insuf)    .00000     1.0000     .00000    
-Db Cpu.NumberBusy                           .58546     (Corr)     .00000     1.0000     .00000    
-Db Cpu.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cpu.Utilization                          .58546     (Corr)     .00000     1.0000     .00000    
-App Disk.NumberBusy                         .65351     (Insuf)    .00000     1.0000     .00000    
-App Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Disk.Utilization                        .65351     (Insuf)    .00000     1.0000     .00000    
-Db Disk.NumberBusy                          .62387     (Corr)     .00000     1.0000     1.0000    
-Db Disk.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Disk.Utilization                         .62387     (Corr)     .00000     1.0000     1.0000    
-Web CPU.NumberBusy                          .80397     (Insuf)    .00000     1.0000     1.0000    
-Web CPU.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web CPU.Utilization                         .80397     (Insuf)    .00000     1.0000     1.0000    
-App Cpu.NumberBusy                          .65384     (Insuf)    .00000     1.0000     1.0000    
-App Cpu.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Cpu.Utilization                         .65384     (Insuf)    .00000     1.0000     1.0000    
-Web Disk.NumberBusy                         .83193     (Insuf)    .00000     1.0000     1.0000    
-Web Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web Disk.Utilization                        .83193     (Insuf)    .00000     1.0000     1.0000    
-DB_CPU.Queue.NumberInQueue                  .77710     (Corr)     .00000     10.000     .00000    
-APP_DISK.Queue.NumberInQueue                1.3207     (Insuf)    .00000     9.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 1.7557     (Corr)     .00000     12.000     2.0000    
-DB_DISK.Queue.NumberInQueue                 .98499     (Corr)     .00000     7.0000     6.0000    
-WEB_CPU.Queue.NumberInQueue                 2.3878     (Corr)     .00000     12.000     1.0000    
-WEB_DISK.Queue.NumberInQueue                2.5185     (Insuf)    .00000     8.0000     4.0000    
-DB_CACHE.Queue.NumberInQueue                .56491     (Insuf)    .00000     6.0000     .00000    
-
-                                             RESULTADOS
-
-Identificador                                   Valor
-_____________________________________________________________
-
-Entity 1.NumberIn                           179.00    
-Entity 1.NumberOut                          162.00    
-Db Cache.NumberSeized                       305.00    
-Db Cache.ScheduledUtilization               .52253    
-Db Cpu.NumberSeized                         801.00    
-Db Cpu.ScheduledUtilization                 .58546    
-App Disk.NumberSeized                       114.00    
-App Disk.ScheduledUtilization               .65351    
-Db Disk.NumberSeized                        557.00    
-Db Disk.ScheduledUtilization                .62387    
-Web CPU.NumberSeized                        309.00    
-Web CPU.ScheduledUtilization                .80397    
-App Cpu.NumberSeized                        353.00    
-App Cpu.ScheduledUtilization                .65384    
-Web Disk.NumberSeized                       54.000    
-Web Disk.ScheduledUtilization               .83193    
-System.NumberOut                            162.00    
-
-Iniciando replicação 2 de 5
-
-                                      ARENA Simulation Results
-                                         Usuário do Windows
-
-                                  Sumário para Replicação 2 de 5
-
-Projeto: ADSD                                                        Data da execução : 6/17/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/17/2019
-
-Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
-Unidade de Tempo Base: Minutos
+Replicação terminada no tempo de      : 120.0 Segundos 
+Unidade de Tempo Base: Segundos
 
                                            VARIÁVEIS DE REGISTRO
 
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             .98254     (Insuf)    6.5752E-05 10.320        148    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        148    
-Entity 1.WaitTime                           2.4905     (Insuf)    .00000     17.610        148    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        148    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        148    
-Entity 1.TotalTime                          3.4730     (Insuf)    .08760     27.212        148    
-DB_CPU.Queue.WaitingTime                    .10889     (Corr)     .00000     .68406        887    
-APP_DISK.Queue.WaitingTime                  .93114     (Insuf)    .00000     4.4558         89    
-APP_CPU.Queue.WaitingTime                   .13831     .06569     .00000     1.2119        342    
-DB_DISK.Queue.WaitingTime                   .19386     (Corr)     .00000     1.0703        621    
-WEB_CPU.Queue.WaitingTime                   1.1199     (Insuf)    .00000     4.4435        316    
-WEB_DISK.Queue.WaitingTime                  3.5752     (Insuf)    .00000     11.287         53    
-DB_CACHE.Queue.WaitingTime                  .35679     (Corr)     .00000     1.5479        382    
+Entity 1.VATime                             .74988     .21111     2.6370E-04 19.463        338    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        338    
+Entity 1.WaitTime                           .44110     (Corr)     .00000     13.615        338    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        338    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        338    
+Entity 1.TotalTime                          1.1909     .43125     2.6370E-04 32.815        338    
+DB_CPU.Queue.WaitingTime                    .02505     (Corr)     .00000     .37234       2239    
+APP_DISK.Queue.WaitingTime                  .08686     (Insuf)    .00000     1.4094         82    
+APP_CPU.Queue.WaitingTime                   .03442     (Corr)     .00000     .41833        805    
+DB_DISK.Queue.WaitingTime                   .02380     .00834     .00000     .34491       1248    
+WEB_CPU.Queue.WaitingTime                   .01396     .00681     .00000     .41942        495    
+WEB_DISK.Queue.WaitingTime                  .03525     (Insuf)    .00000     .45257         57    
+DB_CACHE.Queue.WaitingTime                  .02430     .00746     .00000     .37076        870    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                24.234     (Corr)     .00000     63.000     63.000    
-Db Cache.NumberBusy                         .71539     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                3.4402     (Corr)     .00000     12.000     2.0000    
+Db Cache.NumberBusy                         .37405     (Corr)     .00000     1.0000     1.0000    
 Db Cache.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cache.Utilization                        .71539     (Insuf)    .00000     1.0000     1.0000    
-Db Cpu.NumberBusy                           .66216     (Corr)     .00000     1.0000     1.0000    
+Db Cache.Utilization                        .37405     (Corr)     .00000     1.0000     1.0000    
+Db Cpu.NumberBusy                           .48081     (Corr)     .00000     1.0000     1.0000    
 Db Cpu.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cpu.Utilization                          .66216     (Corr)     .00000     1.0000     1.0000    
-App Disk.NumberBusy                         .63358     (Insuf)    .00000     1.0000     1.0000    
+Db Cpu.Utilization                          .48081     (Corr)     .00000     1.0000     1.0000    
+App Disk.NumberBusy                         .19346     (Insuf)    .00000     1.0000     .00000    
 App Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Disk.Utilization                        .63358     (Insuf)    .00000     1.0000     1.0000    
-Db Disk.NumberBusy                          .69157     (Insuf)    .00000     1.0000     1.0000    
+App Disk.Utilization                        .19346     (Insuf)    .00000     1.0000     .00000    
+Db Disk.NumberBusy                          .38929     (Corr)     .00000     1.0000     .00000    
 Db Disk.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Disk.Utilization                         .69157     (Insuf)    .00000     1.0000     1.0000    
-Web CPU.NumberBusy                          .89561     (Insuf)    .00000     1.0000     1.0000    
+Db Disk.Utilization                         .38929     (Corr)     .00000     1.0000     .00000    
+Web CPU.NumberBusy                          .22733     .04174     .00000     1.0000     .00000    
 Web CPU.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web CPU.Utilization                         .89561     (Insuf)    .00000     1.0000     1.0000    
-App Cpu.NumberBusy                          .61845     (Insuf)    .00000     1.0000     1.0000    
+Web CPU.Utilization                         .22733     .04174     .00000     1.0000     .00000    
+App Cpu.NumberBusy                          .39518     (Corr)     .00000     1.0000     .00000    
 App Cpu.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Cpu.Utilization                         .61845     (Insuf)    .00000     1.0000     1.0000    
-Web Disk.NumberBusy                         .77935     (Insuf)    .00000     1.0000     1.0000    
+App Cpu.Utilization                         .39518     (Corr)     .00000     1.0000     .00000    
+Web Disk.NumberBusy                         .12440     (Insuf)    .00000     1.0000     .00000    
 Web Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web Disk.Utilization                        .77935     (Insuf)    .00000     1.0000     1.0000    
-DB_CPU.Queue.NumberInQueue                  1.6100     (Corr)     .00000     12.000     1.0000    
-APP_DISK.Queue.NumberInQueue                1.4388     (Insuf)    .00000     9.0000     3.0000    
-APP_CPU.Queue.NumberInQueue                 .78916     (Corr)     .00000     9.0000     2.0000    
-DB_DISK.Queue.NumberInQueue                 2.0108     (Corr)     .00000     14.000     2.0000    
-WEB_CPU.Queue.NumberInQueue                 6.7421     (Corr)     .00000     28.000     27.000    
-WEB_DISK.Queue.NumberInQueue                4.3541     (Insuf)    .00000     17.000     17.000    
-DB_CACHE.Queue.NumberInQueue                2.2931     (Corr)     .00000     12.000     4.0000    
+Web Disk.Utilization                        .12440     (Insuf)    .00000     1.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  .46742     (Corr)     .00000     9.0000     .00000    
+APP_DISK.Queue.NumberInQueue                .05935     (Insuf)    .00000     3.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 .23092     (Corr)     .00000     6.0000     .00000    
+DB_DISK.Queue.NumberInQueue                 .24753     (Corr)     .00000     6.0000     .00000    
+WEB_CPU.Queue.NumberInQueue                 .05760     (Insuf)    .00000     4.0000     .00000    
+WEB_DISK.Queue.NumberInQueue                .01674     (Insuf)    .00000     1.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .17614     (Corr)     .00000     4.0000     .00000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           211.00    
-Entity 1.NumberOut                          148.00    
-Db Cache.NumberSeized                       382.00    
-Db Cache.ScheduledUtilization               .71539    
-Db Cpu.NumberSeized                         887.00    
-Db Cpu.ScheduledUtilization                 .66216    
-App Disk.NumberSeized                       89.000    
-App Disk.ScheduledUtilization               .63358    
-Db Disk.NumberSeized                        621.00    
-Db Disk.ScheduledUtilization                .69157    
-Web CPU.NumberSeized                        316.00    
-Web CPU.ScheduledUtilization                .89561    
-App Cpu.NumberSeized                        342.00    
-App Cpu.ScheduledUtilization                .61845    
-Web Disk.NumberSeized                       53.000    
-Web Disk.ScheduledUtilization               .77935    
-System.NumberOut                            148.00    
+Entity 1.NumberIn                           340.00    
+Entity 1.NumberOut                          338.00    
+Db Cache.NumberSeized                       870.00    
+Db Cache.ScheduledUtilization               .37405    
+Db Cpu.NumberSeized                         2239.0    
+Db Cpu.ScheduledUtilization                 .48081    
+App Disk.NumberSeized                       82.000    
+App Disk.ScheduledUtilization               .19346    
+Db Disk.NumberSeized                        1248.0    
+Db Disk.ScheduledUtilization                .38929    
+Web CPU.NumberSeized                        495.00    
+Web CPU.ScheduledUtilization                .22733    
+App Cpu.NumberSeized                        805.00    
+App Cpu.ScheduledUtilization                .39518    
+Web Disk.NumberSeized                       57.000    
+Web Disk.ScheduledUtilization               .12440    
+System.NumberOut                            338.00    
 
-Iniciando replicação 3 de 5
+Iniciando replicação 2 de 3
 
                                       ARENA Simulation Results
                                          Usuário do Windows
 
-                                  Sumário para Replicação 3 de 5
+                                  Sumário para Replicação 2 de 3
 
-Projeto: ADSD                                                        Data da execução : 6/17/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/17/2019
+Projeto: ADSD                                                        Data da execução : 6/20/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/20/2019
 
-Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
-Unidade de Tempo Base: Minutos
+Replicação terminada no tempo de      : 120.0 Segundos 
+Unidade de Tempo Base: Segundos
 
                                            VARIÁVEIS DE REGISTRO
 
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             1.4698     (Insuf)    4.9096E-04 13.692        146    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        146    
-Entity 1.WaitTime                           3.7491     (Insuf)    .00000     25.853        146    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        146    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        146    
-Entity 1.TotalTime                          5.2190     (Insuf)    .00402     39.546        146    
-DB_CPU.Queue.WaitingTime                    .07338     .01420     .00000     .47961        979    
-APP_DISK.Queue.WaitingTime                  .53772     (Insuf)    .00000     1.9661        155    
-APP_CPU.Queue.WaitingTime                   .36805     (Corr)     .00000     1.4891        439    
-DB_DISK.Queue.WaitingTime                   .14793     .07195     .00000     .96532        678    
-WEB_CPU.Queue.WaitingTime                   .75467     (Insuf)    .00000     3.2125        305    
-WEB_DISK.Queue.WaitingTime                  2.5267     (Insuf)    .00000     5.7726         61    
-DB_CACHE.Queue.WaitingTime                  .23047     .06943     .00000     1.0140        402    
+Entity 1.VATime                             .76920     .14211     3.0435E-05 10.709        376    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        376    
+Entity 1.WaitTime                           .45715     (Corr)     .00000     8.0227        376    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        376    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        376    
+Entity 1.TotalTime                          1.2263     .25755     3.0435E-05 17.141        376    
+DB_CPU.Queue.WaitingTime                    .02207     (Corr)     .00000     .31164       2563    
+APP_DISK.Queue.WaitingTime                  .09963     (Insuf)    .00000     .90224        104    
+APP_CPU.Queue.WaitingTime                   .04162     .01276     .00000     .63802        969    
+DB_DISK.Queue.WaitingTime                   .01956     .00576     .00000     .24042       1358    
+WEB_CPU.Queue.WaitingTime                   .02314     .00865     .00000     .41347        548    
+WEB_DISK.Queue.WaitingTime                  .08183     (Insuf)    .00000     .95238         69    
+DB_CACHE.Queue.WaitingTime                  .04679     .01322     .00000     .55044       1069    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                20.598     (Insuf)    .00000     30.000     27.000    
-Db Cache.NumberBusy                         .74030     (Insuf)    .00000     1.0000     1.0000    
+Entity 1.WIP                                4.2961     (Corr)     .00000     11.000     9.0000    
+Db Cache.NumberBusy                         .49906     (Corr)     .00000     1.0000     1.0000    
 Db Cache.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cache.Utilization                        .74030     (Insuf)    .00000     1.0000     1.0000    
-Db Cpu.NumberBusy                           .71869     .06099     .00000     1.0000     1.0000    
+Db Cache.Utilization                        .49906     (Corr)     .00000     1.0000     1.0000    
+Db Cpu.NumberBusy                           .53342     (Corr)     .00000     1.0000     1.0000    
 Db Cpu.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cpu.Utilization                          .71869     .06099     .00000     1.0000     1.0000    
-App Disk.NumberBusy                         .83251     (Insuf)    .00000     1.0000     1.0000    
+Db Cpu.Utilization                          .53342     (Corr)     .00000     1.0000     1.0000    
+App Disk.NumberBusy                         .27156     (Insuf)    .00000     1.0000     .00000    
 App Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Disk.Utilization                        .83251     (Insuf)    .00000     1.0000     1.0000    
-Db Disk.NumberBusy                          .71410     (Corr)     .00000     1.0000     1.0000    
+App Disk.Utilization                        .27156     (Insuf)    .00000     1.0000     .00000    
+Db Disk.NumberBusy                          .41229     (Corr)     .00000     1.0000     1.0000    
 Db Disk.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Disk.Utilization                         .71410     (Corr)     .00000     1.0000     1.0000    
-Web CPU.NumberBusy                          .88860     (Insuf)    .00000     1.0000     1.0000    
+Db Disk.Utilization                         .41229     (Corr)     .00000     1.0000     1.0000    
+Web CPU.NumberBusy                          .26266     .03430     .00000     1.0000     .00000    
 Web CPU.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web CPU.Utilization                         .88860     (Insuf)    .00000     1.0000     1.0000    
-App Cpu.NumberBusy                          .80268     (Insuf)    .00000     1.0000     1.0000    
+Web CPU.Utilization                         .26266     .03430     .00000     1.0000     .00000    
+App Cpu.NumberBusy                          .47462     (Corr)     .00000     1.0000     1.0000    
 App Cpu.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Cpu.Utilization                         .80268     (Insuf)    .00000     1.0000     1.0000    
-Web Disk.NumberBusy                         .89956     (Insuf)    .00000     1.0000     1.0000    
+App Cpu.Utilization                         .47462     (Corr)     .00000     1.0000     1.0000    
+Web Disk.NumberBusy                         .15468     (Insuf)    .00000     1.0000     .00000    
 Web Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web Disk.Utilization                        .89956     (Insuf)    .00000     1.0000     1.0000    
-DB_CPU.Queue.NumberInQueue                  1.2249     (Corr)     .00000     11.000     8.0000    
-APP_DISK.Queue.NumberInQueue                1.4241     (Insuf)    .00000     7.0000     2.0000    
-APP_CPU.Queue.NumberInQueue                 2.7096     (Corr)     .00000     13.000     3.0000    
-DB_DISK.Queue.NumberInQueue                 1.6737     .73828     .00000     10.000     1.0000    
-WEB_CPU.Queue.NumberInQueue                 3.8407     (Corr)     .00000     13.000     2.0000    
-WEB_DISK.Queue.NumberInQueue                2.5807     (Insuf)    .00000     8.0000     1.0000    
-DB_CACHE.Queue.NumberInQueue                1.5483     .53196     .00000     10.000     3.0000    
+Web Disk.Utilization                        .15468     (Insuf)    .00000     1.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  .47132     (Corr)     .00000     7.0000     .00000    
+APP_DISK.Queue.NumberInQueue                .08634     (Insuf)    .00000     3.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 .33703     (Corr)     .00000     5.0000     3.0000    
+DB_DISK.Queue.NumberInQueue                 .22134     (Corr)     .00000     4.0000     .00000    
+WEB_CPU.Queue.NumberInQueue                 .10566     (Insuf)    .00000     5.0000     .00000    
+WEB_DISK.Queue.NumberInQueue                .04705     (Insuf)    .00000     3.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .41914     (Corr)     .00000     7.0000     2.0000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           173.00    
-Entity 1.NumberOut                          146.00    
-Db Cache.NumberSeized                       402.00    
-Db Cache.ScheduledUtilization               .74030    
-Db Cpu.NumberSeized                         979.00    
-Db Cpu.ScheduledUtilization                 .71869    
-App Disk.NumberSeized                       155.00    
-App Disk.ScheduledUtilization               .83251    
-Db Disk.NumberSeized                        678.00    
-Db Disk.ScheduledUtilization                .71410    
-Web CPU.NumberSeized                        305.00    
-Web CPU.ScheduledUtilization                .88860    
-App Cpu.NumberSeized                        439.00    
-App Cpu.ScheduledUtilization                .80268    
-Web Disk.NumberSeized                       61.000    
-Web Disk.ScheduledUtilization               .89956    
-System.NumberOut                            146.00    
+Entity 1.NumberIn                           385.00    
+Entity 1.NumberOut                          376.00    
+Db Cache.NumberSeized                       1069.0    
+Db Cache.ScheduledUtilization               .49906    
+Db Cpu.NumberSeized                         2563.0    
+Db Cpu.ScheduledUtilization                 .53342    
+App Disk.NumberSeized                       104.00    
+App Disk.ScheduledUtilization               .27156    
+Db Disk.NumberSeized                        1358.0    
+Db Disk.ScheduledUtilization                .41229    
+Web CPU.NumberSeized                        548.00    
+Web CPU.ScheduledUtilization                .26266    
+App Cpu.NumberSeized                        969.00    
+App Cpu.ScheduledUtilization                .47462    
+Web Disk.NumberSeized                       69.000    
+Web Disk.ScheduledUtilization               .15468    
+System.NumberOut                            376.00    
 
-Iniciando replicação 4 de 5
+Iniciando replicação 3 de 3
 
                                       ARENA Simulation Results
                                          Usuário do Windows
 
-                                  Sumário para Replicação 4 de 5
+                                  Sumário para Replicação 3 de 3
 
-Projeto: ADSD                                                        Data da execução : 6/17/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/17/2019
+Projeto: ADSD                                                        Data da execução : 6/20/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/20/2019
 
-Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
-Unidade de Tempo Base: Minutos
+Replicação terminada no tempo de      : 120.0 Segundos 
+Unidade de Tempo Base: Segundos
 
                                            VARIÁVEIS DE REGISTRO
 
 Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
 ___________________________________________________________________________________________________
 
-Entity 1.VATime                             1.1878     (Insuf)    .00221     17.257        151    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        151    
-Entity 1.WaitTime                           4.8106     (Insuf)    .00000     40.994        151    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        151    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        151    
-Entity 1.TotalTime                          5.9984     (Insuf)    .02830     57.432        151    
-DB_CPU.Queue.WaitingTime                    .13844     (Corr)     .00000     .82381       1050    
-APP_DISK.Queue.WaitingTime                  .24088     (Insuf)    .00000     1.8100        107    
-APP_CPU.Queue.WaitingTime                   .39097     (Corr)     .00000     1.7204        400    
-DB_DISK.Queue.WaitingTime                   .17614     .06166     .00000     .79368        717    
-WEB_CPU.Queue.WaitingTime                   1.4263     (Corr)     .00000     3.3272        330    
-WEB_DISK.Queue.WaitingTime                  4.8260     (Insuf)    .00000     14.250         55    
-DB_CACHE.Queue.WaitingTime                  .49159     (Corr)     .00000     3.2030        419    
+Entity 1.VATime                             .80955     .25758     1.9036E-04 20.870        357    
+Entity 1.NVATime                            .00000     .00000     .00000     .00000        357    
+Entity 1.WaitTime                           .57493     .26280     .00000     13.226        357    
+Entity 1.TranTime                           .00000     .00000     .00000     .00000        357    
+Entity 1.OtherTime                          .00000     .00000     .00000     .00000        357    
+Entity 1.TotalTime                          1.3844     .48854     1.9036E-04 28.719        357    
+DB_CPU.Queue.WaitingTime                    .02500     (Corr)     .00000     .31900       2755    
+APP_DISK.Queue.WaitingTime                  .07835     (Insuf)    .00000     .91842         88    
+APP_CPU.Queue.WaitingTime                   .04242     (Corr)     .00000     .48689       1003    
+DB_DISK.Queue.WaitingTime                   .02836     .00800     .00000     .31656       1517    
+WEB_CPU.Queue.WaitingTime                   .01415     .00447     .00000     .25260        500    
+WEB_DISK.Queue.WaitingTime                  .01028     (Insuf)    .00000     .20457         39    
+DB_CACHE.Queue.WaitingTime                  .04124     (Corr)     .00000     .50157       1122    
 
                                      VARIÁVEIS DISCRETAS
 
 Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
 ___________________________________________________________________________________________________
 
-Entity 1.WIP                                30.629     (Corr)     .00000     54.000     42.000    
-Db Cache.NumberBusy                         .79216     (Insuf)    .00000     1.0000     .00000    
+Entity 1.WIP                                4.3434     (Corr)     .00000     11.000     4.0000    
+Db Cache.NumberBusy                         .47973     (Corr)     .00000     1.0000     1.0000    
 Db Cache.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cache.Utilization                        .79216     (Insuf)    .00000     1.0000     .00000    
-Db Cpu.NumberBusy                           .73736     (Corr)     .00000     1.0000     1.0000    
+Db Cache.Utilization                        .47973     (Corr)     .00000     1.0000     1.0000    
+Db Cpu.NumberBusy                           .58330     (Corr)     .00000     1.0000     1.0000    
 Db Cpu.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cpu.Utilization                          .73736     (Corr)     .00000     1.0000     1.0000    
-App Disk.NumberBusy                         .54512     (Insuf)    .00000     1.0000     .00000    
+Db Cpu.Utilization                          .58330     (Corr)     .00000     1.0000     1.0000    
+App Disk.NumberBusy                         .25318     (Insuf)    .00000     1.0000     .00000    
 App Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Disk.Utilization                        .54512     (Insuf)    .00000     1.0000     .00000    
-Db Disk.NumberBusy                          .71917     (Corr)     .00000     1.0000     1.0000    
+App Disk.Utilization                        .25318     (Insuf)    .00000     1.0000     .00000    
+Db Disk.NumberBusy                          .46512     .05891     .00000     1.0000     .00000    
 Db Disk.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Disk.Utilization                         .71917     (Corr)     .00000     1.0000     1.0000    
-Web CPU.NumberBusy                          .97074     (Insuf)    .00000     1.0000     1.0000    
+Db Disk.Utilization                         .46512     .05891     .00000     1.0000     .00000    
+Web CPU.NumberBusy                          .23125     .02837     .00000     1.0000     1.0000    
 Web CPU.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web CPU.Utilization                         .97074     (Insuf)    .00000     1.0000     1.0000    
-App Cpu.NumberBusy                          .75237     (Insuf)    .00000     1.0000     1.0000    
+Web CPU.Utilization                         .23125     .02837     .00000     1.0000     1.0000    
+App Cpu.NumberBusy                          .48092     (Corr)     .00000     1.0000     .00000    
 App Cpu.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Cpu.Utilization                         .75237     (Insuf)    .00000     1.0000     1.0000    
-Web Disk.NumberBusy                         .87007     (Insuf)    .00000     1.0000     1.0000    
+App Cpu.Utilization                         .48092     (Corr)     .00000     1.0000     .00000    
+Web Disk.NumberBusy                         .05737     (Insuf)    .00000     1.0000     .00000    
 Web Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web Disk.Utilization                        .87007     (Insuf)    .00000     1.0000     1.0000    
-DB_CPU.Queue.NumberInQueue                  2.4226     (Corr)     .00000     16.000     .00000    
-APP_DISK.Queue.NumberInQueue                .42957     (Insuf)    .00000     5.0000     .00000    
-APP_CPU.Queue.NumberInQueue                 2.7289     (Corr)     .00000     18.000     11.000    
-DB_DISK.Queue.NumberInQueue                 2.1313     (Corr)     .00000     11.000     7.0000    
-WEB_CPU.Queue.NumberInQueue                 7.8450     (Corr)     .00000     20.000     .00000    
-WEB_DISK.Queue.NumberInQueue                6.2521     (Insuf)    .00000     19.000     19.000    
-DB_CACHE.Queue.NumberInQueue                3.4329     (Corr)     .00000     15.000     .00000    
+Web Disk.Utilization                        .05737     (Insuf)    .00000     1.0000     .00000    
+DB_CPU.Queue.NumberInQueue                  .57419     (Corr)     .00000     7.0000     1.0000    
+APP_DISK.Queue.NumberInQueue                .05746     (Insuf)    .00000     2.0000     .00000    
+APP_CPU.Queue.NumberInQueue                 .35457     (Corr)     .00000     6.0000     .00000    
+DB_DISK.Queue.NumberInQueue                 .35850     (Corr)     .00000     5.0000     .00000    
+WEB_CPU.Queue.NumberInQueue                 .05898     (Insuf)    .00000     3.0000     .00000    
+WEB_DISK.Queue.NumberInQueue                .00334     (Insuf)    .00000     1.0000     .00000    
+DB_CACHE.Queue.NumberInQueue                .38556     (Corr)     .00000     6.0000     .00000    
 
                                              RESULTADOS
 
 Identificador                                   Valor
 _____________________________________________________________
 
-Entity 1.NumberIn                           193.00    
-Entity 1.NumberOut                          151.00    
-Db Cache.NumberSeized                       419.00    
-Db Cache.ScheduledUtilization               .79216    
-Db Cpu.NumberSeized                         1050.0    
-Db Cpu.ScheduledUtilization                 .73736    
-App Disk.NumberSeized                       107.00    
-App Disk.ScheduledUtilization               .54512    
-Db Disk.NumberSeized                        717.00    
-Db Disk.ScheduledUtilization                .71917    
-Web CPU.NumberSeized                        330.00    
-Web CPU.ScheduledUtilization                .97074    
-App Cpu.NumberSeized                        400.00    
-App Cpu.ScheduledUtilization                .75237    
-Web Disk.NumberSeized                       55.000    
-Web Disk.ScheduledUtilization               .87007    
-System.NumberOut                            151.00    
-
-Iniciando replicação 5 de 5
-
-                                      ARENA Simulation Results
-                                         Usuário do Windows
-
-                                  Sumário para Replicação 5 de 5
-
-Projeto: ADSD                                                        Data da execução : 6/17/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/17/2019
-
-Replicação terminada no tempo de      : 60.0 Minutos (Sunday, July 22, 2018, 01:18:55)
-Unidade de Tempo Base: Minutos
-
-                                           VARIÁVEIS DE REGISTRO
-
-Identificador                                  Média   Meia Largura  Mínimo    Máximo   Observações
-___________________________________________________________________________________________________
-
-Entity 1.VATime                             1.4915     (Insuf)    2.7096E-04 13.754        156    
-Entity 1.NVATime                            .00000     (Insuf)    .00000     .00000        156    
-Entity 1.WaitTime                           4.2061     (Insuf)    .00000     41.192        156    
-Entity 1.TranTime                           .00000     (Insuf)    .00000     .00000        156    
-Entity 1.OtherTime                          .00000     (Insuf)    .00000     .00000        156    
-Entity 1.TotalTime                          5.6976     (Insuf)    .00396     54.946        156    
-DB_CPU.Queue.WaitingTime                    .16176     (Corr)     .00000     .82060       1075    
-APP_DISK.Queue.WaitingTime                  .48665     (Insuf)    .00000     1.9358        107    
-APP_CPU.Queue.WaitingTime                   .39198     (Corr)     .00000     1.8105        431    
-DB_DISK.Queue.WaitingTime                   .28739     .10477     .00000     1.2064        727    
-WEB_CPU.Queue.WaitingTime                   .54349     (Corr)     .00000     2.3095        333    
-WEB_DISK.Queue.WaitingTime                  .81889     (Insuf)    .00000     3.3313         66    
-DB_CACHE.Queue.WaitingTime                  .30169     .10887     .00000     1.5047        431    
-
-                                     VARIÁVEIS DISCRETAS
-
-Identificador                                 Média   Meia Largura  Mínimo    Máximo   Valor Final
-___________________________________________________________________________________________________
-
-Entity 1.WIP                                21.612     (Corr)     .00000     33.000     26.000    
-Db Cache.NumberBusy                         .76908     (Insuf)    .00000     1.0000     .00000    
-Db Cache.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cache.Utilization                        .76908     (Insuf)    .00000     1.0000     .00000    
-Db Cpu.NumberBusy                           .77100     (Corr)     .00000     1.0000     1.0000    
-Db Cpu.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Cpu.Utilization                          .77100     (Corr)     .00000     1.0000     1.0000    
-App Disk.NumberBusy                         .61350     (Insuf)    .00000     1.0000     1.0000    
-App Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Disk.Utilization                        .61350     (Insuf)    .00000     1.0000     1.0000    
-Db Disk.NumberBusy                          .83111     (Insuf)    .00000     1.0000     1.0000    
-Db Disk.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Db Disk.Utilization                         .83111     (Insuf)    .00000     1.0000     1.0000    
-Web CPU.NumberBusy                          .82630     (Insuf)    .00000     1.0000     1.0000    
-Web CPU.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web CPU.Utilization                         .82630     (Insuf)    .00000     1.0000     1.0000    
-App Cpu.NumberBusy                          .78594     (Insuf)    .00000     1.0000     1.0000    
-App Cpu.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-App Cpu.Utilization                         .78594     (Insuf)    .00000     1.0000     1.0000    
-Web Disk.NumberBusy                         .79086     (Insuf)    .00000     1.0000     1.0000    
-Web Disk.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Web Disk.Utilization                        .79086     (Insuf)    .00000     1.0000     1.0000    
-DB_CPU.Queue.NumberInQueue                  2.9153     (Corr)     .00000     17.000     9.0000    
-APP_DISK.Queue.NumberInQueue                .86895     (Insuf)    .00000     7.0000     1.0000    
-APP_CPU.Queue.NumberInQueue                 2.8194     (Corr)     .00000     16.000     3.0000    
-DB_DISK.Queue.NumberInQueue                 3.4837     (Corr)     .00000     15.000     1.0000    
-WEB_CPU.Queue.NumberInQueue                 3.0523     (Corr)     .00000     12.000     4.0000    
-WEB_DISK.Queue.NumberInQueue                .91743     (Insuf)    .00000     4.0000     2.0000    
-DB_CACHE.Queue.NumberInQueue                2.1671     (Corr)     .00000     14.000     .00000    
-
-                                             RESULTADOS
-
-Identificador                                   Valor
-_____________________________________________________________
-
-Entity 1.NumberIn                           182.00    
-Entity 1.NumberOut                          156.00    
-Db Cache.NumberSeized                       431.00    
-Db Cache.ScheduledUtilization               .76908    
-Db Cpu.NumberSeized                         1075.0    
-Db Cpu.ScheduledUtilization                 .77100    
-App Disk.NumberSeized                       107.00    
-App Disk.ScheduledUtilization               .61350    
-Db Disk.NumberSeized                        727.00    
-Db Disk.ScheduledUtilization                .83111    
-Web CPU.NumberSeized                        333.00    
-Web CPU.ScheduledUtilization                .82630    
-App Cpu.NumberSeized                        431.00    
-App Cpu.ScheduledUtilization                .78594    
-Web Disk.NumberSeized                       66.000    
-Web Disk.ScheduledUtilization               .79086    
-System.NumberOut                            156.00    
+Entity 1.NumberIn                           361.00    
+Entity 1.NumberOut                          357.00    
+Db Cache.NumberSeized                       1122.0    
+Db Cache.ScheduledUtilization               .47973    
+Db Cpu.NumberSeized                         2755.0    
+Db Cpu.ScheduledUtilization                 .58330    
+App Disk.NumberSeized                       88.000    
+App Disk.ScheduledUtilization               .25318    
+Db Disk.NumberSeized                        1517.0    
+Db Disk.ScheduledUtilization                .46512    
+Web CPU.NumberSeized                        500.00    
+Web CPU.ScheduledUtilization                .23125    
+App Cpu.NumberSeized                        1003.0    
+App Cpu.ScheduledUtilization                .48092    
+Web Disk.NumberSeized                       39.000    
+Web Disk.ScheduledUtilization               .05737    
+System.NumberOut                            357.00    
 
 
                                       ARENA Simulation Results
                                          Usuário do Windows
 
-                               Resumo de resultados para 5 Replicações
+                               Resumo de resultados para 3 Replicações
 
-Projeto: ADSD                                                        Data da execução : 6/17/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/17/2019
+Projeto: ADSD                                                        Data da execução : 6/20/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/20/2019
 
 
                                              RESULTADOS
@@ -462,23 +282,23 @@ Analista: gcintra@live.com                                            Data de re
 Identificador                                 Média    Meia-largura Mínima    Maximo # de Replicações
 ___________________________________________________________________________________________________
 
-Entity 1.NumberIn                           187.60     18.572     173.00     211.00     5
-Entity 1.NumberOut                          152.60     8.0264     146.00     162.00     5
-Db Cache.NumberSeized                       387.80     61.858     305.00     431.00     5
-Db Cache.ScheduledUtilization               .70789     .13358     .52253     .79216     5
-Db Cpu.NumberSeized                         958.40     141.93     801.00     1075.0     5
-Db Cpu.ScheduledUtilization                 .69494     .09040     .58546     .77100     5
-App Disk.NumberSeized                       114.40     30.429     89.000     155.00     5
-App Disk.ScheduledUtilization               .65564     .13279     .54512     .83251     5
-Db Disk.NumberSeized                        660.00     88.205     557.00     727.00     5
-Db Disk.ScheduledUtilization                .71596     .09280     .62387     .83111     5
-Web CPU.NumberSeized                        318.60     15.471     305.00     333.00     5
-Web CPU.ScheduledUtilization                .87704     .08134     .80397     .97074     5
-App Cpu.NumberSeized                        393.00     54.856     342.00     439.00     5
-App Cpu.ScheduledUtilization                .72266     .10178     .61845     .80268     5
-Web Disk.NumberSeized                       57.800     6.8786     53.000     66.000     5
-Web Disk.ScheduledUtilization               .83436     .06345     .77935     .89956     5
-System.NumberOut                            152.60     8.0264     146.00     162.00     5
+Entity 1.NumberIn                           362.00     55.939     340.00     385.00     3
+Entity 1.NumberOut                          357.00     47.202     338.00     376.00     3
+Db Cache.NumberSeized                       1020.3     330.07     870.00     1122.0     3
+Db Cache.ScheduledUtilization               .45095     .16718     .37405     .49906     3
+Db Cpu.NumberSeized                         2519.0     647.91     2239.0     2755.0     3
+Db Cpu.ScheduledUtilization                 .53251     .12732     .48081     .58330     3
+App Disk.NumberSeized                       91.333     28.253     82.000     104.00     3
+App Disk.ScheduledUtilization               .23940     .10145     .19346     .27156     3
+Db Disk.NumberSeized                        1374.3     335.98     1248.0     1517.0     3
+Db Disk.ScheduledUtilization                .42223     .09660     .38929     .46512     3
+Web CPU.NumberSeized                        514.33     72.699     495.00     548.00     3
+Web CPU.ScheduledUtilization                .24041     .04812     .22733     .26266     3
+App Cpu.NumberSeized                        925.66     263.02     805.00     1003.0     3
+App Cpu.ScheduledUtilization                .45024     .11873     .39518     .48092     3
+Web Disk.NumberSeized                       55.000     37.512     39.000     69.000     3
+Web Disk.ScheduledUtilization               .11215     .12371     .05737     .15468     3
+System.NumberOut                            357.00     47.202     338.00     376.00     3
 
-Tempo executando a simulação: 0.12 minutos.
+Tempo executando a simulação: 0.23 minutos.
 Simulação completada.
