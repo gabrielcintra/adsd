@@ -1,11 +1,11 @@
 
                                       ARENA Simulation Results
-                                         Usuário do Windows
+                                          GCintra@LIVE.COM
 
                                   Sumário para Replicação 1 de 3
 
-Projeto: ADSD                                                        Data da execução : 6/20/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/20/2019
+Projeto: ADSD                                                        Data da execução : 6/24/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/24/2019
 
 Replicação terminada no tempo de      : 120.0 Segundos 
 Unidade de Tempo Base: Segundos
@@ -90,12 +90,12 @@ System.NumberOut                            338.00
 Iniciando replicação 2 de 3
 
                                       ARENA Simulation Results
-                                         Usuário do Windows
+                                          GCintra@LIVE.COM
 
                                   Sumário para Replicação 2 de 3
 
-Projeto: ADSD                                                        Data da execução : 6/20/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/20/2019
+Projeto: ADSD                                                        Data da execução : 6/24/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/24/2019
 
 Replicação terminada no tempo de      : 120.0 Segundos 
 Unidade de Tempo Base: Segundos
@@ -180,12 +180,12 @@ System.NumberOut                            376.00
 Iniciando replicação 3 de 3
 
                                       ARENA Simulation Results
-                                         Usuário do Windows
+                                          GCintra@LIVE.COM
 
                                   Sumário para Replicação 3 de 3
 
-Projeto: ADSD                                                        Data da execução : 6/20/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/20/2019
+Projeto: ADSD                                                        Data da execução : 6/24/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/24/2019
 
 Replicação terminada no tempo de      : 120.0 Segundos 
 Unidade de Tempo Base: Segundos
@@ -269,12 +269,12 @@ System.NumberOut                            357.00
 
 
                                       ARENA Simulation Results
-                                         Usuário do Windows
+                                          GCintra@LIVE.COM
 
                                Resumo de resultados para 3 Replicações
 
-Projeto: ADSD                                                        Data da execução : 6/20/2019
-Analista: gcintra@live.com                                            Data de revisão do modelo: 6/20/2019
+Projeto: ADSD                                                        Data da execução : 6/24/2019
+Analista: gcintra@live.com                                            Data de revisão do modelo: 6/24/2019
 
 
                                              RESULTADOS
@@ -300,5 +300,5 @@ Web Disk.NumberSeized                       55.000     37.512     39.000     69.
 Web Disk.ScheduledUtilization               .11215     .12371     .05737     .15468     3
 System.NumberOut                            357.00     47.202     338.00     376.00     3
 
-Tempo executando a simulação: 0.23 minutos.
+Tempo executando a simulação: 0.27 minutos.
 Simulação completada.
