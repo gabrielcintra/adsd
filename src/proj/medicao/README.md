@@ -10,6 +10,8 @@ ADSD - UFCG 2019.1
 ##### Entrada
 Vídeo no formato .flv
 
+Mais detalhes no relatório de análise.
+
 ##### Fatores e níveis
 - Formato do vídeo na saída
 -- MP4
@@ -22,6 +24,8 @@ Vídeo no formato .flv
 - Memória Ram total
 -- 8gb
 -- 4gb
+
+Mais detalhes no relatório de análise.
 
 ---
 
