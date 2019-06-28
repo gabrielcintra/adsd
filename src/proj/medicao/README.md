@@ -10,7 +10,7 @@ ADSD - UFCG 2019.1
 ##### Entrada
 Vídeo no formato .flv
 
-Mais detalhes no relatório de análise.
+Mais detalhes no documento do plano de medição.
 
 ##### Fatores e níveis
 - Formato do vídeo na saída
@@ -25,9 +25,9 @@ Mais detalhes no relatório de análise.
 -- 8gb
 -- 4gb
 
-Mais detalhes no relatório de análise.
+Mais detalhes no documento do plano de medição.
 
 ---
 
-##### Análise de saída
-Pode ser verificada no arquivo docs/report.pdf e as capturas de tela referentes aos recursos em cada análise encontram-se, também, na pasta docs.
+##### Arquivos e medições
+O plano de medição pode ser verificado no arquivo docs/plan.pdf e a tabela de coleta de medições (E cálculos de médias e desvio padrão) pode ser verificada no arquivo docs/medicoes.xlsx.
